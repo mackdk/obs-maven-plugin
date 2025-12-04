@@ -9,6 +9,11 @@
     "customizations": {
         "vscode": {
             "settings": {
+                "sonarlint.pathToNodeExecutable": "/usr/bin/node",
+                "sonarlint.connectedMode.project": {
+                    "connectionId": "mackdk",
+                    "projectKey": "mackdk_obs-maven-plugin"
+                },
                 "java.jdt.ls.java.home": "/usr/lib64/jvm/java-25-openjdk",
                 "java.configuration.runtimes": [
                     {
@@ -25,7 +30,9 @@
                 "vscjava.vscode-java-test",
                 "vscjava.vscode-maven",
                 "vscjava.vscode-java-dependency",
-                "redhat.vscode-xml"
+                "redhat.vscode-xml",
+                "SonarSource.sonarlint-vscode",
+                "shblue21.vscode-spotbugs"
             ]
         }
     },
