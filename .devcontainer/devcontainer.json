@@ -24,7 +24,12 @@
                         "--sun-misc-unsafe-memory-access=allow"
                     ]
                 },
-                "java.format.settings.url": "format-style.xml"
+                "java.format.settings.url": "format-style.xml",
+                "sonarlint.connectedMode.project": {
+                    "connectionId": "mackdk",
+                    "projectKey": "mackdk_obs-maven-plugin"
+                },
+                "sonarlint.pathToNodeExecutable": "/usr/bin/node"
             },
             "extensions": [
                 "redhat.java",
@@ -33,7 +38,8 @@
                 "vscjava.vscode-java-test",
                 "vscjava.vscode-maven",
                 "vscjava.vscode-java-dependency",
-                "redhat.vscode-xml"
+                "redhat.vscode-xml",
+                "SonarSource.sonarlint-vscode"
             ]
         }
     },

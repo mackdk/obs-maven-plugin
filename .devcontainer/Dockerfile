@@ -6,7 +6,7 @@ FROM registry.opensuse.org/opensuse/tumbleweed:latest
 # Installing all packages
 RUN zypper refresh && \
         zypper -n install awk bash-completion curl expect git man openssh sudo tar vim wget \
-                          java-25-openjdk-devel maven && \
+                          nodejs22 java-25-openjdk-devel maven && \
          zypper clean -a
 
 # Creating regular user
