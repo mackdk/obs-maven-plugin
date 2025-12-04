@@ -95,7 +95,7 @@ public class RpmPackage {
         }
 
         // Skip minor version
-        rpmStream.skipBytes(1);
+        rpmStream.readByte();
 
         // Exclude source RPM
         short type = rpmStream.readShort();

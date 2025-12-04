@@ -9,7 +9,7 @@ import com.google.common.base.Objects;
 public final class ObsRepository {
 
     private static final Pattern OBS_PROJECT_PATTERN = Pattern
-            .compile("^[a-zA-Z0-9._-]+(?::[a-zA-Z0-9._-]+)*/[a-zA-Z0-9._-]+$");
+            .compile("^[a-zA-Z0-9._-]++(?::[a-zA-Z0-9._-]++)*+/[a-zA-Z0-9._-]++$");
 
     private final String name;
 
@@ -82,6 +82,10 @@ public final class ObsRepository {
     }
 
     private static boolean isValidObsProject(String path) {
+        if (path == null || path.isEmpty()) {
+            return false;
+        }
+
         return OBS_PROJECT_PATTERN.matcher(path).matches();
     }
 
