@@ -25,7 +25,7 @@ import java.util.regex.Pattern;
 public final class ObsRepository {
 
     private static final Pattern OBS_PROJECT_PATTERN = Pattern.compile(
-        "^[a-zA-Z0-9._-]+(?::[a-zA-Z0-9._-]+)*/[a-zA-Z0-9._-]+$"
+        "^[a-zA-Z0-9._-]++(?::[a-zA-Z0-9._-]++)*+/[a-zA-Z0-9._-]++$"
     );
 
     private final String name;
