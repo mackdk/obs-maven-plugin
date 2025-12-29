@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- This primary is malformed: it contains two entries for xmlsec: the first is missing some mandatory tags, the other is correct -->
+<metadata xmlns="http://linux.duke.edu/metadata/common" xmlns:rpm="http://linux.duke.edu/metadata/rpm" packages="2">
+<package type="rpm">
+  <name>xmlsec</name>
+  <arch>noarch</arch>
+  <version epoch="0" ver="2.0.7" rel="1"/>
+  <summary>Apache XML Security for Java supports XML-Signature Syntax</summary>
+  <description>Apache XML Security for Java supports XML-Signature Syntax and Processing, W3C Recommendation 12 February 2002, and XML Encryption Syntax and Processing, W3C Recommendation 10 December 2002. As of version 1.4, the library supports the standard Java API JSR-105: XML Digital Signature APIs</description>
+  <packager></packager>
+  <url>http://santuario.apache.org/</url>
+  <time file="1766158402" build="1766158397"/>
+  <size package="1003124" installed="1134095" archive="1134520"/>
+  <format>
+    <rpm:license>Apache-2.0</rpm:license>
+    <rpm:vendor>obs://build.opensuse.org/systemsmanagement:Uyuni</rpm:vendor>
+    <rpm:group>Development/Libraries/Java</rpm:group>
+    <rpm:buildhost>i02-armsrv1</rpm:buildhost>
+    <rpm:sourcerpm>xmlsec-2.0.7-4.126.uyuni3.src.rpm</rpm:sourcerpm>
+    <rpm:header-range start="4504" end="7696"/>
+    <rpm:provides>
+      <rpm:entry name="mvn(org.apache.santuario:xmlsec)" flags="EQ" epoch="0" ver="2.0.7"/>
+      <rpm:entry name="xmlsec" flags="EQ" epoch="0" ver="2.0.7" rel="4.126.uyuni3"/>
+    </rpm:provides>
+    <rpm:requires>
+      <rpm:entry name="java"/>
+      <rpm:entry name="mvn(commons-codec:commons-codec)"/>
+      <rpm:entry name="mvn(org.codehaus.woodstox:woodstox-core-asl)"/>
+      <rpm:entry name="osgi(slf4j.api)"/>
+    </rpm:requires>
+  </format>
+</package>
+<package type="rpm">
+  <name>xmlsec</name>
+  <arch>noarch</arch>
+  <version epoch="0" ver="2.0.7" rel="5"/>
+  <checksum type="sha256" pkgid="YES">75574bf304802411dd07d572f4c40aab89e28fd9d8a253ee0245aa24d1b592ee</checksum>
+  <summary>Apache XML Security for Java supports XML-Signature Syntax</summary>
+  <description>Apache XML Security for Java supports XML-Signature Syntax and Processing, W3C Recommendation 12 February 2002, and XML Encryption Syntax and Processing, W3C Recommendation 10 December 2002. As of version 1.4, the library supports the standard Java API JSR-105: XML Digital Signature APIs</description>
+  <packager></packager>
+  <url>http://santuario.apache.org/</url>
+  <time file="1766158402" build="1766158397"/>
+  <size package="1003124" installed="1134095" archive="1134520"/>
+  <location href="noarch/xmlsec-2.0.7-5.noarch.rpm"/>
+  <format>
+    <rpm:license>Apache-2.0</rpm:license>
+    <rpm:vendor>obs://build.opensuse.org/systemsmanagement:Uyuni</rpm:vendor>
+    <rpm:group>Development/Libraries/Java</rpm:group>
+    <rpm:buildhost>i02-armsrv1</rpm:buildhost>
+    <rpm:sourcerpm>xmlsec-2.0.7-4.126.uyuni3.src.rpm</rpm:sourcerpm>
+    <rpm:header-range start="4504" end="7696"/>
+    <rpm:provides>
+      <rpm:entry name="mvn(org.apache.santuario:xmlsec)" flags="EQ" epoch="0" ver="2.0.7"/>
+      <rpm:entry name="xmlsec" flags="EQ" epoch="0" ver="2.0.7" rel="4.126.uyuni3"/>
+    </rpm:provides>
+    <rpm:requires>
+      <rpm:entry name="java"/>
+      <rpm:entry name="mvn(commons-codec:commons-codec)"/>
+      <rpm:entry name="mvn(org.codehaus.woodstox:woodstox-core-asl)"/>
+      <rpm:entry name="osgi(slf4j.api)"/>
+    </rpm:requires>
+  </format>
+</package>
+</metadata>

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<repomd xmlns="http://linux.duke.edu/metadata/repo" xmlns:rpm="http://linux.duke.edu/metadata/rpm">
+  <revision>1766158663</revision>
+  <tags>
+    <repo>obsrepository://build.opensuse.org/systemsmanagement:Uyuni:Master:Other/openSUSE_Leap_15.6</repo>
+    <repo>obsbuildid:1712860959</repo>
+  </tags>
+  <data type="primary">
+    <checksum type="sha256">2a478f6f712afd8ba62215fa33cdb12c5cc3efbc79240bfaae258d4201db260c</checksum>
+    <open-checksum type="sha256">f7de9a514d335085c30b5e1f19dd166b61af729495f50b3562790d023a6e402c</open-checksum>
+    <location href="repodata/2a478f6f712afd8ba62215fa33cdb12c5cc3efbc79240bfaae258d4201db260c-primary.xml.gz"/>
+    <timestamp>1766158779</timestamp>
+    <size>178838</size>
+    <open-size>178838</open-size>
+  </data>
+  <data type="filelists">
+    <checksum type="sha256">bad858830aa45e982736b58ec0539c1d3393c8aaea02b920eaf0bb7c14935a22</checksum>
+    <open-checksum type="sha256">4bc0366ecf8a457a45e73ad5e66f023c504e292d50283cf8627bd7fb131b77f4</open-checksum>
+    <location href="repodata/bad858830aa45e982736b58ec0539c1d3393c8aaea02b920eaf0bb7c14935a22-filelists.xml.gz"/>
+    <timestamp>1766158663</timestamp>
+    <size>32788</size>
+    <open-size>412525</open-size>
+  </data>
+  <data type="other">
+    <timestamp>1766158663</timestamp>
+    <size>25513</size>
+  </data>
+  <data type="primary">
+    <checksum type="sha256">2a478f6f712afd8ba62215fa33cdb12c5cc3efbc79240bfaae258d4201db260c</checksum>
+    <open-checksum type="sha256">f7de9a514d335085c30b5e1f19dd166b61af729495f50b3562790d023a6e402c</open-checksum>
+    <location href="repodata/2a478f6f712afd8ba62215fa33cdb12c5cc3efbc79240bfaae258d4201db260c-primary.xml.gz"/>
+    <timestamp>1766158663</timestamp>
+    <size>23111</size>
+    <open-size>178838</open-size>
+  </data>
+  <data type="other">
+    <checksum type="sha256">80ce304e53183f83063365e2fe6f4b677e41c1d2d965fbc53417d8984adf01d4</checksum>
+    <open-checksum type="sha256">3961c0d81ad9583c7c9f4f1f82e9ebf60248ba518d29d59a013ef4c9d4d9ecdc</open-checksum>
+    <location href="repodata/80ce304e53183f83063365e2fe6f4b677e41c1d2d965fbc53417d8984adf01d4-other.xml.gz"/>
+    <timestamp>1163457863</timestamp>
+    <size>129012</size>
+    <open-size>326236</open-size>
+  </data>
+</repomd>

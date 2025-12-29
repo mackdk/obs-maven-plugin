@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- This primary contains two packages with the same name, same version but different epochs -->
+<metadata xmlns="http://linux.duke.edu/metadata/common" xmlns:rpm="http://linux.duke.edu/metadata/rpm" packages="2">
+<package type="rpm">
+  <name>apache-commons-fileupload2-core</name>
+  <arch>noarch</arch>
+  <version epoch="0" ver="2.0.0~M4" rel="2.4.uyuni3"/>
+  <checksum type="sha256" pkgid="YES">c65f9265889a99bbb86114cf221c1f843a55819304932ecb8b0d290b2a1639d3</checksum>
+  <summary>Apache Commons FileUpload Core</summary>
+  <description>The Apache Commons FileUpload Core component provides the
+framework for a simple yet flexible means of adding support
+for multipart file upload functionality to servlets, portlets,
+and web applications.</description>
+  <packager></packager>
+  <url>https://commons.apache.org/proper/commons-fileupload/</url>
+  <time file="1766158267" build="1766158255"/>
+  <size package="64464" installed="75430" archive="77116"/>
+  <location href="noarch/apache-commons-fileupload2-core-2.0.0~M4-2.4.uyuni3.noarch.rpm"/>
+  <format>
+    <rpm:license>Apache-2.0</rpm:license>
+    <rpm:vendor>obs://build.opensuse.org/systemsmanagement:Uyuni</rpm:vendor>
+    <rpm:group>Development/Libraries/Java</rpm:group>
+    <rpm:buildhost>i02-armsrv1</rpm:buildhost>
+    <rpm:sourcerpm>apache-commons-fileupload2-2.0.0~M4-2.4.uyuni3.src.rpm</rpm:sourcerpm>
+    <rpm:header-range start="4504" end="8776"/>
+    <rpm:provides>
+      <rpm:entry name="apache-commons-fileupload2-core" flags="EQ" epoch="0" ver="2.0.0~M4" rel="2.4.uyuni3"/>
+      <rpm:entry name="mvn(org.apache.commons:commons-fileupload2-core)" flags="EQ" epoch="0" ver="2.0.0.M4"/>
+      <rpm:entry name="mvn(org.apache.commons:commons-fileupload2-core:pom:)" flags="EQ" epoch="0" ver="2.0.0.M4"/>
+      <rpm:entry name="osgi(org.apache.commons.commons-fileupload2-core)" flags="EQ" epoch="0" ver="2.0.0"/>
+    </rpm:provides>
+    <rpm:requires>
+      <rpm:entry name="java-headless"/>
+      <rpm:entry name="javapackages-filesystem"/>
+      <rpm:entry name="mvn(commons-io:commons-io)"/>
+    </rpm:requires>
+  </format>
+</package>
+<package type="rpm">
+  <name>apache-commons-fileupload2-core</name>
+  <arch>noarch</arch>
+  <version epoch="1" ver="2.0.0~M4" rel="2.4.uyuni3"/>
+  <checksum type="sha256" pkgid="YES">fefe2ccdd9ec87c8de1ebfbda6f24d147145fd080d3d6c0b5634df52e2c5aab1</checksum>
+  <summary>Apache Commons FileUpload Core</summary>
+  <description>The Apache Commons FileUpload Core component provides the
+framework for a simple yet flexible means of adding support
+for multipart file upload functionality to servlets, portlets,
+and web applications.</description>
+  <packager></packager>
+  <url>https://commons.apache.org/proper/commons-fileupload/</url>
+  <time file="1766158267" build="1766158255"/>
+  <size package="64464" installed="75430" archive="77116"/>
+  <location href="noarch/apache-commons-fileupload2-core-1:2.0.0~M4-2.4.uyuni3.noarch.rpm"/>
+  <format>
+    <rpm:license>Apache-2.0</rpm:license>
+    <rpm:vendor>obs://build.opensuse.org/systemsmanagement:Uyuni</rpm:vendor>
+    <rpm:group>Development/Libraries/Java</rpm:group>
+    <rpm:buildhost>i02-armsrv1</rpm:buildhost>
+    <rpm:sourcerpm>apache-commons-fileupload2-2.0.0~M4-2.4.uyuni3.src.rpm</rpm:sourcerpm>
+    <rpm:header-range start="4504" end="8776"/>
+    <rpm:provides>
+      <rpm:entry name="apache-commons-fileupload2-core" flags="EQ" epoch="0" ver="2.0.0~M4" rel="2.4.uyuni3"/>
+      <rpm:entry name="mvn(org.apache.commons:commons-fileupload2-core)" flags="EQ" epoch="0" ver="2.0.0.M4"/>
+      <rpm:entry name="mvn(org.apache.commons:commons-fileupload2-core:pom:)" flags="EQ" epoch="0" ver="2.0.0.M4"/>
+      <rpm:entry name="osgi(org.apache.commons.commons-fileupload2-core)" flags="EQ" epoch="0" ver="2.0.0"/>
+    </rpm:provides>
+    <rpm:requires>
+      <rpm:entry name="java-headless"/>
+      <rpm:entry name="javapackages-filesystem"/>
+      <rpm:entry name="mvn(commons-io:commons-io)"/>
+    </rpm:requires>
+  </format>
+</package>
+</metadata>

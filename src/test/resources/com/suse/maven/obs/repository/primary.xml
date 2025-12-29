@@ -1,0 +1,3539 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<metadata xmlns="http://linux.duke.edu/metadata/common" xmlns:rpm="http://linux.duke.edu/metadata/rpm" packages="110">
+<package type="rpm">
+  <name>apache-commons-fileupload2</name>
+  <arch>src</arch>
+  <version epoch="0" ver="2.0.0~M4" rel="2.4.uyuni3"/>
+  <checksum type="sha256" pkgid="YES">796a8568444fa5555f71a3f97d59dc90cffc37ff5b97b1246e0ac58e845c663e</checksum>
+  <summary>API to work with HTML file upload</summary>
+  <description>The Apache Commons FileUpload component provides a simple yet
+flexible means of adding support for multipart file upload
+functionality to servlets and web applications.</description>
+  <packager></packager>
+  <url>https://commons.apache.org/proper/commons-fileupload/</url>
+  <time file="1766158267" build="1766158255"/>
+  <size package="181768" installed="178376" archive="178940"/>
+  <location href="src/apache-commons-fileupload2-2.0.0~M4-2.4.uyuni3.src.rpm"/>
+  <format>
+    <rpm:license>Apache-2.0</rpm:license>
+    <rpm:vendor>obs://build.opensuse.org/systemsmanagement:Uyuni</rpm:vendor>
+    <rpm:group>Development/Libraries/Java</rpm:group>
+    <rpm:buildhost>i02-armsrv1</rpm:buildhost>
+    <rpm:sourcerpm></rpm:sourcerpm>
+    <rpm:header-range start="4504" end="6984"/>
+    <rpm:requires>
+      <rpm:entry name="ant"/>
+      <rpm:entry name="apache-commons-io" flags="GE" epoch="0" ver="2.16"/>
+      <rpm:entry name="apache-portlet-1_0-api"/>
+      <rpm:entry name="fdupes"/>
+      <rpm:entry name="glassfish-servlet-api"/>
+      <rpm:entry name="jakarta-servlet"/>
+      <rpm:entry name="java-devel" flags="GE" epoch="0" ver="17"/>
+      <rpm:entry name="javapackages-local" flags="GE" epoch="0" ver="6"/>
+    </rpm:requires>
+  </format>
+</package>
+<package type="rpm">
+  <name>apache-commons-fileupload2-core</name>
+  <arch>noarch</arch>
+  <version epoch="0" ver="2.0.0~M4" rel="2.4.uyuni3"/>
+  <checksum type="sha256" pkgid="YES">fefe2ccdd9ec87c8de1ebfbda6f24d147145fd080d3d6c0b5634df52e2c5aab1</checksum>
+  <summary>Apache Commons FileUpload Core</summary>
+  <description>The Apache Commons FileUpload Core component provides the
+framework for a simple yet flexible means of adding support
+for multipart file upload functionality to servlets, portlets,
+and web applications.</description>
+  <packager></packager>
+  <url>https://commons.apache.org/proper/commons-fileupload/</url>
+  <time file="1766158267" build="1766158255"/>
+  <size package="64464" installed="75430" archive="77116"/>
+  <location href="noarch/apache-commons-fileupload2-core-2.0.0~M4-2.4.uyuni3.noarch.rpm"/>
+  <format>
+    <rpm:license>Apache-2.0</rpm:license>
+    <rpm:vendor>obs://build.opensuse.org/systemsmanagement:Uyuni</rpm:vendor>
+    <rpm:group>Development/Libraries/Java</rpm:group>
+    <rpm:buildhost>i02-armsrv1</rpm:buildhost>
+    <rpm:sourcerpm>apache-commons-fileupload2-2.0.0~M4-2.4.uyuni3.src.rpm</rpm:sourcerpm>
+    <rpm:header-range start="4504" end="8776"/>
+    <rpm:provides>
+      <rpm:entry name="apache-commons-fileupload2-core" flags="EQ" epoch="0" ver="2.0.0~M4" rel="2.4.uyuni3"/>
+      <rpm:entry name="mvn(org.apache.commons:commons-fileupload2-core)" flags="EQ" epoch="0" ver="2.0.0.M4"/>
+      <rpm:entry name="mvn(org.apache.commons:commons-fileupload2-core:pom:)" flags="EQ" epoch="0" ver="2.0.0.M4"/>
+      <rpm:entry name="osgi(org.apache.commons.commons-fileupload2-core)" flags="EQ" epoch="0" ver="2.0.0"/>
+    </rpm:provides>
+    <rpm:requires>
+      <rpm:entry name="java-headless"/>
+      <rpm:entry name="javapackages-filesystem"/>
+      <rpm:entry name="mvn(commons-io:commons-io)"/>
+    </rpm:requires>
+  </format>
+</package>
+<package type="rpm">
+  <name>apache-commons-fileupload2-jakarta-servlet5</name>
+  <arch>noarch</arch>
+  <version epoch="0" ver="2.0.0~M4" rel="2.4.uyuni3"/>
+  <checksum type="sha256" pkgid="YES">0710727b4ec8e07ef511eb06f60f1bf3186bd2ee0df4e9daf7514fddc5de54af</checksum>
+  <summary>Apache Commons FileUpload Jakarta Servlet 5</summary>
+  <description>The Apache Commons FileUpload Jakarta component provides a
+simple yet flexible means of adding support for multipart file
+upload functionality to Jakarta servlets and web applications.</description>
+  <packager></packager>
+  <url>https://commons.apache.org/proper/commons-fileupload/</url>
+  <time file="1766158267" build="1766158255"/>
+  <size package="13520" installed="9340" archive="10216"/>
+  <location href="noarch/apache-commons-fileupload2-jakarta-servlet5-2.0.0~M4-2.4.uyuni3.noarch.rpm"/>
+  <format>
+    <rpm:license>Apache-2.0</rpm:license>
+    <rpm:vendor>obs://build.opensuse.org/systemsmanagement:Uyuni</rpm:vendor>
+    <rpm:group>Development/Libraries/Java</rpm:group>
+    <rpm:buildhost>i02-armsrv1</rpm:buildhost>
+    <rpm:sourcerpm>apache-commons-fileupload2-2.0.0~M4-2.4.uyuni3.src.rpm</rpm:sourcerpm>
+    <rpm:header-range start="4504" end="8176"/>
+    <rpm:provides>
+      <rpm:entry name="apache-commons-fileupload2-jakarta-servlet5" flags="EQ" epoch="0" ver="2.0.0~M4" rel="2.4.uyuni3"/>
+      <rpm:entry name="mvn(org.apache.commons:commons-fileupload2-jakarta-servlet5)" flags="EQ" epoch="0" ver="2.0.0.M4"/>
+      <rpm:entry name="mvn(org.apache.commons:commons-fileupload2-jakarta-servlet5:pom:)" flags="EQ" epoch="0" ver="2.0.0.M4"/>
+      <rpm:entry name="osgi(org.apache.commons.commons-fileupload2-jakarta-servlet5)" flags="EQ" epoch="0" ver="2.0.0"/>
+    </rpm:provides>
+    <rpm:requires>
+      <rpm:entry name="java-headless"/>
+      <rpm:entry name="javapackages-filesystem"/>
+      <rpm:entry name="mvn(commons-io:commons-io)"/>
+      <rpm:entry name="mvn(org.apache.commons:commons-fileupload2-core)" flags="EQ" epoch="0" ver="2.0.0.M4"/>
+    </rpm:requires>
+  </format>
+</package>
+<package type="rpm">
+  <name>apache-commons-fileupload2-jakarta-servlet6</name>
+  <arch>noarch</arch>
+  <version epoch="0" ver="2.0.0~M4" rel="2.4.uyuni3"/>
+  <checksum type="sha256" pkgid="YES">2004d301cea7d813ab2c9e35066c65f2b3e13bd5009fa0dec0e3a46b0f7d5182</checksum>
+  <summary>Apache Commons FileUpload Jakarta Servlet 6</summary>
+  <description>The Apache Commons FileUpload Jakarta component provides a
+simple yet flexible means of adding support for multipart file
+upload functionality to Jakarta servlets and web applications.</description>
+  <packager></packager>
+  <url>https://commons.apache.org/proper/commons-fileupload/</url>
+  <time file="1766158267" build="1766158255"/>
+  <size package="13516" installed="9340" archive="10216"/>
+  <location href="noarch/apache-commons-fileupload2-jakarta-servlet6-2.0.0~M4-2.4.uyuni3.noarch.rpm"/>
+  <format>
+    <rpm:license>Apache-2.0</rpm:license>
+    <rpm:vendor>obs://build.opensuse.org/systemsmanagement:Uyuni</rpm:vendor>
+    <rpm:group>Development/Libraries/Java</rpm:group>
+    <rpm:buildhost>i02-armsrv1</rpm:buildhost>
+    <rpm:sourcerpm>apache-commons-fileupload2-2.0.0~M4-2.4.uyuni3.src.rpm</rpm:sourcerpm>
+    <rpm:header-range start="4504" end="8176"/>
+    <rpm:provides>
+      <rpm:entry name="apache-commons-fileupload2-jakarta-servlet6" flags="EQ" epoch="0" ver="2.0.0~M4" rel="2.4.uyuni3"/>
+      <rpm:entry name="mvn(org.apache.commons:commons-fileupload2-jakarta-servlet6)" flags="EQ" epoch="0" ver="2.0.0.M4"/>
+      <rpm:entry name="mvn(org.apache.commons:commons-fileupload2-jakarta-servlet6:pom:)" flags="EQ" epoch="0" ver="2.0.0.M4"/>
+      <rpm:entry name="osgi(org.apache.commons.commons-fileupload2-jakarta-servlet6)" flags="EQ" epoch="0" ver="2.0.0"/>
+    </rpm:provides>
+    <rpm:requires>
+      <rpm:entry name="java-headless"/>
+      <rpm:entry name="javapackages-filesystem"/>
+      <rpm:entry name="mvn(commons-io:commons-io)"/>
+      <rpm:entry name="mvn(org.apache.commons:commons-fileupload2-core)" flags="EQ" epoch="0" ver="2.0.0.M4"/>
+    </rpm:requires>
+  </format>
+</package>
+<package type="rpm">
+  <name>apache-commons-fileupload2-javadoc</name>
+  <arch>noarch</arch>
+  <version epoch="0" ver="2.0.0~M4" rel="2.4.uyuni3"/>
+  <checksum type="sha256" pkgid="YES">543542b57ac1c8e8332b6fb4dad96837fe1fb70895814512effe6cccc5a5e5de</checksum>
+  <summary>API documentation for apache-commons-fileupload2</summary>
+  <description>This package contains the API documentation for apache-commons-fileupload2.</description>
+  <packager></packager>
+  <url>https://commons.apache.org/proper/commons-fileupload/</url>
+  <time file="1766158267" build="1766158255"/>
+  <size package="199852" installed="2869106" archive="2940868"/>
+  <location href="noarch/apache-commons-fileupload2-javadoc-2.0.0~M4-2.4.uyuni3.noarch.rpm"/>
+  <format>
+    <rpm:license>Apache-2.0</rpm:license>
+    <rpm:vendor>obs://build.opensuse.org/systemsmanagement:Uyuni</rpm:vendor>
+    <rpm:group>Documentation/HTML</rpm:group>
+    <rpm:buildhost>i02-armsrv1</rpm:buildhost>
+    <rpm:sourcerpm>apache-commons-fileupload2-2.0.0~M4-2.4.uyuni3.src.rpm</rpm:sourcerpm>
+    <rpm:header-range start="4504" end="53752"/>
+    <rpm:provides>
+      <rpm:entry name="apache-commons-fileupload2-javadoc" flags="EQ" epoch="0" ver="2.0.0~M4" rel="2.4.uyuni3"/>
+    </rpm:provides>
+    <rpm:requires>
+      <rpm:entry name="javapackages-filesystem"/>
+    </rpm:requires>
+  </format>
+</package>
+<package type="rpm">
+  <name>apache-commons-fileupload2-javax</name>
+  <arch>noarch</arch>
+  <version epoch="0" ver="2.0.0~M4" rel="2.4.uyuni3"/>
+  <checksum type="sha256" pkgid="YES">f1b20aca6457f4b12a83bea387dda510ac12e3f2ee04864e819718195cf3997c</checksum>
+  <summary>Apache Commons FileUpload Javax</summary>
+  <description>The Apache Commons FileUpload Javax component provides a simple
+yet flexible means of adding support for multipart file upload
+functionality to Javax servlets and web applications.</description>
+  <packager></packager>
+  <url>https://commons.apache.org/proper/commons-fileupload/</url>
+  <time file="1766158267" build="1766158255"/>
+  <size package="13308" installed="8893" archive="9716"/>
+  <location href="noarch/apache-commons-fileupload2-javax-2.0.0~M4-2.4.uyuni3.noarch.rpm"/>
+  <format>
+    <rpm:license>Apache-2.0</rpm:license>
+    <rpm:vendor>obs://build.opensuse.org/systemsmanagement:Uyuni</rpm:vendor>
+    <rpm:group>Development/Libraries/Java</rpm:group>
+    <rpm:buildhost>i02-armsrv1</rpm:buildhost>
+    <rpm:sourcerpm>apache-commons-fileupload2-2.0.0~M4-2.4.uyuni3.src.rpm</rpm:sourcerpm>
+    <rpm:header-range start="4504" end="8052"/>
+    <rpm:provides>
+      <rpm:entry name="apache-commons-fileupload2-javax" flags="EQ" epoch="0" ver="2.0.0~M4" rel="2.4.uyuni3"/>
+      <rpm:entry name="mvn(org.apache.commons:commons-fileupload2-javax)" flags="EQ" epoch="0" ver="2.0.0.M4"/>
+      <rpm:entry name="mvn(org.apache.commons:commons-fileupload2-javax:pom:)" flags="EQ" epoch="0" ver="2.0.0.M4"/>
+      <rpm:entry name="osgi(org.apache.commons.commons-fileupload2-javax)" flags="EQ" epoch="0" ver="2.0.0"/>
+    </rpm:provides>
+    <rpm:requires>
+      <rpm:entry name="java-headless"/>
+      <rpm:entry name="javapackages-filesystem"/>
+      <rpm:entry name="mvn(commons-io:commons-io)"/>
+      <rpm:entry name="mvn(org.apache.commons:commons-fileupload2-core)" flags="EQ" epoch="0" ver="2.0.0.M4"/>
+    </rpm:requires>
+  </format>
+</package>
+<package type="rpm">
+  <name>apache-commons-fileupload2-portlet</name>
+  <arch>noarch</arch>
+  <version epoch="0" ver="2.0.0~M4" rel="2.4.uyuni3"/>
+  <checksum type="sha256" pkgid="YES">b02d1db0728c9f96a1ef2c1c35a860ea815f5879a47ba80ad0a3cdeeede16ae2</checksum>
+  <summary>Apache Commons FileUpload Portlet</summary>
+  <description>The Apache Commons FileUpload Portlet component provides a
+simple yet flexible means of adding support for multipart
+file upload functionality to portlet.</description>
+  <packager></packager>
+  <url>https://commons.apache.org/proper/commons-fileupload/</url>
+  <time file="1766158267" build="1766158255"/>
+  <size package="11632" installed="7009" archive="7844"/>
+  <location href="noarch/apache-commons-fileupload2-portlet-2.0.0~M4-2.4.uyuni3.noarch.rpm"/>
+  <format>
+    <rpm:license>Apache-2.0</rpm:license>
+    <rpm:vendor>obs://build.opensuse.org/systemsmanagement:Uyuni</rpm:vendor>
+    <rpm:group>Development/Libraries/Java</rpm:group>
+    <rpm:buildhost>i02-armsrv1</rpm:buildhost>
+    <rpm:sourcerpm>apache-commons-fileupload2-2.0.0~M4-2.4.uyuni3.src.rpm</rpm:sourcerpm>
+    <rpm:header-range start="4504" end="8076"/>
+    <rpm:provides>
+      <rpm:entry name="apache-commons-fileupload2-portlet" flags="EQ" epoch="0" ver="2.0.0~M4" rel="2.4.uyuni3"/>
+      <rpm:entry name="mvn(org.apache.commons:commons-fileupload2-portlet)" flags="EQ" epoch="0" ver="2.0.0.M4"/>
+      <rpm:entry name="mvn(org.apache.commons:commons-fileupload2-portlet:pom:)" flags="EQ" epoch="0" ver="2.0.0.M4"/>
+      <rpm:entry name="osgi(org.apache.commons.commons-fileupload2-portlet)" flags="EQ" epoch="0" ver="2.0.0"/>
+    </rpm:provides>
+    <rpm:requires>
+      <rpm:entry name="java-headless"/>
+      <rpm:entry name="javapackages-filesystem"/>
+      <rpm:entry name="mvn(org.apache.commons:commons-fileupload2-core)" flags="EQ" epoch="0" ver="2.0.0.M4"/>
+      <rpm:entry name="mvn(org.apache.commons:commons-fileupload2-javax)" flags="EQ" epoch="0" ver="2.0.0.M4"/>
+    </rpm:requires>
+  </format>
+</package>
+<package type="rpm">
+  <name>apache2-mod_xsendfile</name>
+  <arch>aarch64</arch>
+  <version epoch="0" ver="0.12" rel="3.2.uyuni3"/>
+  <checksum type="sha256" pkgid="YES">03b7bd09b080a80d34099ce90fd111293bc544c8107a46b8e04fafc69d256789</checksum>
+  <summary>Processes X-SENDFILE headers registered by the original output handler</summary>
+  <description>mod_xsendfile is a small Apache2 module that processes X-SENDFILE headers registered by the original output handler.
+
+If it encounters the presence of such header it will discard all output and send the file specified by that header instead using Apache internals including all optimizations like caching-headers and sendfile or mmap if configured.
+
+It is useful for processing script-output of e.g. php, perl or any cgi.</description>
+  <packager></packager>
+  <url>https://tn123.org/mod_xsendfile/</url>
+  <time file="1763132297" build="1763132289"/>
+  <size package="13184" installed="71632" archive="71904"/>
+  <location href="aarch64/apache2-mod_xsendfile-0.12-3.2.uyuni3.aarch64.rpm"/>
+  <format>
+    <rpm:license>Apache-2.0</rpm:license>
+    <rpm:vendor>obs://build.opensuse.org/systemsmanagement:Uyuni</rpm:vendor>
+    <rpm:group>Productivity/Networking/Web/Servers</rpm:group>
+    <rpm:buildhost>i01-armsrv2</rpm:buildhost>
+    <rpm:sourcerpm>apache2-mod_xsendfile-0.12-3.2.uyuni3.src.rpm</rpm:sourcerpm>
+    <rpm:header-range start="4504" end="8024"/>
+    <rpm:provides>
+      <rpm:entry name="apache2-mod_xsendfile" flags="EQ" epoch="0" ver="0.12" rel="3.2.uyuni3"/>
+      <rpm:entry name="apache2-mod_xsendfile(aarch-64)" flags="EQ" epoch="0" ver="0.12" rel="3.2.uyuni3"/>
+      <rpm:entry name="mod_xsendfile" flags="EQ" epoch="0" ver="0.12"/>
+    </rpm:provides>
+    <rpm:requires>
+      <rpm:entry name="apache2"/>
+      <rpm:entry name="apache_mmn_20120211"/>
+      <rpm:entry name="ld-linux-aarch64.so.1()(64bit)"/>
+      <rpm:entry name="ld-linux-aarch64.so.1(GLIBC_2.17)(64bit)"/>
+      <rpm:entry name="suse_maintenance_mmn_0"/>
+      <rpm:entry name="libc.so.6(GLIBC_2.17)(64bit)"/>
+    </rpm:requires>
+  </format>
+</package>
+<package type="rpm">
+  <name>apache2-mod_xsendfile</name>
+  <arch>src</arch>
+  <version epoch="0" ver="0.12" rel="3.2.uyuni3"/>
+  <checksum type="sha256" pkgid="YES">c2d9366ddd7dd790a913ab9b77fd190f6840ea3901b449983a5be5e7065f1fed</checksum>
+  <summary>Processes X-SENDFILE headers registered by the original output handler</summary>
+  <description>mod_xsendfile is a small Apache2 module that processes X-SENDFILE headers registered by the original output handler.
+
+If it encounters the presence of such header it will discard all output and send the file specified by that header instead using Apache internals including all optimizations like caching-headers and sendfile or mmap if configured.
+
+It is useful for processing script-output of e.g. php, perl or any cgi.</description>
+  <packager></packager>
+  <url>https://tn123.org/mod_xsendfile/</url>
+  <time file="1763125544" build="1763125536"/>
+  <size package="18765" installed="12674" archive="13212"/>
+  <location href="src/apache2-mod_xsendfile-0.12-3.2.uyuni3.src.rpm"/>
+  <format>
+    <rpm:license>Apache-2.0</rpm:license>
+    <rpm:vendor>obs://build.opensuse.org/systemsmanagement:Uyuni</rpm:vendor>
+    <rpm:group>Productivity/Networking/Web/Servers</rpm:group>
+    <rpm:buildhost>i03-ch1d</rpm:buildhost>
+    <rpm:sourcerpm></rpm:sourcerpm>
+    <rpm:header-range start="4504" end="7424"/>
+    <rpm:requires>
+      <rpm:entry name="apache-rpm-macros"/>
+      <rpm:entry name="apache2-devel"/>
+      <rpm:entry name="apache2-prefork"/>
+      <rpm:entry name="apache2-worker"/>
+    </rpm:requires>
+  </format>
+</package>
+<package type="rpm">
+  <name>apache2-mod_xsendfile</name>
+  <arch>x86_64</arch>
+  <version epoch="0" ver="0.12" rel="3.2.uyuni3"/>
+  <checksum type="sha256" pkgid="YES">581c87a4739652143633b419dd65b70a58d06dc3f3db71890a8412dc52388ee9</checksum>
+  <summary>Processes X-SENDFILE headers registered by the original output handler</summary>
+  <description>mod_xsendfile is a small Apache2 module that processes X-SENDFILE headers registered by the original output handler.
+
+If it encounters the presence of such header it will discard all output and send the file specified by that header instead using Apache internals including all optimizations like caching-headers and sendfile or mmap if configured.
+
+It is useful for processing script-output of e.g. php, perl or any cgi.</description>
+  <packager></packager>
+  <url>https://tn123.org/mod_xsendfile/</url>
+  <time file="1763125544" build="1763125536"/>
+  <size package="13060" installed="17376" archive="17648"/>
+  <location href="x86_64/apache2-mod_xsendfile-0.12-3.2.uyuni3.x86_64.rpm"/>
+  <format>
+    <rpm:license>Apache-2.0</rpm:license>
+    <rpm:vendor>obs://build.opensuse.org/systemsmanagement:Uyuni</rpm:vendor>
+    <rpm:group>Productivity/Networking/Web/Servers</rpm:group>
+    <rpm:buildhost>i03-ch1d</rpm:buildhost>
+    <rpm:sourcerpm>apache2-mod_xsendfile-0.12-3.2.uyuni3.src.rpm</rpm:sourcerpm>
+    <rpm:header-range start="4504" end="8004"/>
+    <rpm:provides>
+      <rpm:entry name="apache2-mod_xsendfile" flags="EQ" epoch="0" ver="0.12" rel="3.2.uyuni3"/>
+      <rpm:entry name="apache2-mod_xsendfile(x86-64)" flags="EQ" epoch="0" ver="0.12" rel="3.2.uyuni3"/>
+      <rpm:entry name="mod_xsendfile" flags="EQ" epoch="0" ver="0.12"/>
+    </rpm:provides>
+    <rpm:requires>
+      <rpm:entry name="apache2"/>
+      <rpm:entry name="apache_mmn_20120211"/>
+      <rpm:entry name="suse_maintenance_mmn_0"/>
+      <rpm:entry name="libc.so.6(GLIBC_2.4)(64bit)"/>
+    </rpm:requires>
+  </format>
+</package>
+<package type="rpm">
+  <name>containment-rpm</name>
+  <arch>noarch</arch>
+  <version epoch="0" ver="2.0.2" rel="1.1.uyuni3"/>
+  <checksum type="sha256" pkgid="YES">98d741ca51c9abb76fe1d6c22b267deb0d9e8d9c178f017a0fc37a57d0fe9fa6</checksum>
+  <summary>Wraps OBS docker/kiwi-built images in rpms</summary>
+  <description>OBS container_post_run hook to wrap a kiwi or docker image in an rpm package.
+
+This package should be required by the Build Service project's meta
+prjconf, so that the container_post_run hook is present in the container image
+and gets executed at the end of the image build.  It will then build
+an rpm which contains the newly-produced image from kiwi/docker (using
+image.spec.in), and place the rpm in the correct location that it
+becomes an additional build artefact.</description>
+  <packager></packager>
+  <url>https://github.com/SUSE/containment-rpm-docker</url>
+  <time file="1744189735" build="1744189725"/>
+  <size package="18664" installed="7785" archive="8352"/>
+  <location href="noarch/containment-rpm-2.0.2-1.1.uyuni3.noarch.rpm"/>
+  <format>
+    <rpm:license>MIT</rpm:license>
+    <rpm:vendor>obs://build.opensuse.org/systemsmanagement:Uyuni</rpm:vendor>
+    <rpm:group>System/Management</rpm:group>
+    <rpm:buildhost>i01-armsrv2</rpm:buildhost>
+    <rpm:sourcerpm>containment-rpm-2.0.2-1.1.uyuni3.src.rpm</rpm:sourcerpm>
+    <rpm:header-range start="4504" end="15724"/>
+    <rpm:provides>
+      <rpm:entry name="containment-rpm" flags="EQ" epoch="0" ver="2.0.2" rel="1.1.uyuni3"/>
+    </rpm:provides>
+    <rpm:requires>
+      <rpm:entry name="/bin/bash"/>
+      <rpm:entry name="jq"/>
+      <rpm:entry name="libxml2-tools"/>
+    </rpm:requires>
+  </format>
+</package>
+<package type="rpm">
+  <name>containment-rpm</name>
+  <arch>src</arch>
+  <version epoch="0" ver="2.0.2" rel="1.1.uyuni3"/>
+  <checksum type="sha256" pkgid="YES">ff3c35c691d6f3e776dbaefd8e37129ea5d08cd0a5b4c7f4440af375285ab012</checksum>
+  <summary>Wraps OBS docker/kiwi-built images in rpms</summary>
+  <description>OBS container_post_run hook to wrap a kiwi or docker image in an rpm package.
+
+This package should be required by the Build Service project's meta
+prjconf, so that the container_post_run hook is present in the container image
+and gets executed at the end of the image build.  It will then build
+an rpm which contains the newly-produced image from kiwi/docker (using
+image.spec.in), and place the rpm in the correct location that it
+becomes an additional build artefact.</description>
+  <packager></packager>
+  <url>https://github.com/SUSE/containment-rpm-docker</url>
+  <time file="1744189736" build="1744189725"/>
+  <size package="26525" installed="17976" archive="18360"/>
+  <location href="src/containment-rpm-2.0.2-1.1.uyuni3.src.rpm"/>
+  <format>
+    <rpm:license>MIT</rpm:license>
+    <rpm:vendor>obs://build.opensuse.org/systemsmanagement:Uyuni</rpm:vendor>
+    <rpm:group>System/Management</rpm:group>
+    <rpm:buildhost>i01-armsrv2</rpm:buildhost>
+    <rpm:sourcerpm></rpm:sourcerpm>
+    <rpm:header-range start="4504" end="15016"/>
+    <rpm:requires>
+      <rpm:entry name="filesystem"/>
+    </rpm:requires>
+  </format>
+</package>
+<package type="rpm">
+  <name>drools</name>
+  <arch>noarch</arch>
+  <version epoch="0" ver="7.17.0" rel="8.126.uyuni3"/>
+  <checksum type="sha256" pkgid="YES">bd0532a6f8864cbfc36dc0dfa113f545d2ccf9fb8017d3ff0a801e94c5228bc9</checksum>
+  <summary>A Business Rules Management System (BRMS) solution for Java</summary>
+  <description>Drools Expert is the rule engine and Drools Fusion does complex event processing (CEP)</description>
+  <packager></packager>
+  <url>https://drools.jboss.org</url>
+  <time file="1766158339" build="1766158329"/>
+  <size package="5055028" installed="5586244" archive="5587340"/>
+  <location href="noarch/drools-7.17.0-8.126.uyuni3.noarch.rpm"/>
+  <format>
+    <rpm:license>Apache-2.0</rpm:license>
+    <rpm:vendor>obs://build.opensuse.org/systemsmanagement:Uyuni</rpm:vendor>
+    <rpm:group>Development/Libraries/Java</rpm:group>
+    <rpm:buildhost>i03-armsrv2</rpm:buildhost>
+    <rpm:sourcerpm>drools-7.17.0-8.126.uyuni3.src.rpm</rpm:sourcerpm>
+    <rpm:header-range start="4504" end="8536"/>
+    <rpm:provides>
+      <rpm:entry name="drools" flags="EQ" epoch="0" ver="7.17.0" rel="8.126.uyuni3"/>
+      <rpm:entry name="mvn(org.drools:drools-compiler)" flags="EQ" epoch="0" ver="7.17.0"/>
+      <rpm:entry name="mvn(org.drools:drools-core)" flags="EQ" epoch="0" ver="7.17.0"/>
+    </rpm:provides>
+    <rpm:requires>
+      <rpm:entry name="java" flags="GE" epoch="0" ver="11"/>
+    </rpm:requires>
+  </format>
+</package>
+<package type="rpm">
+  <name>drools</name>
+  <arch>src</arch>
+  <version epoch="0" ver="7.17.0" rel="8.126.uyuni3"/>
+  <checksum type="sha256" pkgid="YES">07d5130adeab1782c606180ff98824fab0e6431348c636fa72be6ed47adb2a89</checksum>
+  <summary>A Business Rules Management System (BRMS) solution for Java</summary>
+  <description>Drools Expert is the rule engine and Drools Fusion does complex event processing (CEP)</description>
+  <packager></packager>
+  <url>https://drools.jboss.org</url>
+  <time file="1766158339" build="1766158329"/>
+  <size package="8580688" installed="8739861" archive="8740648"/>
+  <location href="src/drools-7.17.0-8.126.uyuni3.src.rpm"/>
+  <format>
+    <rpm:license>Apache-2.0</rpm:license>
+    <rpm:vendor>obs://build.opensuse.org/systemsmanagement:Uyuni</rpm:vendor>
+    <rpm:group>Development/Libraries/Java</rpm:group>
+    <rpm:buildhost>i03-armsrv2</rpm:buildhost>
+    <rpm:sourcerpm></rpm:sourcerpm>
+    <rpm:header-range start="4504" end="7980"/>
+    <rpm:requires>
+      <rpm:entry name="drools-kit" flags="EQ" epoch="0" ver="53dfdb61201f3b0b269d4c852786ee0bf37fe43a"/>
+      <rpm:entry name="java-devel" flags="GE" epoch="0" ver="11"/>
+      <rpm:entry name="xz"/>
+    </rpm:requires>
+  </format>
+</package>
+<package type="rpm">
+  <name>ehcache</name>
+  <arch>noarch</arch>
+  <version epoch="0" ver="2.10.1" rel="3.149.uyuni3"/>
+  <checksum type="sha256" pkgid="YES">a0e71384b4ad942571b0c7db995bf7b8e9c5bf1be8598c6fbe5a17d0c62d21be</checksum>
+  <summary>A cache library for Java projects</summary>
+  <description>Ehcache is an open source, standards-based cache that boosts performance, offloads your database, and simplifies scalability. It's the most widely-used Java-based cache because it's robust, proven, full-featured, and integrates with other popular libraries and frameworks. Ehcache scales from in-process caching, all the way to mixed in-process/out-of-process deployments with terabyte-sized caches.</description>
+  <packager></packager>
+  <url>http://www.ehcache.org/</url>
+  <time file="1766158213" build="1766158207"/>
+  <size package="1239844" installed="1383537" archive="1383984"/>
+  <location href="noarch/ehcache-2.10.1-3.149.uyuni3.noarch.rpm"/>
+  <format>
+    <rpm:license>Apache-2.0</rpm:license>
+    <rpm:vendor>obs://build.opensuse.org/systemsmanagement:Uyuni</rpm:vendor>
+    <rpm:group>Development/Libraries/Java</rpm:group>
+    <rpm:buildhost>armv9</rpm:buildhost>
+    <rpm:sourcerpm>ehcache-2.10.1-3.149.uyuni3.src.rpm</rpm:sourcerpm>
+    <rpm:header-range start="4504" end="7880"/>
+    <rpm:provides>
+      <rpm:entry name="ehcache" flags="EQ" epoch="0" ver="2.10.1" rel="3.149.uyuni3"/>
+      <rpm:entry name="mvn(net.sf.ehcache:ehcache-core)" flags="EQ" epoch="0" ver="2.10.1"/>
+    </rpm:provides>
+    <rpm:requires>
+      <rpm:entry name="java"/>
+    </rpm:requires>
+  </format>
+</package>
+<package type="rpm">
+  <name>ehcache</name>
+  <arch>src</arch>
+  <version epoch="0" ver="2.10.1" rel="3.149.uyuni3"/>
+  <checksum type="sha256" pkgid="YES">d2e73b76a2367450301f2dfb555462d50b64fa514f37f7db51fe1c0ce8e28055</checksum>
+  <summary>A cache library for Java projects</summary>
+  <description>Ehcache is an open source, standards-based cache that boosts performance, offloads your database, and simplifies scalability. It's the most widely-used Java-based cache because it's robust, proven, full-featured, and integrates with other popular libraries and frameworks. Ehcache scales from in-process caching, all the way to mixed in-process/out-of-process deployments with terabyte-sized caches.</description>
+  <packager></packager>
+  <url>http://www.ehcache.org/</url>
+  <time file="1766158213" build="1766158207"/>
+  <size package="2617439" installed="2614215" archive="2615000"/>
+  <location href="src/ehcache-2.10.1-3.149.uyuni3.src.rpm"/>
+  <format>
+    <rpm:license>Apache-2.0</rpm:license>
+    <rpm:vendor>obs://build.opensuse.org/systemsmanagement:Uyuni</rpm:vendor>
+    <rpm:group>Development/Libraries/Java</rpm:group>
+    <rpm:buildhost>armv9</rpm:buildhost>
+    <rpm:sourcerpm></rpm:sourcerpm>
+    <rpm:header-range start="4504" end="7856"/>
+    <rpm:requires>
+      <rpm:entry name="ehcache-kit" flags="EQ" epoch="0" ver="b6cea070e6df19be8c962e4c6d225e620115fe4c"/>
+      <rpm:entry name="java-devel"/>
+      <rpm:entry name="subversion"/>
+      <rpm:entry name="xz"/>
+    </rpm:requires>
+  </format>
+</package>
+<package type="rpm">
+  <name>hibernate-commons-annotations</name>
+  <arch>noarch</arch>
+  <version epoch="0" ver="5.0.4" rel="3.155.uyuni3"/>
+  <checksum type="sha256" pkgid="YES">5278b58c143b4be9bde1bef61dae43f1ba5021d068bed06775c36d5c28f77589</checksum>
+  <summary>Clean-room definition of JPA APIs</summary>
+  <description>Clean-room definition of JPA APIs intended for transitory use in Hibernate JPA development.
+See http://java.net/projects/jpa-spec/downloads for drafts used.</description>
+  <packager></packager>
+  <url>https://github.com/hibernate/hibernate-jpa-api</url>
+  <time file="1766158310" build="1766158307"/>
+  <size package="82800" installed="106049" archive="107404"/>
+  <location href="noarch/hibernate-commons-annotations-5.0.4-3.155.uyuni3.noarch.rpm"/>
+  <format>
+    <rpm:license>EPL-1.0</rpm:license>
+    <rpm:vendor>obs://build.opensuse.org/systemsmanagement:Uyuni</rpm:vendor>
+    <rpm:group>Development/Libraries/Java</rpm:group>
+    <rpm:buildhost>i02-ch2d</rpm:buildhost>
+    <rpm:sourcerpm>hibernate-commons-annotations-5.0.4-3.155.uyuni3.src.rpm</rpm:sourcerpm>
+    <rpm:header-range start="4504" end="9940"/>
+    <rpm:provides>
+      <rpm:entry name="hibernate-commons-annotations" flags="EQ" epoch="0" ver="5.0.4" rel="3.155.uyuni3"/>
+      <rpm:entry name="mvn(org.hibernate.common:hibernate-commons-annotations)" flags="EQ" epoch="0" ver="5.0.4.Final"/>
+      <rpm:entry name="mvn(org.hibernate.common:hibernate-commons-annotations:pom:)" flags="EQ" epoch="0" ver="5.0.4.Final"/>
+      <rpm:entry name="osgi(org.hibernate.common.hibernate-commons-annotations-5.0.4.Final)" flags="EQ" epoch="0" ver="5.0.4"/>
+    </rpm:provides>
+    <rpm:requires>
+      <rpm:entry name="java"/>
+      <rpm:entry name="java-headless"/>
+      <rpm:entry name="javapackages-filesystem"/>
+      <rpm:entry name="mvn(org.jboss.logging:jboss-logging)"/>
+    </rpm:requires>
+  </format>
+</package>
+<package type="rpm">
+  <name>hibernate-commons-annotations</name>
+  <arch>src</arch>
+  <version epoch="0" ver="5.0.4" rel="3.155.uyuni3"/>
+  <checksum type="sha256" pkgid="YES">43badf20cd469ae0f26895bdf6c14d1adeb6b7603b1a3d81c2f8a79bf12e2cb0</checksum>
+  <summary>Clean-room definition of JPA APIs</summary>
+  <description>Clean-room definition of JPA APIs intended for transitory use in Hibernate JPA development.
+See http://java.net/projects/jpa-spec/downloads for drafts used.</description>
+  <packager></packager>
+  <url>https://github.com/hibernate/hibernate-jpa-api</url>
+  <time file="1766158310" build="1766158307"/>
+  <size package="108222" installed="101759" archive="102460"/>
+  <location href="src/hibernate-commons-annotations-5.0.4-3.155.uyuni3.src.rpm"/>
+  <format>
+    <rpm:license>EPL-1.0</rpm:license>
+    <rpm:vendor>obs://build.opensuse.org/systemsmanagement:Uyuni</rpm:vendor>
+    <rpm:group>Development/Libraries/Java</rpm:group>
+    <rpm:buildhost>i02-ch2d</rpm:buildhost>
+    <rpm:sourcerpm></rpm:sourcerpm>
+    <rpm:header-range start="4504" end="8696"/>
+    <rpm:requires>
+      <rpm:entry name="hibernate-commons-annotations-kit" flags="EQ" epoch="0" ver="faf017d3ce87a4e7b4eb65dfdfbe2acdbecb979d"/>
+      <rpm:entry name="java-devel-openjdk" flags="GE" epoch="0" ver="1.8"/>
+      <rpm:entry name="javapackages-local"/>
+      <rpm:entry name="mvn(org.jboss.logging:jboss-logging)"/>
+      <rpm:entry name="xmvn-install"/>
+      <rpm:entry name="xmvn-resolve"/>
+      <rpm:entry name="xz"/>
+    </rpm:requires>
+  </format>
+</package>
+<package type="rpm">
+  <name>hibernate-types</name>
+  <arch>noarch</arch>
+  <version epoch="0" ver="2.16.2" rel="3.1.uyuni3"/>
+  <checksum type="sha256" pkgid="YES">3efb40ab6f17a85367ef8bdeb11cc13fa1f007ee14b7fe548e01c76b420a47e9</checksum>
+  <summary>Hibernate Types adds extra types like JSON, Array, etc</summary>
+  <description>Hibernate Types adds extra types like JSON, Array, etc</description>
+  <packager></packager>
+  <url>https://github.com/vladmihalcea/hibernate-types</url>
+  <time file="1736264871" build="1736264868"/>
+  <size package="162636" installed="190776" archive="192008"/>
+  <location href="noarch/hibernate-types-2.16.2-3.1.uyuni3.noarch.rpm"/>
+  <format>
+    <rpm:license>Apache-2.0</rpm:license>
+    <rpm:vendor>obs://build.opensuse.org/systemsmanagement:Uyuni</rpm:vendor>
+    <rpm:group>Development/Libraries/Java</rpm:group>
+    <rpm:buildhost>i01-ch2b</rpm:buildhost>
+    <rpm:sourcerpm>hibernate-types-2.16.2-3.1.uyuni3.src.rpm</rpm:sourcerpm>
+    <rpm:header-range start="4504" end="9356"/>
+    <rpm:provides>
+      <rpm:entry name="hibernate-types" flags="EQ" epoch="0" ver="2.16.2" rel="3.1.uyuni3"/>
+      <rpm:entry name="mvn(com.vladmihalcea:hibernate-types-52)" flags="EQ" epoch="0" ver="2.16.2"/>
+      <rpm:entry name="mvn(com.vladmihalcea:hibernate-types-52:pom:)" flags="EQ" epoch="0" ver="2.16.2"/>
+    </rpm:provides>
+    <rpm:requires>
+      <rpm:entry name="java"/>
+      <rpm:entry name="java-headless" flags="GE" epoch="0" ver="1.8"/>
+      <rpm:entry name="javapackages-filesystem"/>
+      <rpm:entry name="mvn(com.fasterxml.jackson.module:jackson-module-jaxb-annotations)"/>
+      <rpm:entry name="mvn(jakarta.persistence:jakarta.persistence-api)"/>
+      <rpm:entry name="mvn(org.hibernate.common:hibernate-commons-annotations)"/>
+    </rpm:requires>
+  </format>
+</package>
+<package type="rpm">
+  <name>hibernate-types</name>
+  <arch>src</arch>
+  <version epoch="0" ver="2.16.2" rel="3.1.uyuni3"/>
+  <checksum type="sha256" pkgid="YES">1bffa5addf1caceb0b5bf4cf0c267860a2bf00d0dffb3c8d6bc9f0fbcb4bc824</checksum>
+  <summary>Hibernate Types adds extra types like JSON, Array, etc</summary>
+  <description>Hibernate Types adds extra types like JSON, Array, etc</description>
+  <packager></packager>
+  <url>https://github.com/vladmihalcea/hibernate-types</url>
+  <time file="1736264871" build="1736264868"/>
+  <size package="583062" installed="577367" archive="577928"/>
+  <location href="src/hibernate-types-2.16.2-3.1.uyuni3.src.rpm"/>
+  <format>
+    <rpm:license>Apache-2.0</rpm:license>
+    <rpm:vendor>obs://build.opensuse.org/systemsmanagement:Uyuni</rpm:vendor>
+    <rpm:group>Development/Libraries/Java</rpm:group>
+    <rpm:buildhost>i01-ch2b</rpm:buildhost>
+    <rpm:sourcerpm></rpm:sourcerpm>
+    <rpm:header-range start="4504" end="8304"/>
+    <rpm:requires>
+      <rpm:entry name="fdupes"/>
+      <rpm:entry name="java-devel"/>
+      <rpm:entry name="maven-local"/>
+      <rpm:entry name="mvn(ch.qos.logback:logback-classic)"/>
+      <rpm:entry name="mvn(com.fasterxml.jackson.core:jackson-databind)"/>
+      <rpm:entry name="mvn(com.fasterxml.jackson.module:jackson-module-jaxb-annotations)"/>
+      <rpm:entry name="mvn(com.google.guava:guava)"/>
+      <rpm:entry name="mvn(jakarta.persistence:jakarta.persistence-api)"/>
+      <rpm:entry name="mvn(org.hibernate.common:hibernate-commons-annotations)"/>
+      <rpm:entry name="mvn(org.hibernate:hibernate-core)"/>
+      <rpm:entry name="mvn(org.postgresql:postgresql)"/>
+      <rpm:entry name="mvn(org.sonatype.oss:oss-parent:pom:)"/>
+    </rpm:requires>
+  </format>
+</package>
+<package type="rpm">
+  <name>hibernate-types-javadoc</name>
+  <arch>noarch</arch>
+  <version epoch="0" ver="2.16.2" rel="3.1.uyuni3"/>
+  <checksum type="sha256" pkgid="YES">8ccb79b1b0841aede2f2bd35cca070c2b6bf40604e0085f22787ece81344b095</checksum>
+  <summary>Javadoc for hibernate-types</summary>
+  <description>This package contains javadoc for hibernate-types</description>
+  <packager></packager>
+  <url>https://github.com/vladmihalcea/hibernate-types</url>
+  <time file="1736264871" build="1736264868"/>
+  <size package="402680" installed="4935009" archive="5008592"/>
+  <location href="noarch/hibernate-types-javadoc-2.16.2-3.1.uyuni3.noarch.rpm"/>
+  <format>
+    <rpm:license>Apache-2.0</rpm:license>
+    <rpm:vendor>obs://build.opensuse.org/systemsmanagement:Uyuni</rpm:vendor>
+    <rpm:group>Development/Libraries/Java</rpm:group>
+    <rpm:buildhost>i01-ch2b</rpm:buildhost>
+    <rpm:sourcerpm>hibernate-types-2.16.2-3.1.uyuni3.src.rpm</rpm:sourcerpm>
+    <rpm:header-range start="4504" end="59072"/>
+    <rpm:provides>
+      <rpm:entry name="hibernate-types-javadoc" flags="EQ" epoch="0" ver="2.16.2" rel="3.1.uyuni3"/>
+    </rpm:provides>
+    <rpm:requires>
+      <rpm:entry name="javapackages-filesystem"/>
+    </rpm:requires>
+  </format>
+</package>
+<package type="rpm">
+  <name>hibernate5</name>
+  <arch>src</arch>
+  <version epoch="0" ver="5.3.25" rel="4.179.uyuni3"/>
+  <checksum type="sha256" pkgid="YES">81c58c8d29a9fc55b4ddf07ca6afd6023ba9bd9f5d3c37457ba767c43396e73a</checksum>
+  <summary>Hibernate ORM is a component/library providing Object/Relational Mapping (ORM)</summary>
+  <description>Hibernate ORM enables developers to more easily write applications whose data outlives the application process. As an Object/Relational Mapping (ORM) framework, Hibernate is concerned with data persistence as it applies to relational databases (via JDBC).</description>
+  <packager></packager>
+  <url>http://hibernate.org</url>
+  <time file="1766158505" build="1766158484"/>
+  <size package="8621653" installed="8627704" archive="8628224"/>
+  <location href="src/hibernate5-5.3.25-4.179.uyuni3.src.rpm"/>
+  <format>
+    <rpm:license>LGPL-2.1-only</rpm:license>
+    <rpm:vendor>obs://build.opensuse.org/systemsmanagement:Uyuni</rpm:vendor>
+    <rpm:group>Development/Libraries/Java</rpm:group>
+    <rpm:buildhost>i02-ch1a</rpm:buildhost>
+    <rpm:sourcerpm></rpm:sourcerpm>
+    <rpm:header-range start="4504" end="9380"/>
+    <rpm:requires>
+      <rpm:entry name="hibernate5-kit" flags="EQ" epoch="0" ver="383ed9af1537d31b9e794f6baa59ddcc8ccb0ebe"/>
+      <rpm:entry name="java-devel" flags="GE" epoch="0" ver="1.9"/>
+      <rpm:entry name="javapackages-local"/>
+      <rpm:entry name="mvn(antlr:antlr)"/>
+      <rpm:entry name="mvn(com.fasterxml:classmate)"/>
+      <rpm:entry name="mvn(com.mchange:c3p0)"/>
+      <rpm:entry name="mvn(javax.activation:javax.activation-api)"/>
+      <rpm:entry name="mvn(javax.cache:cache-api)"/>
+      <rpm:entry name="mvn(javax.xml.bind:jaxb-api)"/>
+      <rpm:entry name="mvn(net.bytebuddy:byte-buddy)"/>
+      <rpm:entry name="mvn(org.apache.logging.log4j:log4j-core)"/>
+      <rpm:entry name="mvn(org.apache.maven.plugin-tools:maven-plugin-annotations)"/>
+      <rpm:entry name="mvn(org.apache.maven:maven-artifact)"/>
+      <rpm:entry name="mvn(org.apache.maven:maven-core)"/>
+      <rpm:entry name="mvn(org.apache.maven:maven-plugin-api)"/>
+      <rpm:entry name="mvn(org.codehaus.plexus:plexus-utils)"/>
+      <rpm:entry name="mvn(org.dom4j:dom4j)"/>
+      <rpm:entry name="mvn(org.glassfish.jaxb:jaxb-runtime)"/>
+      <rpm:entry name="mvn(org.hibernate.common:hibernate-commons-annotations)"/>
+      <rpm:entry name="mvn(org.javassist:javassist)"/>
+      <rpm:entry name="mvn(org.jboss.logging:jboss-logging)"/>
+      <rpm:entry name="mvn(org.jboss:jandex)"/>
+      <rpm:entry name="mvn(org.osgi:org.osgi.compendium)"/>
+      <rpm:entry name="mvn(org.osgi:org.osgi.core)"/>
+      <rpm:entry name="mvn(org.postgresql:postgresql)"/>
+      <rpm:entry name="mvn(org.sonatype.plexus:plexus-build-api)"/>
+      <rpm:entry name="xmvn-install"/>
+      <rpm:entry name="xmvn-resolve"/>
+      <rpm:entry name="xz"/>
+    </rpm:requires>
+  </format>
+</package>
+<package type="rpm">
+  <name>hibernate5-agroal</name>
+  <arch>noarch</arch>
+  <version epoch="0" ver="5.3.25" rel="4.179.uyuni3"/>
+  <checksum type="sha256" pkgid="YES">2516e6c4363717f98da968a6d188105474beb4788513bd5b6017aa60745d8f1d</checksum>
+  <summary>Hibernate ORM - hibernate-agroal</summary>
+  <description>Integration for Agroal as a ConnectionProvider for Hibernate ORM</description>
+  <packager></packager>
+  <url>http://hibernate.org</url>
+  <time file="1766158505" build="1766158484"/>
+  <size package="25180" installed="38337" archive="39552"/>
+  <location href="noarch/hibernate5-agroal-5.3.25-4.179.uyuni3.noarch.rpm"/>
+  <format>
+    <rpm:license>LGPL-2.1-only</rpm:license>
+    <rpm:vendor>obs://build.opensuse.org/systemsmanagement:Uyuni</rpm:vendor>
+    <rpm:group>Development/Libraries/Java</rpm:group>
+    <rpm:buildhost>i02-ch1a</rpm:buildhost>
+    <rpm:sourcerpm>hibernate5-5.3.25-4.179.uyuni3.src.rpm</rpm:sourcerpm>
+    <rpm:header-range start="4504" end="9620"/>
+    <rpm:provides>
+      <rpm:entry name="hibernate5-agroal" flags="EQ" epoch="0" ver="5.3.25" rel="4.179.uyuni3"/>
+      <rpm:entry name="mvn(org.hibernate:hibernate-agroal)" flags="EQ" epoch="0" ver="5.3.25.Final"/>
+      <rpm:entry name="mvn(org.hibernate:hibernate-agroal:pom:)" flags="EQ" epoch="0" ver="5.3.25.Final"/>
+      <rpm:entry name="osgi(org.hibernate.orm.agroal)" flags="EQ" epoch="0" ver="5.3.25"/>
+    </rpm:provides>
+    <rpm:requires>
+      <rpm:entry name="java-headless"/>
+      <rpm:entry name="javapackages-filesystem"/>
+      <rpm:entry name="mvn(org.hibernate:hibernate-core)" flags="EQ" epoch="0" ver="5.3.25.Final"/>
+      <rpm:entry name="mvn(org.jboss.logging:jboss-logging)"/>
+    </rpm:requires>
+  </format>
+</package>
+<package type="rpm">
+  <name>hibernate5-c3p0</name>
+  <arch>noarch</arch>
+  <version epoch="0" ver="5.3.25" rel="4.179.uyuni3"/>
+  <checksum type="sha256" pkgid="YES">c65f9265889a99bbb86114cf221c1f843a55819304932ecb8b0d290b2a1639d3</checksum>
+  <summary>Hibernate ORM - hibernate-c3p0</summary>
+  <description>Integration for c3p0 Connection pooling into Hibernate ORM</description>
+  <packager></packager>
+  <url>http://hibernate.org</url>
+  <time file="1766158505" build="1766158484"/>
+  <size package="29732" installed="44351" archive="45552"/>
+  <location href="noarch/hibernate5-c3p0-5.3.25-4.179.uyuni3.noarch.rpm"/>
+  <format>
+    <rpm:license>LGPL-2.1-only</rpm:license>
+    <rpm:vendor>obs://build.opensuse.org/systemsmanagement:Uyuni</rpm:vendor>
+    <rpm:group>Development/Libraries/Java</rpm:group>
+    <rpm:buildhost>i02-ch1a</rpm:buildhost>
+    <rpm:sourcerpm>hibernate5-5.3.25-4.179.uyuni3.src.rpm</rpm:sourcerpm>
+    <rpm:header-range start="4504" end="9600"/>
+    <rpm:provides>
+      <rpm:entry name="hibernate5-c3p0" flags="EQ" epoch="0" ver="5.3.25" rel="4.179.uyuni3"/>
+      <rpm:entry name="mvn(org.hibernate:hibernate-c3p0)" flags="EQ" epoch="0" ver="5.3.25.Final"/>
+      <rpm:entry name="mvn(org.hibernate:hibernate-c3p0:pom:)" flags="EQ" epoch="0" ver="5.3.25.Final"/>
+      <rpm:entry name="osgi(org.hibernate.orm.c3p0)" flags="EQ" epoch="0" ver="5.3.25"/>
+    </rpm:provides>
+    <rpm:requires>
+      <rpm:entry name="java-headless"/>
+      <rpm:entry name="javapackages-filesystem"/>
+      <rpm:entry name="mvn(com.mchange:c3p0)"/>
+      <rpm:entry name="mvn(org.hibernate:hibernate-core)" flags="EQ" epoch="0" ver="5.3.25.Final"/>
+      <rpm:entry name="mvn(org.jboss.logging:jboss-logging)"/>
+    </rpm:requires>
+  </format>
+</package>
+<package type="rpm">
+  <name>hibernate5-core</name>
+  <arch>noarch</arch>
+  <version epoch="0" ver="5.3.25" rel="4.179.uyuni3"/>
+  <checksum type="sha256" pkgid="YES">cbf01065167d40121d0b8fb8d02f30629bc1a1245f66d4c1336423a21bf17a26</checksum>
+  <summary>Hibernate ORM - hibernate-core</summary>
+  <description>Hibernate's core ORM functionality</description>
+  <packager></packager>
+  <url>http://hibernate.org</url>
+  <time file="1766158505" build="1766158484"/>
+  <size package="6228676" installed="7046922" archive="7048120"/>
+  <location href="noarch/hibernate5-core-5.3.25-4.179.uyuni3.noarch.rpm"/>
+  <format>
+    <rpm:license>LGPL-2.1-only</rpm:license>
+    <rpm:vendor>obs://build.opensuse.org/systemsmanagement:Uyuni</rpm:vendor>
+    <rpm:group>Development/Libraries/Java</rpm:group>
+    <rpm:buildhost>i02-ch1a</rpm:buildhost>
+    <rpm:sourcerpm>hibernate5-5.3.25-4.179.uyuni3.src.rpm</rpm:sourcerpm>
+    <rpm:header-range start="4504" end="9828"/>
+    <rpm:provides>
+      <rpm:entry name="hibernate5-core" flags="EQ" epoch="0" ver="5.3.25" rel="4.179.uyuni3"/>
+      <rpm:entry name="mvn(org.hibernate:hibernate-core)" flags="EQ" epoch="0" ver="5.3.25.Final"/>
+      <rpm:entry name="mvn(org.hibernate:hibernate-core:pom:)" flags="EQ" epoch="0" ver="5.3.25.Final"/>
+      <rpm:entry name="osgi(org.hibernate.orm.core)" flags="EQ" epoch="0" ver="5.3.25"/>
+    </rpm:provides>
+    <rpm:requires>
+      <rpm:entry name="java-headless"/>
+      <rpm:entry name="javapackages-filesystem"/>
+      <rpm:entry name="mvn(antlr:antlr)"/>
+      <rpm:entry name="mvn(javax.activation:javax.activation-api)"/>
+      <rpm:entry name="mvn(javax.xml.bind:jaxb-api)"/>
+      <rpm:entry name="mvn(net.bytebuddy:byte-buddy)"/>
+      <rpm:entry name="mvn(org.dom4j:dom4j)"/>
+      <rpm:entry name="mvn(org.glassfish.jaxb:jaxb-runtime)"/>
+      <rpm:entry name="mvn(org.javassist:javassist)"/>
+      <rpm:entry name="mvn(org.jboss.logging:jboss-logging)"/>
+      <rpm:entry name="mvn(org.jboss:jandex)"/>
+    </rpm:requires>
+  </format>
+</package>
+<package type="rpm">
+  <name>hibernate5-ehcache</name>
+  <arch>noarch</arch>
+  <version epoch="0" ver="5.3.25" rel="4.179.uyuni3"/>
+  <checksum type="sha256" pkgid="YES">054a62dcac0fb3cc73adbd38cba6ec9fd75826df457dd733d5b84acbebc533e7</checksum>
+  <summary>Hibernate ORM - hibernate-ehcache</summary>
+  <description>Integration for using Ehcache 2.x as a Hibernate second-level-cache provider</description>
+  <packager></packager>
+  <url>http://hibernate.org</url>
+  <time file="1766158505" build="1766158484"/>
+  <size package="69688" installed="84563" archive="85780"/>
+  <location href="noarch/hibernate5-ehcache-5.3.25-4.179.uyuni3.noarch.rpm"/>
+  <format>
+    <rpm:license>LGPL-2.1-only</rpm:license>
+    <rpm:vendor>obs://build.opensuse.org/systemsmanagement:Uyuni</rpm:vendor>
+    <rpm:group>Development/Libraries/Java</rpm:group>
+    <rpm:buildhost>i02-ch1a</rpm:buildhost>
+    <rpm:sourcerpm>hibernate5-5.3.25-4.179.uyuni3.src.rpm</rpm:sourcerpm>
+    <rpm:header-range start="4504" end="9640"/>
+    <rpm:provides>
+      <rpm:entry name="hibernate5-ehcache" flags="EQ" epoch="0" ver="5.3.25" rel="4.179.uyuni3"/>
+      <rpm:entry name="mvn(org.hibernate:hibernate-ehcache)" flags="EQ" epoch="0" ver="5.3.25.Final"/>
+      <rpm:entry name="mvn(org.hibernate:hibernate-ehcache:pom:)" flags="EQ" epoch="0" ver="5.3.25.Final"/>
+      <rpm:entry name="osgi(org.hibernate.orm.ehcache)" flags="EQ" epoch="0" ver="5.3.25"/>
+    </rpm:provides>
+    <rpm:requires>
+      <rpm:entry name="java-headless"/>
+      <rpm:entry name="javapackages-filesystem"/>
+      <rpm:entry name="mvn(org.hibernate:hibernate-core)" flags="EQ" epoch="0" ver="5.3.25.Final"/>
+      <rpm:entry name="mvn(org.jboss.logging:jboss-logging)"/>
+    </rpm:requires>
+  </format>
+</package>
+<package type="rpm">
+  <name>hibernate5-enhance-maven-plugin</name>
+  <arch>noarch</arch>
+  <version epoch="0" ver="5.3.25" rel="4.179.uyuni3"/>
+  <checksum type="sha256" pkgid="YES">1c16a67041f4934602c6a4cd6a102f3ed8d00a4a7a6559aba358716cb6c5f4b9</checksum>
+  <summary>Hibernate ORM - hibernate-enhance-maven-plugin</summary>
+  <description>Enhance Plugin of the Hibernate project for use with Maven build system.</description>
+  <packager></packager>
+  <url>http://hibernate.org</url>
+  <time file="1766158505" build="1766158484"/>
+  <size package="32968" installed="55787" archive="57072"/>
+  <location href="noarch/hibernate5-enhance-maven-plugin-5.3.25-4.179.uyuni3.noarch.rpm"/>
+  <format>
+    <rpm:license>LGPL-2.1-only</rpm:license>
+    <rpm:vendor>obs://build.opensuse.org/systemsmanagement:Uyuni</rpm:vendor>
+    <rpm:group>Development/Libraries/Java</rpm:group>
+    <rpm:buildhost>i02-ch1a</rpm:buildhost>
+    <rpm:sourcerpm>hibernate5-5.3.25-4.179.uyuni3.src.rpm</rpm:sourcerpm>
+    <rpm:header-range start="4504" end="10184"/>
+    <rpm:provides>
+      <rpm:entry name="hibernate5-enhance-maven-plugin" flags="EQ" epoch="0" ver="5.3.25" rel="4.179.uyuni3"/>
+      <rpm:entry name="mvn(org.hibernate.orm.tooling:hibernate-enhance-maven-plugin)" flags="EQ" epoch="0" ver="5.3.25.Final"/>
+      <rpm:entry name="mvn(org.hibernate.orm.tooling:hibernate-enhance-maven-plugin:pom:)" flags="EQ" epoch="0" ver="5.3.25.Final"/>
+      <rpm:entry name="osgi(org.hibernate.orm.enhance-maven-plugin)" flags="EQ" epoch="0" ver="5.3.25"/>
+    </rpm:provides>
+    <rpm:requires>
+      <rpm:entry name="java-headless"/>
+      <rpm:entry name="javapackages-filesystem"/>
+      <rpm:entry name="mvn(net.bytebuddy:byte-buddy)"/>
+      <rpm:entry name="mvn(org.apache.maven.plugin-tools:maven-plugin-annotations)"/>
+      <rpm:entry name="mvn(org.apache.maven:maven-artifact)"/>
+      <rpm:entry name="mvn(org.apache.maven:maven-core)"/>
+      <rpm:entry name="mvn(org.apache.maven:maven-plugin-api)"/>
+      <rpm:entry name="mvn(org.codehaus.plexus:plexus-utils)"/>
+      <rpm:entry name="mvn(org.hibernate:hibernate-core)" flags="EQ" epoch="0" ver="5.3.25.Final"/>
+      <rpm:entry name="mvn(org.javassist:javassist)"/>
+      <rpm:entry name="mvn(org.jboss.logging:jboss-logging)"/>
+      <rpm:entry name="mvn(org.sonatype.plexus:plexus-build-api)"/>
+    </rpm:requires>
+  </format>
+</package>
+<package type="rpm">
+  <name>hibernate5-entitymanager</name>
+  <arch>noarch</arch>
+  <version epoch="0" ver="5.3.25" rel="4.179.uyuni3"/>
+  <checksum type="sha256" pkgid="YES">1801d274457bba59c57879f2608b4ffdfbdbd8c7d02cf7fa8dfa4a40b46ff696</checksum>
+  <summary>Hibernate ORM - hibernate-entitymanager</summary>
+  <description>(deprecated - use hibernate-core instead) Hibernate O/RM implementation of the JPA specification</description>
+  <packager></packager>
+  <url>http://hibernate.org</url>
+  <time file="1766158505" build="1766158484"/>
+  <size package="20500" installed="35735" archive="36980"/>
+  <location href="noarch/hibernate5-entitymanager-5.3.25-4.179.uyuni3.noarch.rpm"/>
+  <format>
+    <rpm:license>LGPL-2.1-only</rpm:license>
+    <rpm:vendor>obs://build.opensuse.org/systemsmanagement:Uyuni</rpm:vendor>
+    <rpm:group>Development/Libraries/Java</rpm:group>
+    <rpm:buildhost>i02-ch1a</rpm:buildhost>
+    <rpm:sourcerpm>hibernate5-5.3.25-4.179.uyuni3.src.rpm</rpm:sourcerpm>
+    <rpm:header-range start="4504" end="9804"/>
+    <rpm:provides>
+      <rpm:entry name="hibernate5-entitymanager" flags="EQ" epoch="0" ver="5.3.25" rel="4.179.uyuni3"/>
+      <rpm:entry name="mvn(org.hibernate:hibernate-entitymanager)" flags="EQ" epoch="0" ver="5.3.25.Final"/>
+      <rpm:entry name="mvn(org.hibernate:hibernate-entitymanager:pom:)" flags="EQ" epoch="0" ver="5.3.25.Final"/>
+    </rpm:provides>
+    <rpm:requires>
+      <rpm:entry name="java-headless"/>
+      <rpm:entry name="javapackages-filesystem"/>
+      <rpm:entry name="mvn(net.bytebuddy:byte-buddy)"/>
+      <rpm:entry name="mvn(org.dom4j:dom4j)"/>
+      <rpm:entry name="mvn(org.hibernate.common:hibernate-commons-annotations)"/>
+      <rpm:entry name="mvn(org.hibernate:hibernate-core)" flags="EQ" epoch="0" ver="5.3.25.Final"/>
+      <rpm:entry name="mvn(org.jboss.logging:jboss-logging)"/>
+    </rpm:requires>
+  </format>
+</package>
+<package type="rpm">
+  <name>hibernate5-envers</name>
+  <arch>noarch</arch>
+  <version epoch="0" ver="5.3.25" rel="4.179.uyuni3"/>
+  <checksum type="sha256" pkgid="YES">6491fbf8b1785aed43500af914f2dede8c4774fed11fc99926549bf5fd7e9e87</checksum>
+  <summary>Hibernate ORM - hibernate-envers</summary>
+  <description>Hibernate's entity version (audit/history) support</description>
+  <packager></packager>
+  <url>http://hibernate.org</url>
+  <time file="1766158505" build="1766158484"/>
+  <size package="444756" installed="518681" archive="519892"/>
+  <location href="noarch/hibernate5-envers-5.3.25-4.179.uyuni3.noarch.rpm"/>
+  <format>
+    <rpm:license>LGPL-2.1-only</rpm:license>
+    <rpm:vendor>obs://build.opensuse.org/systemsmanagement:Uyuni</rpm:vendor>
+    <rpm:group>Development/Libraries/Java</rpm:group>
+    <rpm:buildhost>i02-ch1a</rpm:buildhost>
+    <rpm:sourcerpm>hibernate5-5.3.25-4.179.uyuni3.src.rpm</rpm:sourcerpm>
+    <rpm:header-range start="4504" end="9584"/>
+    <rpm:provides>
+      <rpm:entry name="hibernate5-envers" flags="EQ" epoch="0" ver="5.3.25" rel="4.179.uyuni3"/>
+      <rpm:entry name="mvn(org.hibernate:hibernate-envers)" flags="EQ" epoch="0" ver="5.3.25.Final"/>
+      <rpm:entry name="mvn(org.hibernate:hibernate-envers:pom:)" flags="EQ" epoch="0" ver="5.3.25.Final"/>
+      <rpm:entry name="osgi(org.hibernate.orm.envers)" flags="EQ" epoch="0" ver="5.3.25"/>
+    </rpm:provides>
+    <rpm:requires>
+      <rpm:entry name="java-headless"/>
+      <rpm:entry name="javapackages-filesystem"/>
+      <rpm:entry name="mvn(org.hibernate:hibernate-core)" flags="EQ" epoch="0" ver="5.3.25.Final"/>
+      <rpm:entry name="mvn(org.jboss.logging:jboss-logging)"/>
+    </rpm:requires>
+  </format>
+</package>
+<package type="rpm">
+  <name>hibernate5-gradle-plugin</name>
+  <arch>noarch</arch>
+  <version epoch="0" ver="5.3.25" rel="4.179.uyuni3"/>
+  <checksum type="sha256" pkgid="YES">06016b1cd9521665291859df1a1cd23f8db819f59faf0bc5e85aeb9bfcb4ec7c</checksum>
+  <summary>Hibernate ORM - hibernate-gradle-plugin</summary>
+  <description>Gradle plugin for integrating Hibernate functionality into your build</description>
+  <packager></packager>
+  <url>http://hibernate.org</url>
+  <time file="1766158505" build="1766158484"/>
+  <size package="32988" installed="48500" archive="49748"/>
+  <location href="noarch/hibernate5-gradle-plugin-5.3.25-4.179.uyuni3.noarch.rpm"/>
+  <format>
+    <rpm:license>LGPL-2.1-only</rpm:license>
+    <rpm:vendor>obs://build.opensuse.org/systemsmanagement:Uyuni</rpm:vendor>
+    <rpm:group>Development/Libraries/Java</rpm:group>
+    <rpm:buildhost>i02-ch1a</rpm:buildhost>
+    <rpm:sourcerpm>hibernate5-5.3.25-4.179.uyuni3.src.rpm</rpm:sourcerpm>
+    <rpm:header-range start="4504" end="9776"/>
+    <rpm:provides>
+      <rpm:entry name="hibernate5-gradle-plugin" flags="EQ" epoch="0" ver="5.3.25" rel="4.179.uyuni3"/>
+      <rpm:entry name="mvn(org.hibernate:hibernate-gradle-plugin)" flags="EQ" epoch="0" ver="5.3.25.Final"/>
+      <rpm:entry name="mvn(org.hibernate:hibernate-gradle-plugin:pom:)" flags="EQ" epoch="0" ver="5.3.25.Final"/>
+      <rpm:entry name="osgi(org.hibernate.orm.gradle-plugin)" flags="EQ" epoch="0" ver="5.3.25"/>
+    </rpm:provides>
+    <rpm:requires>
+      <rpm:entry name="java-headless"/>
+      <rpm:entry name="javapackages-filesystem"/>
+      <rpm:entry name="mvn(net.bytebuddy:byte-buddy)"/>
+      <rpm:entry name="mvn(org.hibernate:hibernate-core)" flags="EQ" epoch="0" ver="5.3.25.Final"/>
+      <rpm:entry name="mvn(org.javassist:javassist)"/>
+      <rpm:entry name="mvn(org.jboss.logging:jboss-logging)"/>
+    </rpm:requires>
+  </format>
+</package>
+<package type="rpm">
+  <name>hibernate5-hikaricp</name>
+  <arch>noarch</arch>
+  <version epoch="0" ver="5.3.25" rel="4.179.uyuni3"/>
+  <checksum type="sha256" pkgid="YES">ba2eed260598d56da23feb1e32928253a30ff55ef346e44656e5dae16b32bbbe</checksum>
+  <summary>Hibernate ORM - hibernate-hikaricp</summary>
+  <description>Integration for HikariCP into Hibernate O/RM</description>
+  <packager></packager>
+  <url>http://hibernate.org</url>
+  <time file="1766158506" build="1766158484"/>
+  <size package="24844" installed="38167" archive="39388"/>
+  <location href="noarch/hibernate5-hikaricp-5.3.25-4.179.uyuni3.noarch.rpm"/>
+  <format>
+    <rpm:license>LGPL-2.1-only</rpm:license>
+    <rpm:vendor>obs://build.opensuse.org/systemsmanagement:Uyuni</rpm:vendor>
+    <rpm:group>Development/Libraries/Java</rpm:group>
+    <rpm:buildhost>i02-ch1a</rpm:buildhost>
+    <rpm:sourcerpm>hibernate5-5.3.25-4.179.uyuni3.src.rpm</rpm:sourcerpm>
+    <rpm:header-range start="4504" end="9620"/>
+    <rpm:provides>
+      <rpm:entry name="hibernate5-hikaricp" flags="EQ" epoch="0" ver="5.3.25" rel="4.179.uyuni3"/>
+      <rpm:entry name="mvn(org.hibernate:hibernate-hikaricp)" flags="EQ" epoch="0" ver="5.3.25.Final"/>
+      <rpm:entry name="mvn(org.hibernate:hibernate-hikaricp:pom:)" flags="EQ" epoch="0" ver="5.3.25.Final"/>
+      <rpm:entry name="osgi(org.hibernate.orm.hikaricp)" flags="EQ" epoch="0" ver="5.3.25"/>
+    </rpm:provides>
+    <rpm:requires>
+      <rpm:entry name="java-headless"/>
+      <rpm:entry name="javapackages-filesystem"/>
+      <rpm:entry name="mvn(org.hibernate:hibernate-core)" flags="EQ" epoch="0" ver="5.3.25.Final"/>
+      <rpm:entry name="mvn(org.jboss.logging:jboss-logging)"/>
+    </rpm:requires>
+  </format>
+</package>
+<package type="rpm">
+  <name>hibernate5-java8</name>
+  <arch>noarch</arch>
+  <version epoch="0" ver="5.3.25" rel="4.179.uyuni3"/>
+  <checksum type="sha256" pkgid="YES">4566a48e4cc5bde931b0ea04d71c7bd2b4d668948c0756943767a6ff5b277150</checksum>
+  <summary>Hibernate ORM - hibernate-java8</summary>
+  <description>(deprecated - use hibernate-core instead) Support for Java8-specific features - mainly Java8 Date/Time (JSR 310)</description>
+  <packager></packager>
+  <url>http://hibernate.org</url>
+  <time file="1766158506" build="1766158484"/>
+  <size package="20132" installed="32204" archive="33412"/>
+  <location href="noarch/hibernate5-java8-5.3.25-4.179.uyuni3.noarch.rpm"/>
+  <format>
+    <rpm:license>LGPL-2.1-only</rpm:license>
+    <rpm:vendor>obs://build.opensuse.org/systemsmanagement:Uyuni</rpm:vendor>
+    <rpm:group>Development/Libraries/Java</rpm:group>
+    <rpm:buildhost>i02-ch1a</rpm:buildhost>
+    <rpm:sourcerpm>hibernate5-5.3.25-4.179.uyuni3.src.rpm</rpm:sourcerpm>
+    <rpm:header-range start="4504" end="9584"/>
+    <rpm:provides>
+      <rpm:entry name="hibernate5-java8" flags="EQ" epoch="0" ver="5.3.25" rel="4.179.uyuni3"/>
+      <rpm:entry name="mvn(org.hibernate:hibernate-java8)" flags="EQ" epoch="0" ver="5.3.25.Final"/>
+      <rpm:entry name="mvn(org.hibernate:hibernate-java8:pom:)" flags="EQ" epoch="0" ver="5.3.25.Final"/>
+    </rpm:provides>
+    <rpm:requires>
+      <rpm:entry name="java-headless"/>
+      <rpm:entry name="javapackages-filesystem"/>
+      <rpm:entry name="mvn(org.hibernate:hibernate-core)" flags="EQ" epoch="0" ver="5.3.25.Final"/>
+      <rpm:entry name="mvn(org.jboss.logging:jboss-logging)"/>
+    </rpm:requires>
+  </format>
+</package>
+<package type="rpm">
+  <name>hibernate5-jcache</name>
+  <arch>noarch</arch>
+  <version epoch="0" ver="5.3.25" rel="4.179.uyuni3"/>
+  <checksum type="sha256" pkgid="YES">7f7f3732580ab1614a57c94335cbcd11ef3e56664e9a76324265731d0b24c73f</checksum>
+  <summary>Hibernate ORM - hibernate-jcache</summary>
+  <description>Integration for javax.cache into Hibernate as a second-level caching service</description>
+  <packager></packager>
+  <url>http://hibernate.org</url>
+  <time file="1766158506" build="1766158484"/>
+  <size package="30496" installed="45415" archive="46628"/>
+  <location href="noarch/hibernate5-jcache-5.3.25-4.179.uyuni3.noarch.rpm"/>
+  <format>
+    <rpm:license>LGPL-2.1-only</rpm:license>
+    <rpm:vendor>obs://build.opensuse.org/systemsmanagement:Uyuni</rpm:vendor>
+    <rpm:group>Development/Libraries/Java</rpm:group>
+    <rpm:buildhost>i02-ch1a</rpm:buildhost>
+    <rpm:sourcerpm>hibernate5-5.3.25-4.179.uyuni3.src.rpm</rpm:sourcerpm>
+    <rpm:header-range start="4504" end="9648"/>
+    <rpm:provides>
+      <rpm:entry name="hibernate5-jcache" flags="EQ" epoch="0" ver="5.3.25" rel="4.179.uyuni3"/>
+      <rpm:entry name="mvn(org.hibernate:hibernate-jcache)" flags="EQ" epoch="0" ver="5.3.25.Final"/>
+      <rpm:entry name="mvn(org.hibernate:hibernate-jcache:pom:)" flags="EQ" epoch="0" ver="5.3.25.Final"/>
+      <rpm:entry name="osgi(org.hibernate.orm.jcache)" flags="EQ" epoch="0" ver="5.3.25"/>
+    </rpm:provides>
+    <rpm:requires>
+      <rpm:entry name="java-headless"/>
+      <rpm:entry name="javapackages-filesystem"/>
+      <rpm:entry name="mvn(javax.cache:cache-api)"/>
+      <rpm:entry name="mvn(org.hibernate:hibernate-core)" flags="EQ" epoch="0" ver="5.3.25.Final"/>
+      <rpm:entry name="mvn(org.jboss.logging:jboss-logging)"/>
+    </rpm:requires>
+  </format>
+</package>
+<package type="rpm">
+  <name>hibernate5-jipijapa</name>
+  <arch>noarch</arch>
+  <version epoch="0" ver="5.3.25" rel="4.179.uyuni3"/>
+  <checksum type="sha256" pkgid="YES">f2a00e7ed24b4da5614f11a62e7abbfa36a2bb694b2b4b95f8c6d47a85551f01</checksum>
+  <summary>Hibernate ORM - hibernate-jipijapa</summary>
+  <description>Integrate with WildFly JipiJapa</description>
+  <packager></packager>
+  <url>http://hibernate.org</url>
+  <time file="1766158506" build="1766158484"/>
+  <size package="87720" installed="121512" archive="122736"/>
+  <location href="noarch/hibernate5-jipijapa-5.3.25-4.179.uyuni3.noarch.rpm"/>
+  <format>
+    <rpm:license>LGPL-2.1-only</rpm:license>
+    <rpm:vendor>obs://build.opensuse.org/systemsmanagement:Uyuni</rpm:vendor>
+    <rpm:group>Development/Libraries/Java</rpm:group>
+    <rpm:buildhost>i02-ch1a</rpm:buildhost>
+    <rpm:sourcerpm>hibernate5-5.3.25-4.179.uyuni3.src.rpm</rpm:sourcerpm>
+    <rpm:header-range start="4504" end="9608"/>
+    <rpm:provides>
+      <rpm:entry name="hibernate5-jipijapa" flags="EQ" epoch="0" ver="5.3.25" rel="4.179.uyuni3"/>
+      <rpm:entry name="mvn(org.hibernate:hibernate-jipijapa)" flags="EQ" epoch="0" ver="5.3.25.Final"/>
+      <rpm:entry name="mvn(org.hibernate:hibernate-jipijapa:pom:)" flags="EQ" epoch="0" ver="5.3.25.Final"/>
+      <rpm:entry name="osgi(org.hibernate.orm.jipijapa)" flags="EQ" epoch="0" ver="5.3.25"/>
+    </rpm:provides>
+    <rpm:requires>
+      <rpm:entry name="java-headless"/>
+      <rpm:entry name="javapackages-filesystem"/>
+      <rpm:entry name="mvn(org.hibernate:hibernate-core)" flags="EQ" epoch="0" ver="5.3.25.Final"/>
+      <rpm:entry name="mvn(org.jboss.logging:jboss-logging)"/>
+    </rpm:requires>
+  </format>
+</package>
+<package type="rpm">
+  <name>hibernate5-jpamodelgen</name>
+  <arch>noarch</arch>
+  <version epoch="0" ver="5.3.25" rel="4.179.uyuni3"/>
+  <checksum type="sha256" pkgid="YES">6c3f8df760238a371d50175e89a96f0d2a245f50785e0cab1a277164aa9e9e43</checksum>
+  <summary>Hibernate ORM - hibernate-jpamodelgen</summary>
+  <description>Annotation Processor to generate JPA 2 static metamodel classes</description>
+  <packager></packager>
+  <url>http://hibernate.org</url>
+  <time file="1766158506" build="1766158484"/>
+  <size package="182320" installed="214847" archive="216080"/>
+  <location href="noarch/hibernate5-jpamodelgen-5.3.25-4.179.uyuni3.noarch.rpm"/>
+  <format>
+    <rpm:license>LGPL-2.1-only</rpm:license>
+    <rpm:vendor>obs://build.opensuse.org/systemsmanagement:Uyuni</rpm:vendor>
+    <rpm:group>Development/Libraries/Java</rpm:group>
+    <rpm:buildhost>i02-ch1a</rpm:buildhost>
+    <rpm:sourcerpm>hibernate5-5.3.25-4.179.uyuni3.src.rpm</rpm:sourcerpm>
+    <rpm:header-range start="4504" end="9680"/>
+    <rpm:provides>
+      <rpm:entry name="hibernate5-jpamodelgen" flags="EQ" epoch="0" ver="5.3.25" rel="4.179.uyuni3"/>
+      <rpm:entry name="mvn(org.hibernate:hibernate-jpamodelgen)" flags="EQ" epoch="0" ver="5.3.25.Final"/>
+      <rpm:entry name="mvn(org.hibernate:hibernate-jpamodelgen:pom:)" flags="EQ" epoch="0" ver="5.3.25.Final"/>
+      <rpm:entry name="osgi(org.hibernate.orm.jpamodelgen)" flags="EQ" epoch="0" ver="5.3.25"/>
+    </rpm:provides>
+    <rpm:requires>
+      <rpm:entry name="java-headless"/>
+      <rpm:entry name="javapackages-filesystem"/>
+      <rpm:entry name="mvn(javax.xml.bind:jaxb-api)"/>
+      <rpm:entry name="mvn(org.glassfish.jaxb:jaxb-runtime)"/>
+      <rpm:entry name="mvn(org.jboss.logging:jboss-logging)"/>
+    </rpm:requires>
+  </format>
+</package>
+<package type="rpm">
+  <name>hibernate5-osgi</name>
+  <arch>noarch</arch>
+  <version epoch="0" ver="5.3.25" rel="4.179.uyuni3"/>
+  <checksum type="sha256" pkgid="YES">fef133c3fdca47f8ffd6e2c39472157a505e6d0ffcb9bb59089bc677881025c1</checksum>
+  <summary>Hibernate ORM - hibernate-osgi</summary>
+  <description>Support for running Hibernate O/RM in OSGi environments</description>
+  <packager></packager>
+  <url>http://hibernate.org</url>
+  <time file="1766158506" build="1766158484"/>
+  <size package="40484" installed="59140" archive="60344"/>
+  <location href="noarch/hibernate5-osgi-5.3.25-4.179.uyuni3.noarch.rpm"/>
+  <format>
+    <rpm:license>LGPL-2.1-only</rpm:license>
+    <rpm:vendor>obs://build.opensuse.org/systemsmanagement:Uyuni</rpm:vendor>
+    <rpm:group>Development/Libraries/Java</rpm:group>
+    <rpm:buildhost>i02-ch1a</rpm:buildhost>
+    <rpm:sourcerpm>hibernate5-5.3.25-4.179.uyuni3.src.rpm</rpm:sourcerpm>
+    <rpm:header-range start="4504" end="9708"/>
+    <rpm:provides>
+      <rpm:entry name="hibernate5-osgi" flags="EQ" epoch="0" ver="5.3.25" rel="4.179.uyuni3"/>
+      <rpm:entry name="mvn(org.hibernate:hibernate-osgi)" flags="EQ" epoch="0" ver="5.3.25.Final"/>
+      <rpm:entry name="mvn(org.hibernate:hibernate-osgi:pom:)" flags="EQ" epoch="0" ver="5.3.25.Final"/>
+      <rpm:entry name="osgi(org.hibernate.orm.osgi)" flags="EQ" epoch="0" ver="5.3.25"/>
+    </rpm:provides>
+    <rpm:requires>
+      <rpm:entry name="java-headless"/>
+      <rpm:entry name="javapackages-filesystem"/>
+      <rpm:entry name="mvn(net.bytebuddy:byte-buddy)"/>
+      <rpm:entry name="mvn(org.hibernate:hibernate-core)" flags="EQ" epoch="0" ver="5.3.25.Final"/>
+      <rpm:entry name="mvn(org.jboss.logging:jboss-logging)"/>
+      <rpm:entry name="mvn(org.osgi:org.osgi.compendium)"/>
+      <rpm:entry name="mvn(org.osgi:org.osgi.core)"/>
+    </rpm:requires>
+  </format>
+</package>
+<package type="rpm">
+  <name>hibernate5-proxool</name>
+  <arch>noarch</arch>
+  <version epoch="0" ver="5.3.25" rel="4.179.uyuni3"/>
+  <checksum type="sha256" pkgid="YES">0d467790e42fd75f3aebf84f7d5df7bf360b2dd81ae2c961f03853565282fcef</checksum>
+  <summary>Hibernate ORM - hibernate-proxool</summary>
+  <description>Integration for Proxool Connection pooling into Hibernate O/RM</description>
+  <packager></packager>
+  <url>http://hibernate.org</url>
+  <time file="1766158506" build="1766158484"/>
+  <size package="29508" installed="43090" archive="44304"/>
+  <location href="noarch/hibernate5-proxool-5.3.25-4.179.uyuni3.noarch.rpm"/>
+  <format>
+    <rpm:license>LGPL-2.1-only</rpm:license>
+    <rpm:vendor>obs://build.opensuse.org/systemsmanagement:Uyuni</rpm:vendor>
+    <rpm:group>Development/Libraries/Java</rpm:group>
+    <rpm:buildhost>i02-ch1a</rpm:buildhost>
+    <rpm:sourcerpm>hibernate5-5.3.25-4.179.uyuni3.src.rpm</rpm:sourcerpm>
+    <rpm:header-range start="4504" end="9628"/>
+    <rpm:provides>
+      <rpm:entry name="hibernate5-proxool" flags="EQ" epoch="0" ver="5.3.25" rel="4.179.uyuni3"/>
+      <rpm:entry name="mvn(org.hibernate:hibernate-proxool)" flags="EQ" epoch="0" ver="5.3.25.Final"/>
+      <rpm:entry name="mvn(org.hibernate:hibernate-proxool:pom:)" flags="EQ" epoch="0" ver="5.3.25.Final"/>
+      <rpm:entry name="osgi(org.hibernate.orm.proxool)" flags="EQ" epoch="0" ver="5.3.25"/>
+    </rpm:provides>
+    <rpm:requires>
+      <rpm:entry name="java-headless"/>
+      <rpm:entry name="javapackages-filesystem"/>
+      <rpm:entry name="mvn(org.hibernate:hibernate-core)" flags="EQ" epoch="0" ver="5.3.25.Final"/>
+      <rpm:entry name="mvn(org.jboss.logging:jboss-logging)"/>
+    </rpm:requires>
+  </format>
+</package>
+<package type="rpm">
+  <name>hibernate5-spatial</name>
+  <arch>noarch</arch>
+  <version epoch="0" ver="5.3.25" rel="4.179.uyuni3"/>
+  <checksum type="sha256" pkgid="YES">26debd33bb719301f1435a8ebaf74f4ff7374699dcd330aa17ebfcf55f5e967a</checksum>
+  <summary>Hibernate ORM - hibernate-spatial</summary>
+  <description>Integrate support for Spatial/GIS data into Hibernate O/RM</description>
+  <packager></packager>
+  <url>http://hibernate.org</url>
+  <time file="1766158506" build="1766158484"/>
+  <size package="152068" installed="187232" archive="188444"/>
+  <location href="noarch/hibernate5-spatial-5.3.25-4.179.uyuni3.noarch.rpm"/>
+  <format>
+    <rpm:license>LGPL-2.1-only</rpm:license>
+    <rpm:vendor>obs://build.opensuse.org/systemsmanagement:Uyuni</rpm:vendor>
+    <rpm:group>Development/Libraries/Java</rpm:group>
+    <rpm:buildhost>i02-ch1a</rpm:buildhost>
+    <rpm:sourcerpm>hibernate5-5.3.25-4.179.uyuni3.src.rpm</rpm:sourcerpm>
+    <rpm:header-range start="4504" end="9716"/>
+    <rpm:provides>
+      <rpm:entry name="hibernate5-spatial" flags="EQ" epoch="0" ver="5.3.25" rel="4.179.uyuni3"/>
+      <rpm:entry name="mvn(org.hibernate:hibernate-spatial)" flags="EQ" epoch="0" ver="5.3.25.Final"/>
+      <rpm:entry name="mvn(org.hibernate:hibernate-spatial:pom:)" flags="EQ" epoch="0" ver="5.3.25.Final"/>
+      <rpm:entry name="osgi(org.hibernate.orm.spatial)" flags="EQ" epoch="0" ver="5.3.25"/>
+    </rpm:provides>
+    <rpm:requires>
+      <rpm:entry name="java-headless"/>
+      <rpm:entry name="javapackages-filesystem"/>
+      <rpm:entry name="mvn(org.dom4j:dom4j)"/>
+      <rpm:entry name="mvn(org.hibernate:hibernate-core)" flags="EQ" epoch="0" ver="5.3.25.Final"/>
+      <rpm:entry name="mvn(org.jboss.logging:jboss-logging)"/>
+      <rpm:entry name="mvn(org.postgresql:postgresql)"/>
+    </rpm:requires>
+  </format>
+</package>
+<package type="rpm">
+  <name>hibernate5-testing</name>
+  <arch>noarch</arch>
+  <version epoch="0" ver="5.3.25" rel="4.179.uyuni3"/>
+  <checksum type="sha256" pkgid="YES">5aab295e7c6fa919721ae49733688241bfe720523c61a60cc287a56e8a2a58be</checksum>
+  <summary>Hibernate ORM - hibernate-testing</summary>
+  <description>Support for testing Hibernate ORM functionality</description>
+  <packager></packager>
+  <url>http://hibernate.org</url>
+  <time file="1766158506" build="1766158484"/>
+  <size package="193016" installed="238091" archive="239308"/>
+  <location href="noarch/hibernate5-testing-5.3.25-4.179.uyuni3.noarch.rpm"/>
+  <format>
+    <rpm:license>LGPL-2.1-only</rpm:license>
+    <rpm:vendor>obs://build.opensuse.org/systemsmanagement:Uyuni</rpm:vendor>
+    <rpm:group>Development/Libraries/Java</rpm:group>
+    <rpm:buildhost>i02-ch1a</rpm:buildhost>
+    <rpm:sourcerpm>hibernate5-5.3.25-4.179.uyuni3.src.rpm</rpm:sourcerpm>
+    <rpm:header-range start="4504" end="9688"/>
+    <rpm:provides>
+      <rpm:entry name="hibernate5-testing" flags="EQ" epoch="0" ver="5.3.25" rel="4.179.uyuni3"/>
+      <rpm:entry name="mvn(org.hibernate:hibernate-testing)" flags="EQ" epoch="0" ver="5.3.25.Final"/>
+      <rpm:entry name="mvn(org.hibernate:hibernate-testing:pom:)" flags="EQ" epoch="0" ver="5.3.25.Final"/>
+      <rpm:entry name="osgi(org.hibernate.orm.testing)" flags="EQ" epoch="0" ver="5.3.25"/>
+    </rpm:provides>
+    <rpm:requires>
+      <rpm:entry name="java-headless"/>
+      <rpm:entry name="javapackages-filesystem"/>
+      <rpm:entry name="mvn(junit:junit)"/>
+      <rpm:entry name="mvn(org.apache.logging.log4j:log4j-core)"/>
+      <rpm:entry name="mvn(org.hibernate:hibernate-core)" flags="EQ" epoch="0" ver="5.3.25.Final"/>
+      <rpm:entry name="mvn(org.jboss.logging:jboss-logging)"/>
+    </rpm:requires>
+  </format>
+</package>
+<package type="rpm">
+  <name>hibernate5-vibur</name>
+  <arch>noarch</arch>
+  <version epoch="0" ver="5.3.25" rel="4.179.uyuni3"/>
+  <checksum type="sha256" pkgid="YES">41c0b19bb9ea6399c9be8d5a37f07bd804624c2c799177ce3410da4d95eb25f1</checksum>
+  <summary>Hibernate ORM - hibernate-vibur</summary>
+  <description>Integration for Vibur Connection pooling as a Hibernate ORM ConnectionProvider</description>
+  <packager></packager>
+  <url>http://hibernate.org</url>
+  <time file="1766158506" build="1766158484"/>
+  <size package="24000" installed="37143" archive="38348"/>
+  <location href="noarch/hibernate5-vibur-5.3.25-4.179.uyuni3.noarch.rpm"/>
+  <format>
+    <rpm:license>LGPL-2.1-only</rpm:license>
+    <rpm:vendor>obs://build.opensuse.org/systemsmanagement:Uyuni</rpm:vendor>
+    <rpm:group>Development/Libraries/Java</rpm:group>
+    <rpm:buildhost>i02-ch1a</rpm:buildhost>
+    <rpm:sourcerpm>hibernate5-5.3.25-4.179.uyuni3.src.rpm</rpm:sourcerpm>
+    <rpm:header-range start="4504" end="9620"/>
+    <rpm:provides>
+      <rpm:entry name="hibernate5-vibur" flags="EQ" epoch="0" ver="5.3.25" rel="4.179.uyuni3"/>
+      <rpm:entry name="mvn(org.hibernate:hibernate-vibur)" flags="EQ" epoch="0" ver="5.3.25.Final"/>
+      <rpm:entry name="mvn(org.hibernate:hibernate-vibur:pom:)" flags="EQ" epoch="0" ver="5.3.25.Final"/>
+      <rpm:entry name="osgi(org.hibernate.orm.vibur)" flags="EQ" epoch="0" ver="5.3.25"/>
+    </rpm:provides>
+    <rpm:requires>
+      <rpm:entry name="java-headless"/>
+      <rpm:entry name="javapackages-filesystem"/>
+      <rpm:entry name="mvn(org.hibernate:hibernate-core)" flags="EQ" epoch="0" ver="5.3.25.Final"/>
+      <rpm:entry name="mvn(org.jboss.logging:jboss-logging)"/>
+    </rpm:requires>
+  </format>
+</package>
+<package type="rpm">
+  <name>ical4j</name>
+  <arch>noarch</arch>
+  <version epoch="0" ver="3.0.18" rel="6.125.uyuni3"/>
+  <checksum type="sha256" pkgid="YES">d6a52c4454cd6ba219405af42680190016a5fcce9fc088e871c2c668a6c728f6</checksum>
+  <summary>A Java library for parsing and building iCalendar data models</summary>
+  <description>A Java library for parsing and building iCalendar data models</description>
+  <packager></packager>
+  <url>https://github.com/ical4j/ical4j</url>
+  <time file="1766158326" build="1766158321"/>
+  <size package="1023672" installed="1270353" archive="1270788"/>
+  <location href="noarch/ical4j-3.0.18-6.125.uyuni3.noarch.rpm"/>
+  <format>
+    <rpm:license>BSD-3-Clause</rpm:license>
+    <rpm:vendor>obs://build.opensuse.org/systemsmanagement:Uyuni</rpm:vendor>
+    <rpm:group>Development/Libraries/Java</rpm:group>
+    <rpm:buildhost>i04-ch1c</rpm:buildhost>
+    <rpm:sourcerpm>ical4j-3.0.18-6.125.uyuni3.src.rpm</rpm:sourcerpm>
+    <rpm:header-range start="4504" end="7396"/>
+    <rpm:provides>
+      <rpm:entry name="ical4j" flags="EQ" epoch="0" ver="3.0.18" rel="6.125.uyuni3"/>
+    </rpm:provides>
+    <rpm:requires>
+      <rpm:entry name="java"/>
+    </rpm:requires>
+  </format>
+</package>
+<package type="rpm">
+  <name>ical4j</name>
+  <arch>src</arch>
+  <version epoch="0" ver="3.0.18" rel="6.125.uyuni3"/>
+  <checksum type="sha256" pkgid="YES">a0d6c2eb1140db326927dcdc5ab303610b38ce39e09d85e9818d5387c0ee9626</checksum>
+  <summary>A Java library for parsing and building iCalendar data models</summary>
+  <description>A Java library for parsing and building iCalendar data models</description>
+  <packager></packager>
+  <url>https://github.com/ical4j/ical4j</url>
+  <time file="1766158326" build="1766158321"/>
+  <size package="892664" installed="896532" archive="897324"/>
+  <location href="src/ical4j-3.0.18-6.125.uyuni3.src.rpm"/>
+  <format>
+    <rpm:license>BSD-3-Clause</rpm:license>
+    <rpm:vendor>obs://build.opensuse.org/systemsmanagement:Uyuni</rpm:vendor>
+    <rpm:group>Development/Libraries/Java</rpm:group>
+    <rpm:buildhost>i04-ch1c</rpm:buildhost>
+    <rpm:sourcerpm></rpm:sourcerpm>
+    <rpm:header-range start="4504" end="7484"/>
+    <rpm:requires>
+      <rpm:entry name="ical4j-kit" flags="EQ" epoch="0" ver="c285d0c91f57e109c1c0613ca58ba748a15b30fb"/>
+      <rpm:entry name="java-devel"/>
+      <rpm:entry name="xz"/>
+    </rpm:requires>
+  </format>
+</package>
+<package type="rpm">
+  <name>ical4j-doc</name>
+  <arch>noarch</arch>
+  <version epoch="0" ver="3.0.18" rel="6.125.uyuni3"/>
+  <checksum type="sha256" pkgid="YES">4609db20f5e1a57c0ee599db822f92cac7f9b29e045c34ca5f8e8d00bc2374fd</checksum>
+  <summary>Javadoc package for ical4j</summary>
+  <description>Javadoc package for ical4j</description>
+  <packager></packager>
+  <url>https://github.com/ical4j/ical4j</url>
+  <time file="1766158326" build="1766158321"/>
+  <size package="7584" installed="261" archive="544"/>
+  <location href="noarch/ical4j-doc-3.0.18-6.125.uyuni3.noarch.rpm"/>
+  <format>
+    <rpm:license>BSD-3-Clause</rpm:license>
+    <rpm:vendor>obs://build.opensuse.org/systemsmanagement:Uyuni</rpm:vendor>
+    <rpm:group>Development/Libraries/Java</rpm:group>
+    <rpm:buildhost>i04-ch1c</rpm:buildhost>
+    <rpm:sourcerpm>ical4j-3.0.18-6.125.uyuni3.src.rpm</rpm:sourcerpm>
+    <rpm:header-range start="4504" end="7272"/>
+    <rpm:provides>
+      <rpm:entry name="ical4j-doc" flags="EQ" epoch="0" ver="3.0.18" rel="6.125.uyuni3"/>
+    </rpm:provides>
+  </format>
+</package>
+<package type="rpm">
+  <name>jade4j</name>
+  <arch>noarch</arch>
+  <version epoch="0" ver="1.2.7" rel="2.5.uyuni3"/>
+  <checksum type="sha256" pkgid="YES">ff0d18a223f8aad88a2c19bd3ee28e6ab2057c0660c39bde9909c8451f013f8d</checksum>
+  <summary>Java implementation of the jade templating</summary>
+  <description>Java implementation of the jade templating - jade4j's intention is to be able to process jade templates in Java
+without the need of a JavaScript environment, while being fully compatible with the original jade syntax.</description>
+  <packager>https://www.suse.com/</packager>
+  <url>https://github.com/neuland/jade4j</url>
+  <time file="1730482813" build="1730482807"/>
+  <size package="149696" installed="168393" archive="169540"/>
+  <location href="noarch/jade4j-1.2.7-2.5.uyuni3.noarch.rpm"/>
+  <format>
+    <rpm:license>MIT</rpm:license>
+    <rpm:vendor>obs://build.opensuse.org/systemsmanagement:Uyuni</rpm:vendor>
+    <rpm:group>Development/Libraries/Java</rpm:group>
+    <rpm:buildhost>h02-ch1d</rpm:buildhost>
+    <rpm:sourcerpm>jade4j-1.2.7-2.5.uyuni3.src.rpm</rpm:sourcerpm>
+    <rpm:header-range start="4504" end="9620"/>
+    <rpm:provides>
+      <rpm:entry name="jade4j" flags="EQ" epoch="0" ver="1.2.7" rel="2.5.uyuni3"/>
+      <rpm:entry name="mvn(de.neuland-bfi:jade4j)" flags="EQ" epoch="0" ver="1.2.7"/>
+      <rpm:entry name="mvn(de.neuland-bfi:jade4j:pom:)" flags="EQ" epoch="0" ver="1.2.7"/>
+    </rpm:provides>
+    <rpm:requires>
+      <rpm:entry name="java-headless" flags="GE" epoch="0" ver="1.6"/>
+      <rpm:entry name="javapackages-filesystem"/>
+      <rpm:entry name="mvn(com.googlecode.concurrentlinkedhashmap:concurrentlinkedhashmap-lru)"/>
+      <rpm:entry name="mvn(commons-collections:commons-collections)"/>
+      <rpm:entry name="mvn(commons-io:commons-io)"/>
+      <rpm:entry name="mvn(org.apache.commons:commons-jexl)"/>
+      <rpm:entry name="mvn(org.apache.commons:commons-lang3)"/>
+      <rpm:entry name="mvn(org.pegdown:pegdown)"/>
+    </rpm:requires>
+  </format>
+</package>
+<package type="rpm">
+  <name>jade4j</name>
+  <arch>src</arch>
+  <version epoch="0" ver="1.2.7" rel="2.5.uyuni3"/>
+  <checksum type="sha256" pkgid="YES">59acfeee183874a8430d932207d7647ee8cf53951accca1a62068079c652c723</checksum>
+  <summary>Java implementation of the jade templating</summary>
+  <description>Java implementation of the jade templating - jade4j's intention is to be able to process jade templates in Java
+without the need of a JavaScript environment, while being fully compatible with the original jade syntax.</description>
+  <packager>https://www.suse.com/</packager>
+  <url>https://github.com/neuland/jade4j</url>
+  <time file="1730482813" build="1730482807"/>
+  <size package="3694355" installed="3688149" archive="3688540"/>
+  <location href="src/jade4j-1.2.7-2.5.uyuni3.src.rpm"/>
+  <format>
+    <rpm:license>MIT</rpm:license>
+    <rpm:vendor>obs://build.opensuse.org/systemsmanagement:Uyuni</rpm:vendor>
+    <rpm:group>Development/Libraries/Java</rpm:group>
+    <rpm:buildhost>h02-ch1d</rpm:buildhost>
+    <rpm:sourcerpm></rpm:sourcerpm>
+    <rpm:header-range start="4504" end="8256"/>
+    <rpm:requires>
+      <rpm:entry name="fdupes"/>
+      <rpm:entry name="java-devel" flags="GE" epoch="0" ver="11"/>
+      <rpm:entry name="maven-local"/>
+      <rpm:entry name="mvn(com.googlecode.concurrentlinkedhashmap:concurrentlinkedhashmap-lru)"/>
+      <rpm:entry name="mvn(commons-collections:commons-collections)"/>
+      <rpm:entry name="mvn(commons-io:commons-io)"/>
+      <rpm:entry name="mvn(org.apache.commons:commons-jexl)"/>
+      <rpm:entry name="mvn(org.apache.commons:commons-lang3)"/>
+      <rpm:entry name="mvn(org.pegdown:pegdown)"/>
+      <rpm:entry name="mvn(org.sonatype.oss:oss-parent:pom:)"/>
+    </rpm:requires>
+  </format>
+</package>
+<package type="rpm">
+  <name>jade4j-javadoc</name>
+  <arch>noarch</arch>
+  <version epoch="0" ver="1.2.7" rel="2.5.uyuni3"/>
+  <checksum type="sha256" pkgid="YES">88935b84669ed2f450be7c489c59a3e09de75659b1b25396efdef62f87e236b3</checksum>
+  <summary>Javadoc for jade4j</summary>
+  <description>This package contains javadoc for jade4j</description>
+  <packager>https://www.suse.com/</packager>
+  <url>https://github.com/neuland/jade4j</url>
+  <time file="1730482813" build="1730482807"/>
+  <size package="390452" installed="4616392" archive="4681616"/>
+  <location href="noarch/jade4j-javadoc-1.2.7-2.5.uyuni3.noarch.rpm"/>
+  <format>
+    <rpm:license>MIT</rpm:license>
+    <rpm:vendor>obs://build.opensuse.org/systemsmanagement:Uyuni</rpm:vendor>
+    <rpm:group>Development/Libraries/Java</rpm:group>
+    <rpm:buildhost>h02-ch1d</rpm:buildhost>
+    <rpm:sourcerpm>jade4j-1.2.7-2.5.uyuni3.src.rpm</rpm:sourcerpm>
+    <rpm:header-range start="4504" end="56616"/>
+    <rpm:provides>
+      <rpm:entry name="jade4j-javadoc" flags="EQ" epoch="0" ver="1.2.7" rel="2.5.uyuni3"/>
+    </rpm:provides>
+    <rpm:requires>
+      <rpm:entry name="javapackages-filesystem"/>
+    </rpm:requires>
+  </format>
+</package>
+<package type="rpm">
+  <name>java-saml</name>
+  <arch>noarch</arch>
+  <version epoch="0" ver="2.4.0" rel="3.8.uyuni3"/>
+  <checksum type="sha256" pkgid="YES">4f875ee08b469d44c14e1a8dbc2aefa32b0c42c2f41c88ca6c6d38d257c9857c</checksum>
+  <summary>A Java SAML toolkit by</summary>
+  <description>A Java SAML toolkit</description>
+  <packager></packager>
+  <url>https://github.com/onelogin/java-saml</url>
+  <time file="1762530924" build="1762530922"/>
+  <size package="125564" installed="124533" archive="125296"/>
+  <location href="noarch/java-saml-2.4.0-3.8.uyuni3.noarch.rpm"/>
+  <format>
+    <rpm:license>MIT</rpm:license>
+    <rpm:vendor>obs://build.opensuse.org/systemsmanagement:Uyuni</rpm:vendor>
+    <rpm:group>Development/Libraries/Java</rpm:group>
+    <rpm:buildhost>i01-armsrv3</rpm:buildhost>
+    <rpm:sourcerpm>java-saml-2.4.0-3.8.uyuni3.src.rpm</rpm:sourcerpm>
+    <rpm:header-range start="4504" end="7396"/>
+    <rpm:provides>
+      <rpm:entry name="java-saml" flags="EQ" epoch="0" ver="2.4.0" rel="3.8.uyuni3"/>
+      <rpm:entry name="mvn(com.onelogin:core)" flags="EQ" epoch="0" ver="2.4.0"/>
+      <rpm:entry name="mvn(com.onelogin:samples)" flags="EQ" epoch="0" ver="2.4.0"/>
+      <rpm:entry name="mvn(com.onelogin:toolkit)" flags="EQ" epoch="0" ver="2.4.0"/>
+    </rpm:provides>
+    <rpm:requires>
+      <rpm:entry name="java"/>
+      <rpm:entry name="joda-time"/>
+    </rpm:requires>
+  </format>
+</package>
+<package type="rpm">
+  <name>java-saml</name>
+  <arch>src</arch>
+  <version epoch="0" ver="2.4.0" rel="3.8.uyuni3"/>
+  <checksum type="sha256" pkgid="YES">fc8e123e26b93289e569c6974789a50f829ac6ecbff04bdbdbf1ebb4ee52c72e</checksum>
+  <summary>A Java SAML toolkit by</summary>
+  <description>A Java SAML toolkit</description>
+  <packager></packager>
+  <url>https://github.com/onelogin/java-saml</url>
+  <time file="1762530924" build="1762530922"/>
+  <size package="344136" installed="338826" archive="339328"/>
+  <location href="src/java-saml-2.4.0-3.8.uyuni3.src.rpm"/>
+  <format>
+    <rpm:license>MIT</rpm:license>
+    <rpm:vendor>obs://build.opensuse.org/systemsmanagement:Uyuni</rpm:vendor>
+    <rpm:group>Development/Libraries/Java</rpm:group>
+    <rpm:buildhost>i01-armsrv3</rpm:buildhost>
+    <rpm:sourcerpm></rpm:sourcerpm>
+    <rpm:header-range start="4504" end="6704"/>
+    <rpm:requires>
+      <rpm:entry name="java-devel"/>
+      <rpm:entry name="java-saml-kit" flags="EQ" epoch="0" ver="3b021b8651a2d25d5c44ab97f515bb2999280c26"/>
+      <rpm:entry name="xz"/>
+    </rpm:requires>
+  </format>
+</package>
+<package type="rpm">
+  <name>jose4j</name>
+  <arch>noarch</arch>
+  <version epoch="0" ver="0.9.5" rel="1.8.uyuni3"/>
+  <checksum type="sha256" pkgid="YES">e75958c7a95acda95f7fc2a786935d645871453f61d1c014a2c8cec2ec3a9fe6</checksum>
+  <summary>JWT implementation for Java</summary>
+  <description>The jose.4.j library is a robust and easy to use open source implementation of
+JSON Web Token (JWT) and the JOSE specification suite (JWS, JWE, and JWK).
+It is written in Java and relies solely on the JCA APIs for cryptography.</description>
+  <packager></packager>
+  <url>https://bitbucket.org/b_c/jose4j</url>
+  <time file="1762530923" build="1762530919"/>
+  <size package="244128" installed="271031" archive="272200"/>
+  <location href="noarch/jose4j-0.9.5-1.8.uyuni3.noarch.rpm"/>
+  <format>
+    <rpm:license>Apache-2.0</rpm:license>
+    <rpm:vendor>obs://build.opensuse.org/systemsmanagement:Uyuni</rpm:vendor>
+    <rpm:group>Devel/Libraries/Java</rpm:group>
+    <rpm:buildhost>armv9</rpm:buildhost>
+    <rpm:sourcerpm>jose4j-0.9.5-1.8.uyuni3.src.rpm</rpm:sourcerpm>
+    <rpm:header-range start="4504" end="10752"/>
+    <rpm:provides>
+      <rpm:entry name="jose4j" flags="EQ" epoch="0" ver="0.9.5" rel="1.8.uyuni3"/>
+    </rpm:provides>
+  </format>
+</package>
+<package type="rpm">
+  <name>jose4j</name>
+  <arch>src</arch>
+  <version epoch="0" ver="0.9.5" rel="1.8.uyuni3"/>
+  <checksum type="sha256" pkgid="YES">3001395fe41c95d1448a45b8b7642d553ab2b68485b70a7f6f5c1c7db58ee580</checksum>
+  <summary>JWT implementation for Java</summary>
+  <description>The jose.4.j library is a robust and easy to use open source implementation of
+JSON Web Token (JWT) and the JOSE specification suite (JWS, JWE, and JWK).
+It is written in Java and relies solely on the JCA APIs for cryptography.</description>
+  <packager></packager>
+  <url>https://bitbucket.org/b_c/jose4j</url>
+  <time file="1762530923" build="1762530919"/>
+  <size package="455598" installed="448463" archive="448848"/>
+  <location href="src/jose4j-0.9.5-1.8.uyuni3.src.rpm"/>
+  <format>
+    <rpm:license>Apache-2.0</rpm:license>
+    <rpm:vendor>obs://build.opensuse.org/systemsmanagement:Uyuni</rpm:vendor>
+    <rpm:group>Devel/Libraries/Java</rpm:group>
+    <rpm:buildhost>armv9</rpm:buildhost>
+    <rpm:sourcerpm></rpm:sourcerpm>
+    <rpm:header-range start="4504" end="9656"/>
+    <rpm:requires>
+      <rpm:entry name="java-devel" flags="GE" epoch="0" ver="17"/>
+      <rpm:entry name="javapackages-tools"/>
+      <rpm:entry name="slf4j" flags="GE" epoch="0" ver="1.7"/>
+    </rpm:requires>
+  </format>
+</package>
+<package type="rpm">
+  <name>jpa-api</name>
+  <arch>noarch</arch>
+  <version epoch="0" ver="2.2.2" rel="3.3.uyuni3"/>
+  <checksum type="sha256" pkgid="YES">8e3daebfc4db1b6cb89ced7ca3bb898a7bf2404a2dd58a90744f00cd40b31e59</checksum>
+  <summary>Java Persistence API specification</summary>
+  <description>The Java Persistence API is the Java API for the management of persistence and object/relational mapping in Jakarta EE and Java SE environments.</description>
+  <packager></packager>
+  <url>https://github.com/eclipse-ee4j/jpa-api</url>
+  <time file="1763076543" build="1763076535"/>
+  <size package="152620" installed="194628" archive="195816"/>
+  <location href="noarch/jpa-api-2.2.2-3.3.uyuni3.noarch.rpm"/>
+  <format>
+    <rpm:license>EPL-2.0</rpm:license>
+    <rpm:vendor>obs://build.opensuse.org/systemsmanagement:Uyuni</rpm:vendor>
+    <rpm:group>Development/Libraries/Java</rpm:group>
+    <rpm:buildhost>h02-ch2b</rpm:buildhost>
+    <rpm:sourcerpm>jpa-api-2.2.2-3.3.uyuni3.src.rpm</rpm:sourcerpm>
+    <rpm:header-range start="4504" end="8124"/>
+    <rpm:provides>
+      <rpm:entry name="jpa-api" flags="EQ" epoch="0" ver="2.2.2" rel="3.3.uyuni3"/>
+      <rpm:entry name="mvn(jakarta.persistence:jakarta.persistence-api)" flags="EQ" epoch="0" ver="2.2.2"/>
+      <rpm:entry name="mvn(jakarta.persistence:jakarta.persistence-api:pom:)" flags="EQ" epoch="0" ver="2.2.2"/>
+      <rpm:entry name="osgi(jakarta.persistence-api)" flags="EQ" epoch="0" ver="2.2.2"/>
+    </rpm:provides>
+    <rpm:requires>
+      <rpm:entry name="java"/>
+      <rpm:entry name="java-headless" flags="GE" epoch="0" ver="1.8"/>
+      <rpm:entry name="javapackages-filesystem"/>
+    </rpm:requires>
+  </format>
+</package>
+<package type="rpm">
+  <name>jpa-api</name>
+  <arch>src</arch>
+  <version epoch="0" ver="2.2.2" rel="3.3.uyuni3"/>
+  <checksum type="sha256" pkgid="YES">ea91c0d7868506286cf34366b47c4cde12158eb3b7609fb2005a55365c13b276</checksum>
+  <summary>Java Persistence API specification</summary>
+  <description>The Java Persistence API is the Java API for the management of persistence and object/relational mapping in Jakarta EE and Java SE environments.</description>
+  <packager></packager>
+  <url>https://github.com/eclipse-ee4j/jpa-api</url>
+  <time file="1763076543" build="1763076535"/>
+  <size package="140805" installed="135533" archive="135916"/>
+  <location href="src/jpa-api-2.2.2-3.3.uyuni3.src.rpm"/>
+  <format>
+    <rpm:license>EPL-2.0</rpm:license>
+    <rpm:vendor>obs://build.opensuse.org/systemsmanagement:Uyuni</rpm:vendor>
+    <rpm:group>Development/Libraries/Java</rpm:group>
+    <rpm:buildhost>h02-ch2b</rpm:buildhost>
+    <rpm:sourcerpm></rpm:sourcerpm>
+    <rpm:header-range start="4504" end="6800"/>
+    <rpm:requires>
+      <rpm:entry name="fdupes"/>
+      <rpm:entry name="java-devel" flags="GE" epoch="0" ver="1.8.0"/>
+      <rpm:entry name="maven-local"/>
+      <rpm:entry name="mvn(org.apache.felix:maven-bundle-plugin)"/>
+      <rpm:entry name="mvn(org.codehaus.mojo:build-helper-maven-plugin)"/>
+      <rpm:entry name="mvn(org.eclipse.ee4j:project:pom:)"/>
+      <rpm:entry name="mvn(org.glassfish.build:spec-version-maven-plugin)"/>
+    </rpm:requires>
+  </format>
+</package>
+<package type="rpm">
+  <name>jpa-api-javadoc</name>
+  <arch>noarch</arch>
+  <version epoch="0" ver="2.2.2" rel="3.3.uyuni3"/>
+  <checksum type="sha256" pkgid="YES">e975f94e0a5d4fcd6b25afd823136df0093468329a573f955e6bedefd8e2a74e</checksum>
+  <summary>Javadoc for jpa-api</summary>
+  <description>This package contains javadoc for jpa-api</description>
+  <packager></packager>
+  <url>https://github.com/eclipse-ee4j/jpa-api</url>
+  <time file="1763076543" build="1763076535"/>
+  <size package="521604" installed="7172491" archive="7260448"/>
+  <location href="noarch/jpa-api-javadoc-2.2.2-3.3.uyuni3.noarch.rpm"/>
+  <format>
+    <rpm:license>EPL-2.0</rpm:license>
+    <rpm:vendor>obs://build.opensuse.org/systemsmanagement:Uyuni</rpm:vendor>
+    <rpm:group>Development/Libraries/Java</rpm:group>
+    <rpm:buildhost>h02-ch2b</rpm:buildhost>
+    <rpm:sourcerpm>jpa-api-2.2.2-3.3.uyuni3.src.rpm</rpm:sourcerpm>
+    <rpm:header-range start="4504" end="74236"/>
+    <rpm:provides>
+      <rpm:entry name="jpa-api-javadoc" flags="EQ" epoch="0" ver="2.2.2" rel="3.3.uyuni3"/>
+    </rpm:provides>
+    <rpm:requires>
+      <rpm:entry name="javapackages-filesystem"/>
+    </rpm:requires>
+  </format>
+</package>
+<package type="rpm">
+  <name>kie-api</name>
+  <arch>noarch</arch>
+  <version epoch="0" ver="7.17.0" rel="7.125.uyuni3"/>
+  <checksum type="sha256" pkgid="YES">8262a92cef1cae00f52766f88a5dbf8d28dfdee96570daca270d5b2492d4c9c3</checksum>
+  <summary>The common API for KIE (Drools, jBPM and OptaPlanner)</summary>
+  <description>The common API for KIE (Drools, jBPM and OptaPlanner). Provides the API and internal jars.</description>
+  <packager></packager>
+  <url>https://www.drools.org/</url>
+  <time file="1766158243" build="1766158240"/>
+  <size package="380924" installed="510215" archive="511296"/>
+  <location href="noarch/kie-api-7.17.0-7.125.uyuni3.noarch.rpm"/>
+  <format>
+    <rpm:license>Apache-2.0</rpm:license>
+    <rpm:vendor>obs://build.opensuse.org/systemsmanagement:Uyuni</rpm:vendor>
+    <rpm:group>Development/Libraries/Java</rpm:group>
+    <rpm:buildhost>i02-armsrv3</rpm:buildhost>
+    <rpm:sourcerpm>kie-api-7.17.0-7.125.uyuni3.src.rpm</rpm:sourcerpm>
+    <rpm:header-range start="4504" end="8084"/>
+    <rpm:provides>
+      <rpm:entry name="kie-api" flags="EQ" epoch="0" ver="7.17.0" rel="7.125.uyuni3"/>
+      <rpm:entry name="mvn(org.kie:kie-api)" flags="EQ" epoch="0" ver="7.17.0"/>
+      <rpm:entry name="mvn(org.kie:kie-internal)" flags="EQ" epoch="0" ver="7.17.0"/>
+    </rpm:provides>
+    <rpm:requires>
+      <rpm:entry name="java" flags="GE" epoch="0" ver="11"/>
+    </rpm:requires>
+  </format>
+</package>
+<package type="rpm">
+  <name>kie-api</name>
+  <arch>src</arch>
+  <version epoch="0" ver="7.17.0" rel="7.125.uyuni3"/>
+  <checksum type="sha256" pkgid="YES">77c00e1652e7eb084d2f5edb436890f1988b659c6f734308351def28f29ba9a7</checksum>
+  <summary>The common API for KIE (Drools, jBPM and OptaPlanner)</summary>
+  <description>The common API for KIE (Drools, jBPM and OptaPlanner). Provides the API and internal jars.</description>
+  <packager></packager>
+  <url>https://www.drools.org/</url>
+  <time file="1766158243" build="1766158240"/>
+  <size package="467249" installed="461867" archive="462372"/>
+  <location href="src/kie-api-7.17.0-7.125.uyuni3.src.rpm"/>
+  <format>
+    <rpm:license>Apache-2.0</rpm:license>
+    <rpm:vendor>obs://build.opensuse.org/systemsmanagement:Uyuni</rpm:vendor>
+    <rpm:group>Development/Libraries/Java</rpm:group>
+    <rpm:buildhost>i02-armsrv3</rpm:buildhost>
+    <rpm:sourcerpm></rpm:sourcerpm>
+    <rpm:header-range start="4504" end="7212"/>
+    <rpm:requires>
+      <rpm:entry name="java-devel" flags="GE" epoch="0" ver="11"/>
+      <rpm:entry name="kie-api-kit" flags="EQ" epoch="0" ver="94b16c723b66df4b03a061e4ad5fc2ad9e289e94"/>
+      <rpm:entry name="xz"/>
+    </rpm:requires>
+  </format>
+</package>
+<package type="rpm">
+  <name>kie-soup</name>
+  <arch>noarch</arch>
+  <version epoch="0" ver="7.17.0.Final" rel="6.125.uyuni3"/>
+  <checksum type="sha256" pkgid="YES">ba6831bdf9a3518f2143d88d04b5a16dafee4cc20aac3b9a0d343af683740187</checksum>
+  <summary>KIE Soup modules for Drools</summary>
+  <description>The parent contains all metadata (including plugins) and also dependency versions. All KIE Soup modules (except for user BOMs like 'kie-soup-bom') should (transitively) inherit from this POM.</description>
+  <packager></packager>
+  <url>http://drools.jboss.org</url>
+  <time file="1766158271" build="1766158267"/>
+  <size package="75804" installed="83675" archive="84916"/>
+  <location href="noarch/kie-soup-7.17.0.Final-6.125.uyuni3.noarch.rpm"/>
+  <format>
+    <rpm:license>Apache-2.0</rpm:license>
+    <rpm:vendor>obs://build.opensuse.org/systemsmanagement:Uyuni</rpm:vendor>
+    <rpm:group>Development/Libraries/Java</rpm:group>
+    <rpm:buildhost>i03-armsrv1</rpm:buildhost>
+    <rpm:sourcerpm>kie-soup-7.17.0.Final-6.125.uyuni3.src.rpm</rpm:sourcerpm>
+    <rpm:header-range start="4504" end="7956"/>
+    <rpm:provides>
+      <rpm:entry name="kie-soup" flags="EQ" epoch="0" ver="7.17.0.Final" rel="6.125.uyuni3"/>
+      <rpm:entry name="mvn(org.kie.soup:kie-soup-commons)" flags="EQ" epoch="0" ver="7.17.0.Final"/>
+      <rpm:entry name="mvn(org.kie.soup:kie-soup-maven-utils)" flags="EQ" epoch="0" ver="7.17.0.Final"/>
+      <rpm:entry name="mvn(org.kie.soup:kie-soup-project-datamodel)" flags="EQ" epoch="0" ver="7.17.0.Final"/>
+    </rpm:provides>
+    <rpm:requires>
+      <rpm:entry name="java" flags="GE" epoch="0" ver="11"/>
+    </rpm:requires>
+  </format>
+</package>
+<package type="rpm">
+  <name>kie-soup</name>
+  <arch>src</arch>
+  <version epoch="0" ver="7.17.0.Final" rel="6.125.uyuni3"/>
+  <checksum type="sha256" pkgid="YES">a45e0b7ec74cdf2634e8746e109c699c304afe536ce7c35481a2d5a39f8b1870</checksum>
+  <summary>KIE Soup modules for Drools</summary>
+  <description>The parent contains all metadata (including plugins) and also dependency versions. All KIE Soup modules (except for user BOMs like 'kie-soup-bom') should (transitively) inherit from this POM.</description>
+  <packager></packager>
+  <url>http://drools.jboss.org</url>
+  <time file="1766158271" build="1766158267"/>
+  <size package="318139" installed="312861" archive="313364"/>
+  <location href="src/kie-soup-7.17.0.Final-6.125.uyuni3.src.rpm"/>
+  <format>
+    <rpm:license>Apache-2.0</rpm:license>
+    <rpm:vendor>obs://build.opensuse.org/systemsmanagement:Uyuni</rpm:vendor>
+    <rpm:group>Development/Libraries/Java</rpm:group>
+    <rpm:buildhost>i03-armsrv1</rpm:buildhost>
+    <rpm:sourcerpm></rpm:sourcerpm>
+    <rpm:header-range start="4504" end="6868"/>
+    <rpm:requires>
+      <rpm:entry name="java-devel" flags="GE" epoch="0" ver="11"/>
+      <rpm:entry name="kie-soup-kit" flags="EQ" epoch="0" ver="17eb2802a66f42d59b44107c558f3ff0d5a360c5"/>
+      <rpm:entry name="xz"/>
+    </rpm:requires>
+  </format>
+</package>
+<package type="rpm">
+  <name>lucene</name>
+  <arch>noarch</arch>
+  <version epoch="0" ver="2.4.1" rel="2.126.uyuni3"/>
+  <checksum type="sha256" pkgid="YES">ca1760653aa091880476c1db6f7ea28581594a001a38f2dca58a2e1cbe7efb71</checksum>
+  <summary>Library for full featured text search</summary>
+  <description>Apache Lucene is a high-performance, full featured text search engine library written in Java.</description>
+  <packager></packager>
+  <url>https://github.com/apache/lucene-solr</url>
+  <time file="1766158251" build="1766158245"/>
+  <size package="947960" installed="1049158" archive="1050524"/>
+  <location href="noarch/lucene-2.4.1-2.126.uyuni3.noarch.rpm"/>
+  <format>
+    <rpm:license>Apache-2.0</rpm:license>
+    <rpm:vendor>obs://build.opensuse.org/systemsmanagement:Uyuni</rpm:vendor>
+    <rpm:group>Development/Libraries/Java</rpm:group>
+    <rpm:buildhost>i03-armsrv1</rpm:buildhost>
+    <rpm:sourcerpm>lucene-2.4.1-2.126.uyuni3.src.rpm</rpm:sourcerpm>
+    <rpm:header-range start="4504" end="8308"/>
+    <rpm:provides>
+      <rpm:entry name="lucene" flags="EQ" epoch="0" ver="2.4.1" rel="2.126.uyuni3"/>
+      <rpm:entry name="mvn(:lucene)" flags="EQ" epoch="0" ver="2.4.1"/>
+    </rpm:provides>
+    <rpm:requires>
+      <rpm:entry name="java" flags="GE" epoch="0" ver="1.7.0"/>
+    </rpm:requires>
+  </format>
+</package>
+<package type="rpm">
+  <name>lucene</name>
+  <arch>src</arch>
+  <version epoch="0" ver="2.4.1" rel="2.126.uyuni3"/>
+  <checksum type="sha256" pkgid="YES">eb316d2245865de27399fb824d0522c63369e45ec9170117f8a8540ca10b8b6f</checksum>
+  <summary>Library for full featured text search</summary>
+  <description>Apache Lucene is a high-performance, full featured text search engine library written in Java.</description>
+  <packager></packager>
+  <url>https://github.com/apache/lucene-solr</url>
+  <time file="1766158252" build="1766158245"/>
+  <size package="5066674" installed="5063110" archive="5063900"/>
+  <location href="src/lucene-2.4.1-2.126.uyuni3.src.rpm"/>
+  <format>
+    <rpm:license>Apache-2.0</rpm:license>
+    <rpm:vendor>obs://build.opensuse.org/systemsmanagement:Uyuni</rpm:vendor>
+    <rpm:group>Development/Libraries/Java</rpm:group>
+    <rpm:buildhost>i03-armsrv1</rpm:buildhost>
+    <rpm:sourcerpm></rpm:sourcerpm>
+    <rpm:header-range start="4504" end="7628"/>
+    <rpm:requires>
+      <rpm:entry name="java-devel" flags="GE" epoch="0" ver="1.7.0"/>
+      <rpm:entry name="lucene-kit" flags="EQ" epoch="0" ver="c9625918383942e9c48f1f71b73b31379161fc54"/>
+      <rpm:entry name="xz"/>
+    </rpm:requires>
+  </format>
+</package>
+<package type="rpm">
+  <name>mvel2</name>
+  <arch>noarch</arch>
+  <version epoch="0" ver="2.5.2" rel="1.1.uyuni3"/>
+  <checksum type="sha256" pkgid="YES">64d92e4727d84ae55e2201a4677a41e89f0f75e6e5e20dc7935066099cb996ef</checksum>
+  <summary>MVEL (MVFLEX Expression Language)</summary>
+  <description>MVEL has largely been inspired by Java syntax, but has some fundamental
+differences aimed at making it more efficient as an expression language, such
+as operators that directly support collection, array and string matching, as
+well as regular expressions. MVEL is used to evaluate expressions written using
+Java syntax.
+
+In addition to the expression language, MVEL serves as a templating language
+for configuration and string construction. Another wiki page for a summary
+information is: https://en.wikipedia.org/wiki/MVEL.</description>
+  <packager></packager>
+  <url>http://mvel.documentnode.com/</url>
+  <time file="1764435321" build="1764435316"/>
+  <size package="648280" installed="717842" archive="721304"/>
+  <location href="noarch/mvel2-2.5.2-1.1.uyuni3.noarch.rpm"/>
+  <format>
+    <rpm:license>Apache-2.0 AND BSD-3-Clause</rpm:license>
+    <rpm:vendor>obs://build.opensuse.org/systemsmanagement:Uyuni</rpm:vendor>
+    <rpm:group>Development/Libraries/Java</rpm:group>
+    <rpm:buildhost>i04-ch2b</rpm:buildhost>
+    <rpm:sourcerpm>mvel2-2.5.2-1.1.uyuni3.src.rpm</rpm:sourcerpm>
+    <rpm:header-range start="4504" end="11592"/>
+    <rpm:provides>
+      <rpm:entry name="mvel2" flags="EQ" epoch="0" ver="2.5.2" rel="1.1.uyuni3"/>
+      <rpm:entry name="mvn(org.mvel:mvel2)" flags="EQ" epoch="0" ver="2.5.2.Final"/>
+      <rpm:entry name="mvn(org.mvel:mvel2:pom:)" flags="EQ" epoch="0" ver="2.5.2.Final"/>
+      <rpm:entry name="osgi(org.mvel2)" flags="EQ" epoch="0" ver="2.5.2"/>
+    </rpm:provides>
+    <rpm:requires>
+      <rpm:entry name="/bin/bash"/>
+      <rpm:entry name="java-headless" flags="GE" epoch="0" ver="1.8"/>
+      <rpm:entry name="javapackages-filesystem"/>
+      <rpm:entry name="mvn(org.ow2.asm:asm)"/>
+    </rpm:requires>
+    <file>/usr/bin/mvel2</file>
+  </format>
+</package>
+<package type="rpm">
+  <name>mvel2</name>
+  <arch>src</arch>
+  <version epoch="0" ver="2.5.2" rel="1.1.uyuni3"/>
+  <checksum type="sha256" pkgid="YES">1961b084130afbb17a3ba70293ec6a8a475f14a2896ee0b8928a6d8d218b6dc1</checksum>
+  <summary>MVEL (MVFLEX Expression Language)</summary>
+  <description>MVEL has largely been inspired by Java syntax, but has some fundamental
+differences aimed at making it more efficient as an expression language, such
+as operators that directly support collection, array and string matching, as
+well as regular expressions. MVEL is used to evaluate expressions written using
+Java syntax.
+
+In addition to the expression language, MVEL serves as a templating language
+for configuration and string construction. Another wiki page for a summary
+information is: https://en.wikipedia.org/wiki/MVEL.</description>
+  <packager></packager>
+  <url>http://mvel.documentnode.com/</url>
+  <time file="1764435321" build="1764435316"/>
+  <size package="2196111" installed="2189605" archive="2190264"/>
+  <location href="src/mvel2-2.5.2-1.1.uyuni3.src.rpm"/>
+  <format>
+    <rpm:license>Apache-2.0 AND BSD-3-Clause</rpm:license>
+    <rpm:vendor>obs://build.opensuse.org/systemsmanagement:Uyuni</rpm:vendor>
+    <rpm:group>Development/Libraries/Java</rpm:group>
+    <rpm:buildhost>i04-ch2b</rpm:buildhost>
+    <rpm:sourcerpm></rpm:sourcerpm>
+    <rpm:header-range start="4504" end="8328"/>
+    <rpm:requires>
+      <rpm:entry name="fdupes"/>
+      <rpm:entry name="maven-local"/>
+      <rpm:entry name="mvn(org.apache.felix:maven-bundle-plugin)"/>
+    </rpm:requires>
+  </format>
+</package>
+<package type="rpm">
+  <name>mvel2-javadoc</name>
+  <arch>noarch</arch>
+  <version epoch="0" ver="2.5.2" rel="1.1.uyuni3"/>
+  <checksum type="sha256" pkgid="YES">67e39504884aedc536a302b1c8a78760696daef8746ba2f111f1e2f36facc9c1</checksum>
+  <summary>API documentation for mvel2</summary>
+  <description>API documentation for mvel2</description>
+  <packager></packager>
+  <url>http://mvel.documentnode.com/</url>
+  <time file="1764435321" build="1764435316"/>
+  <size package="795512" installed="14266267" archive="14429480"/>
+  <location href="noarch/mvel2-javadoc-2.5.2-1.1.uyuni3.noarch.rpm"/>
+  <format>
+    <rpm:license>Apache-2.0 AND BSD-3-Clause</rpm:license>
+    <rpm:vendor>obs://build.opensuse.org/systemsmanagement:Uyuni</rpm:vendor>
+    <rpm:group>Documentation/HTML</rpm:group>
+    <rpm:buildhost>i04-ch2b</rpm:buildhost>
+    <rpm:sourcerpm>mvel2-2.5.2-1.1.uyuni3.src.rpm</rpm:sourcerpm>
+    <rpm:header-range start="4504" end="133328"/>
+    <rpm:provides>
+      <rpm:entry name="mvel2-javadoc" flags="EQ" epoch="0" ver="2.5.2" rel="1.1.uyuni3"/>
+    </rpm:provides>
+    <rpm:requires>
+      <rpm:entry name="javapackages-filesystem"/>
+    </rpm:requires>
+  </format>
+</package>
+<package type="rpm">
+  <name>optaplanner</name>
+  <arch>noarch</arch>
+  <version epoch="0" ver="7.17.0" rel="6.125.uyuni3"/>
+  <checksum type="sha256" pkgid="YES">ff4a7f487bce111679f5823379f483a8fbd9a5abbdcc88104a9fa590f9b9f4c8</checksum>
+  <summary>A Java library to solve planning problems</summary>
+  <description>OptaPlanner solves planning problems. This lightweight, embeddable planning engine implements powerful and scalable algorithms to optimize business resource scheduling and planning.</description>
+  <packager></packager>
+  <url>https://www.optaplanner.org</url>
+  <time file="1766158264" build="1766158257"/>
+  <size package="1006892" installed="1184840" archive="1185624"/>
+  <location href="noarch/optaplanner-7.17.0-6.125.uyuni3.noarch.rpm"/>
+  <format>
+    <rpm:license>Apache-2.0</rpm:license>
+    <rpm:vendor>obs://build.opensuse.org/systemsmanagement:Uyuni</rpm:vendor>
+    <rpm:group>Development/Libraries/Java</rpm:group>
+    <rpm:buildhost>i02-armsrv2</rpm:buildhost>
+    <rpm:sourcerpm>optaplanner-7.17.0-6.125.uyuni3.src.rpm</rpm:sourcerpm>
+    <rpm:header-range start="4504" end="8148"/>
+    <rpm:provides>
+      <rpm:entry name="mvn(org.optaplanner:optaplanner-core)" flags="EQ" epoch="0" ver="7.17.0"/>
+      <rpm:entry name="optaplanner" flags="EQ" epoch="0" ver="7.17.0" rel="6.125.uyuni3"/>
+    </rpm:provides>
+    <rpm:requires>
+      <rpm:entry name="java" flags="GE" epoch="0" ver="11"/>
+      <rpm:entry name="mvn(org.drools:drools-compiler)" flags="EQ" epoch="0" ver="7.17.0"/>
+      <rpm:entry name="mvn(org.drools:drools-core)" flags="EQ" epoch="0" ver="7.17.0"/>
+    </rpm:requires>
+  </format>
+</package>
+<package type="rpm">
+  <name>optaplanner</name>
+  <arch>src</arch>
+  <version epoch="0" ver="7.17.0" rel="6.125.uyuni3"/>
+  <checksum type="sha256" pkgid="YES">f08bece97840d398df08c9b0a19dbd61135ad58d08cb12b1031a7c4f019085cf</checksum>
+  <summary>A Java library to solve planning problems</summary>
+  <description>OptaPlanner solves planning problems. This lightweight, embeddable planning engine implements powerful and scalable algorithms to optimize business resource scheduling and planning.</description>
+  <packager></packager>
+  <url>https://www.optaplanner.org</url>
+  <time file="1766158265" build="1766158257"/>
+  <size package="54373577" installed="55732492" archive="55733000"/>
+  <location href="src/optaplanner-7.17.0-6.125.uyuni3.src.rpm"/>
+  <format>
+    <rpm:license>Apache-2.0</rpm:license>
+    <rpm:vendor>obs://build.opensuse.org/systemsmanagement:Uyuni</rpm:vendor>
+    <rpm:group>Development/Libraries/Java</rpm:group>
+    <rpm:buildhost>i02-armsrv2</rpm:buildhost>
+    <rpm:sourcerpm></rpm:sourcerpm>
+    <rpm:header-range start="4504" end="7420"/>
+    <rpm:requires>
+      <rpm:entry name="java-devel" flags="GE" epoch="0" ver="11"/>
+      <rpm:entry name="optaplanner-kit" flags="EQ" epoch="0" ver="9515bb1cc6a07917e87ad566c948bb789122bac1"/>
+      <rpm:entry name="xz"/>
+    </rpm:requires>
+  </format>
+</package>
+<package type="rpm">
+  <name>perl-Mail-RFC822-Address</name>
+  <arch>noarch</arch>
+  <version epoch="0" ver="0.300.0" rel="1.1.uyuni3"/>
+  <checksum type="sha256" pkgid="YES">37babb415822186a1bb041ad68903061fc2a3aee6de6a7f2dba4252554be0b4f</checksum>
+  <summary>Perl extension for validating email addresses</summary>
+  <description>Mail::RFC822::Address validates email addresses against the grammar
+described in RFC 822 using regular expressions. How to validate a user
+supplied email address is a FAQ (see perlfaq9): the only sure way to see if
+a supplied email address is genuine is to send an email to it and see if
+the user recieves it. The one useful check that can be performed on an
+address is to check that the email address is syntactically valid. That is
+what this module does.
+
+This module is functionally equivalent to RFC::RFC822::Address, but uses
+regular expressions rather than the Parse::RecDescent parser. This means
+that startup time is greatly reduced making it suitable for use in
+transient scripts such as CGI scripts.</description>
+  <packager></packager>
+  <url>https://metacpan.org/release/Mail-RFC822-Address</url>
+  <time file="1764583646" build="1764583644"/>
+  <size package="14460" installed="9476" archive="10744"/>
+  <location href="noarch/perl-Mail-RFC822-Address-0.300.0-1.1.uyuni3.noarch.rpm"/>
+  <format>
+    <rpm:license>Artistic-1.0</rpm:license>
+    <rpm:vendor>obs://build.opensuse.org/systemsmanagement:Uyuni</rpm:vendor>
+    <rpm:group>Unspecified</rpm:group>
+    <rpm:buildhost>i02-armsrv3</rpm:buildhost>
+    <rpm:sourcerpm>perl-Mail-RFC822-Address-0.300.0-1.1.uyuni3.src.rpm</rpm:sourcerpm>
+    <rpm:header-range start="4504" end="8592"/>
+    <rpm:provides>
+      <rpm:entry name="perl(Mail::RFC822::Address)" flags="EQ" epoch="0" ver="0.300.0"/>
+      <rpm:entry name="perl-Mail-RFC822-Address" flags="EQ" epoch="0" ver="0.300.0" rel="1.1.uyuni3"/>
+    </rpm:provides>
+    <rpm:requires>
+      <rpm:entry name="perl(:MODULE_COMPAT_5.26.1)"/>
+    </rpm:requires>
+  </format>
+</package>
+<package type="rpm">
+  <name>perl-Mail-RFC822-Address</name>
+  <arch>src</arch>
+  <version epoch="0" ver="0.300.0" rel="1.1.uyuni3"/>
+  <checksum type="sha256" pkgid="YES">d7987cdd74fb81a11a5b8e24b9ac2658c7cb2f0ce07bc80370335792206cdf3b</checksum>
+  <summary>Perl extension for validating email addresses</summary>
+  <description>Mail::RFC822::Address validates email addresses against the grammar
+described in RFC 822 using regular expressions. How to validate a user
+supplied email address is a FAQ (see perlfaq9): the only sure way to see if
+a supplied email address is genuine is to send an email to it and see if
+the user recieves it. The one useful check that can be performed on an
+address is to check that the email address is syntactically valid. That is
+what this module does.
+
+This module is functionally equivalent to RFC::RFC822::Address, but uses
+regular expressions rather than the Parse::RecDescent parser. This means
+that startup time is greatly reduced making it suitable for use in
+transient scripts such as CGI scripts.</description>
+  <packager></packager>
+  <url>https://metacpan.org/release/Mail-RFC822-Address</url>
+  <time file="1764583646" build="1764583644"/>
+  <size package="15928" installed="10187" archive="10844"/>
+  <location href="src/perl-Mail-RFC822-Address-0.300.0-1.1.uyuni3.src.rpm"/>
+  <format>
+    <rpm:license>Artistic-1.0</rpm:license>
+    <rpm:vendor>obs://build.opensuse.org/systemsmanagement:Uyuni</rpm:vendor>
+    <rpm:group>Unspecified</rpm:group>
+    <rpm:buildhost>i02-armsrv3</rpm:buildhost>
+    <rpm:sourcerpm></rpm:sourcerpm>
+    <rpm:header-range start="4504" end="7648"/>
+    <rpm:requires>
+      <rpm:entry name="perl"/>
+      <rpm:entry name="perl-macros"/>
+    </rpm:requires>
+  </format>
+</package>
+<package type="rpm">
+  <name>pgjdbc-ng</name>
+  <arch>noarch</arch>
+  <version epoch="0" ver="0.8.7" rel="2.159.uyuni3"/>
+  <checksum type="sha256" pkgid="YES">4fc276c2750fe384485d2a890221efc96b845760b30c5beaa0a5b34d07823cec</checksum>
+  <summary>A new JDBC driver for PostgreSQL</summary>
+  <description>A new JDBC driver for PostgreSQL aimed at supporting the advanced features of JDBC and Postgres.</description>
+  <packager></packager>
+  <url>http://impossibl.github.io/pgjdbc-ng/</url>
+  <time file="1766158454" build="1766158449"/>
+  <size package="1207800" installed="1336018" archive="1337492"/>
+  <location href="noarch/pgjdbc-ng-0.8.7-2.159.uyuni3.noarch.rpm"/>
+  <format>
+    <rpm:license>BSD-3-Clause</rpm:license>
+    <rpm:vendor>obs://build.opensuse.org/systemsmanagement:Uyuni</rpm:vendor>
+    <rpm:group>Development/Libraries/Java</rpm:group>
+    <rpm:buildhost>i03-ch1b</rpm:buildhost>
+    <rpm:sourcerpm>pgjdbc-ng-0.8.7-2.159.uyuni3.src.rpm</rpm:sourcerpm>
+    <rpm:header-range start="4504" end="9248"/>
+    <rpm:provides>
+      <rpm:entry name="mvn(com.impossibl.pgjdbc-ng:pgjdbc-ng)" flags="EQ" epoch="0" ver="0.8.7"/>
+      <rpm:entry name="mvn(com.impossibl.pgjdbc-ng:pgjdbc-ng:pom:)" flags="EQ" epoch="0" ver="0.8.7"/>
+      <rpm:entry name="mvn(com.impossibl.pgjdbc-ng:spy)" flags="EQ" epoch="0" ver="0.8.7"/>
+      <rpm:entry name="mvn(com.impossibl.pgjdbc-ng:spy:pom:)" flags="EQ" epoch="0" ver="0.8.7"/>
+      <rpm:entry name="pgjdbc-ng" flags="EQ" epoch="0" ver="0.8.7" rel="2.159.uyuni3"/>
+    </rpm:provides>
+    <rpm:requires>
+      <rpm:entry name="java"/>
+      <rpm:entry name="java-headless"/>
+      <rpm:entry name="javapackages-filesystem"/>
+      <rpm:entry name="mvn(io.netty:netty-buffer)"/>
+      <rpm:entry name="mvn(io.netty:netty-codec)"/>
+      <rpm:entry name="mvn(io.netty:netty-common)"/>
+      <rpm:entry name="mvn(io.netty:netty-handler)"/>
+      <rpm:entry name="mvn(io.netty:netty-transport)"/>
+      <rpm:entry name="mvn(io.netty:netty-transport-native-unix-common)"/>
+    </rpm:requires>
+  </format>
+</package>
+<package type="rpm">
+  <name>pgjdbc-ng</name>
+  <arch>src</arch>
+  <version epoch="0" ver="0.8.7" rel="2.159.uyuni3"/>
+  <checksum type="sha256" pkgid="YES">9a4c1603133429442669ccec472b5de0170d936ea932b8f233d19effd66119d5</checksum>
+  <summary>A new JDBC driver for PostgreSQL</summary>
+  <description>A new JDBC driver for PostgreSQL aimed at supporting the advanced features of JDBC and Postgres.</description>
+  <packager></packager>
+  <url>http://impossibl.github.io/pgjdbc-ng/</url>
+  <time file="1766158454" build="1766158449"/>
+  <size package="665524" installed="664902" archive="665672"/>
+  <location href="src/pgjdbc-ng-0.8.7-2.159.uyuni3.src.rpm"/>
+  <format>
+    <rpm:license>BSD-3-Clause</rpm:license>
+    <rpm:vendor>obs://build.opensuse.org/systemsmanagement:Uyuni</rpm:vendor>
+    <rpm:group>Development/Libraries/Java</rpm:group>
+    <rpm:buildhost>i03-ch1b</rpm:buildhost>
+    <rpm:sourcerpm></rpm:sourcerpm>
+    <rpm:header-range start="4504" end="7752"/>
+    <rpm:requires>
+      <rpm:entry name="java-devel"/>
+      <rpm:entry name="javapackages-local"/>
+      <rpm:entry name="netty"/>
+      <rpm:entry name="pgjdbc-ng-kit" flags="EQ" epoch="0" ver="135558273d9a1bebd9475e217b7b5317ab7a8b41"/>
+      <rpm:entry name="xmvn-install"/>
+      <rpm:entry name="xmvn-resolve"/>
+      <rpm:entry name="xz"/>
+    </rpm:requires>
+  </format>
+</package>
+<package type="rpm">
+  <name>picocontainer</name>
+  <arch>noarch</arch>
+  <version epoch="0" ver="1.3.7" rel="3.8.uyuni3"/>
+  <checksum type="sha256" pkgid="YES">ca6245f077cf76580c6dddb0773a0824b48ea4dd5acacb35625c1f10c28c71ff</checksum>
+  <summary>Dependeny injection framework</summary>
+  <description>PicoContainer is a highly embeddable full service Inversion of Control (IoC) container for components honor the Dependency Injection pattern. The development started in 2003 and pioneered Constructor Injection auto-wiring.</description>
+  <packager></packager>
+  <url>http://www.picocontainer.com</url>
+  <time file="1762530917" build="1762530914"/>
+  <size package="105536" installed="114252" archive="115012"/>
+  <location href="noarch/picocontainer-1.3.7-3.8.uyuni3.noarch.rpm"/>
+  <format>
+    <rpm:license>BSD-3-Clause</rpm:license>
+    <rpm:vendor>obs://build.opensuse.org/systemsmanagement:Uyuni</rpm:vendor>
+    <rpm:group>Development/Libraries/Java</rpm:group>
+    <rpm:buildhost>i02-armsrv1</rpm:buildhost>
+    <rpm:sourcerpm>picocontainer-1.3.7-3.8.uyuni3.src.rpm</rpm:sourcerpm>
+    <rpm:header-range start="4504" end="7640"/>
+    <rpm:provides>
+      <rpm:entry name="ant(:picocontainer)" flags="EQ" epoch="0" ver="1.3"/>
+      <rpm:entry name="picocontainer" flags="EQ" epoch="0" ver="1.3.7" rel="3.8.uyuni3"/>
+    </rpm:provides>
+    <rpm:requires>
+      <rpm:entry name="java"/>
+    </rpm:requires>
+  </format>
+</package>
+<package type="rpm">
+  <name>picocontainer</name>
+  <arch>src</arch>
+  <version epoch="0" ver="1.3.7" rel="3.8.uyuni3"/>
+  <checksum type="sha256" pkgid="YES">66c133b8afc046e7b6900b471db9380ede681d79cb3b3c520383d1a7ae121ef2</checksum>
+  <summary>Dependeny injection framework</summary>
+  <description>PicoContainer is a highly embeddable full service Inversion of Control (IoC) container for components honor the Dependency Injection pattern. The development started in 2003 and pioneered Constructor Injection auto-wiring.</description>
+  <packager></packager>
+  <url>http://www.picocontainer.com</url>
+  <time file="1762530917" build="1762530914"/>
+  <size package="68628" installed="62651" archive="63044"/>
+  <location href="src/picocontainer-1.3.7-3.8.uyuni3.src.rpm"/>
+  <format>
+    <rpm:license>BSD-3-Clause</rpm:license>
+    <rpm:vendor>obs://build.opensuse.org/systemsmanagement:Uyuni</rpm:vendor>
+    <rpm:group>Development/Libraries/Java</rpm:group>
+    <rpm:buildhost>i02-armsrv1</rpm:buildhost>
+    <rpm:sourcerpm></rpm:sourcerpm>
+    <rpm:header-range start="4504" end="6848"/>
+    <rpm:requires>
+      <rpm:entry name="ant"/>
+      <rpm:entry name="java-devel"/>
+    </rpm:requires>
+  </format>
+</package>
+<package type="rpm">
+  <name>prometheus-simpleclient-java</name>
+  <arch>noarch</arch>
+  <version epoch="0" ver="0.3.0" rel="1.5.uyuni3"/>
+  <checksum type="sha256" pkgid="YES">74bdde80435a10f33c21a869679d36a60eb70402ada491d979242faf31eace28</checksum>
+  <summary>Prometheus instrumentation library for JVM applications</summary>
+  <description>The Prometheus JVM Client allows instrumentation of software running on the JVM
+for use with the Prometheus systems monitoring and alerting toolkit.
+It supports Java, Clojure, Scala, JRuby, and anything else that runs on the JVM.</description>
+  <packager></packager>
+  <url>http://github.com/prometheus/client_java</url>
+  <time file="1766158402" build="1766158399"/>
+  <size package="111676" installed="128519" archive="130704"/>
+  <location href="noarch/prometheus-simpleclient-java-0.3.0-1.5.uyuni3.noarch.rpm"/>
+  <format>
+    <rpm:license>Apache-2.0</rpm:license>
+    <rpm:vendor>obs://build.opensuse.org/systemsmanagement:Uyuni</rpm:vendor>
+    <rpm:group>Development/Libraries/Java</rpm:group>
+    <rpm:buildhost>i01-armsrv3</rpm:buildhost>
+    <rpm:sourcerpm>prometheus-simpleclient-java-0.3.0-1.5.uyuni3.src.rpm</rpm:sourcerpm>
+    <rpm:header-range start="4504" end="8932"/>
+    <rpm:provides>
+      <rpm:entry name="mvn(io.prometheus:simpleclient)" flags="EQ" epoch="0" ver="0.3.0"/>
+      <rpm:entry name="mvn(io.prometheus:simpleclient_common)" flags="EQ" epoch="0" ver="0.3.0"/>
+      <rpm:entry name="mvn(io.prometheus:simpleclient_hibernate)" flags="EQ" epoch="0" ver="0.3.0"/>
+      <rpm:entry name="mvn(io.prometheus:simpleclient_hotspot)" flags="EQ" epoch="0" ver="0.3.0"/>
+      <rpm:entry name="mvn(io.prometheus:simpleclient_servlet)" flags="EQ" epoch="0" ver="0.3.0"/>
+      <rpm:entry name="prometheus-client-java" flags="EQ" epoch="0" ver="0.3.0"/>
+      <rpm:entry name="prometheus-simpleclient-java" flags="EQ" epoch="0" ver="0.3.0" rel="1.5.uyuni3"/>
+    </rpm:provides>
+    <rpm:requires>
+      <rpm:entry name="java"/>
+    </rpm:requires>
+    <rpm:obsoletes>
+      <rpm:entry name="prometheus-client-java" flags="LT" epoch="0" ver="0.3.0"/>
+    </rpm:obsoletes>
+  </format>
+</package>
+<package type="rpm">
+  <name>prometheus-simpleclient-java</name>
+  <arch>src</arch>
+  <version epoch="0" ver="0.3.0" rel="1.5.uyuni3"/>
+  <checksum type="sha256" pkgid="YES">128d46d822c8d25765bfa10640afcbd03e9485890faf8bee48996705bbdbe12b</checksum>
+  <summary>Prometheus instrumentation library for JVM applications</summary>
+  <description>The Prometheus JVM Client allows instrumentation of software running on the JVM
+for use with the Prometheus systems monitoring and alerting toolkit.
+It supports Java, Clojure, Scala, JRuby, and anything else that runs on the JVM.</description>
+  <packager></packager>
+  <url>http://github.com/prometheus/client_java</url>
+  <time file="1766158402" build="1766158399"/>
+  <size package="157475" installed="152898" archive="153588"/>
+  <location href="src/prometheus-simpleclient-java-0.3.0-1.5.uyuni3.src.rpm"/>
+  <format>
+    <rpm:license>Apache-2.0</rpm:license>
+    <rpm:vendor>obs://build.opensuse.org/systemsmanagement:Uyuni</rpm:vendor>
+    <rpm:group>Development/Libraries/Java</rpm:group>
+    <rpm:buildhost>i01-armsrv3</rpm:buildhost>
+    <rpm:sourcerpm></rpm:sourcerpm>
+    <rpm:header-range start="4504" end="7236"/>
+    <rpm:requires>
+      <rpm:entry name="java-devel"/>
+      <rpm:entry name="prometheus-client-java-kit" flags="EQ" epoch="0" ver="32e6246cc91e4f4f2f4afae0b3c4104088f269e6"/>
+      <rpm:entry name="xz"/>
+    </rpm:requires>
+  </format>
+</package>
+<package type="rpm">
+  <name>python-fbtftp</name>
+  <arch>src</arch>
+  <version epoch="0" ver="0.5" rel="1.2.uyuni3"/>
+  <checksum type="sha256" pkgid="YES">d20bf39e6440f2e550f5f0d187c013d2c518ad3e4a67b6b74036de6106c82674</checksum>
+  <summary>A python3 framework to build dynamic TFTP servers</summary>
+  <description>A python3 framework to build dynamic TFTP servers</description>
+  <packager>https://www.suse.com/</packager>
+  <url>https://www.github.com/facebook/fbtftp</url>
+  <time file="1720174815" build="1720174807"/>
+  <size package="34118" installed="28225" archive="28608"/>
+  <location href="src/python-fbtftp-0.5-1.2.uyuni3.src.rpm"/>
+  <format>
+    <rpm:license>MIT</rpm:license>
+    <rpm:vendor>obs://build.opensuse.org/systemsmanagement:Uyuni</rpm:vendor>
+    <rpm:group>Unspecified</rpm:group>
+    <rpm:buildhost>i02-ch2a</rpm:buildhost>
+    <rpm:sourcerpm></rpm:sourcerpm>
+    <rpm:header-range start="4504" end="6540"/>
+    <rpm:requires>
+      <rpm:entry name="fdupes"/>
+      <rpm:entry name="python3-rpm-macros"/>
+      <rpm:entry name="python3-setuptools"/>
+    </rpm:requires>
+  </format>
+</package>
+<package type="rpm">
+  <name>python3-fbtftp</name>
+  <arch>noarch</arch>
+  <version epoch="0" ver="0.5" rel="1.2.uyuni3"/>
+  <checksum type="sha256" pkgid="YES">2c04758a83262e3556dc30b7a0b27fb7fd682044f4ab07f883d10a4920cbcec8</checksum>
+  <summary>A python3 framework to build dynamic TFTP servers</summary>
+  <description>A python3 framework to build dynamic TFTP servers</description>
+  <packager>https://www.suse.com/</packager>
+  <url>https://www.github.com/facebook/fbtftp</url>
+  <time file="1720174815" build="1720174807"/>
+  <size package="29560" installed="78312" archive="83224"/>
+  <location href="noarch/python3-fbtftp-0.5-1.2.uyuni3.noarch.rpm"/>
+  <format>
+    <rpm:license>MIT</rpm:license>
+    <rpm:vendor>obs://build.opensuse.org/systemsmanagement:Uyuni</rpm:vendor>
+    <rpm:group>Unspecified</rpm:group>
+    <rpm:buildhost>i02-ch2a</rpm:buildhost>
+    <rpm:sourcerpm>python-fbtftp-0.5-1.2.uyuni3.src.rpm</rpm:sourcerpm>
+    <rpm:header-range start="4504" end="10672"/>
+    <rpm:provides>
+      <rpm:entry name="python3-fbtftp" flags="EQ" epoch="0" ver="0.5" rel="1.2.uyuni3"/>
+    </rpm:provides>
+    <rpm:requires>
+      <rpm:entry name="python(abi)" flags="EQ" epoch="0" ver="3.6"/>
+    </rpm:requires>
+  </format>
+</package>
+<package type="rpm">
+  <name>quartz</name>
+  <arch>noarch</arch>
+  <version epoch="0" ver="2.3.0" rel="2.147.uyuni3"/>
+  <checksum type="sha256" pkgid="YES">767bb37944c935edf6eeeb52c80e7139305ef39ea43fdcc3bfd8e47bd1d502f0</checksum>
+  <summary>Quartz is a full-featured, open source job scheduling</summary>
+  <description>Quartz is a full-featured, open source job scheduling system that can be integrated with, or used along side virtually any J2EE or J2SE</description>
+  <packager></packager>
+  <url>http://www.quartz-scheduler.org</url>
+  <time file="1766158405" build="1766158400"/>
+  <size package="642224" installed="686308" archive="686732"/>
+  <location href="noarch/quartz-2.3.0-2.147.uyuni3.noarch.rpm"/>
+  <format>
+    <rpm:license>Apache-2.0</rpm:license>
+    <rpm:vendor>obs://build.opensuse.org/systemsmanagement:Uyuni</rpm:vendor>
+    <rpm:group>Development/Libraries/Java</rpm:group>
+    <rpm:buildhost>i02-armsrv1</rpm:buildhost>
+    <rpm:sourcerpm>quartz-2.3.0-2.147.uyuni3.src.rpm</rpm:sourcerpm>
+    <rpm:header-range start="4504" end="8096"/>
+    <rpm:provides>
+      <rpm:entry name="mvn(org.quartz-scheduler:quartz)" flags="EQ" epoch="0" ver="2.3.0"/>
+      <rpm:entry name="quartz" flags="EQ" epoch="0" ver="2.3.0" rel="2.147.uyuni3"/>
+    </rpm:provides>
+    <rpm:requires>
+      <rpm:entry name="java"/>
+    </rpm:requires>
+  </format>
+</package>
+<package type="rpm">
+  <name>quartz</name>
+  <arch>src</arch>
+  <version epoch="0" ver="2.3.0" rel="2.147.uyuni3"/>
+  <checksum type="sha256" pkgid="YES">d0490e37502c56b96cb7812724f1095c712bf2899ad959cc834d821abfc7a7cd</checksum>
+  <summary>Quartz is a full-featured, open source job scheduling</summary>
+  <description>Quartz is a full-featured, open source job scheduling system that can be integrated with, or used along side virtually any J2EE or J2SE</description>
+  <packager></packager>
+  <url>http://www.quartz-scheduler.org</url>
+  <time file="1766158405" build="1766158400"/>
+  <size package="684546" installed="682934" archive="684036"/>
+  <location href="src/quartz-2.3.0-2.147.uyuni3.src.rpm"/>
+  <format>
+    <rpm:license>Apache-2.0</rpm:license>
+    <rpm:vendor>obs://build.opensuse.org/systemsmanagement:Uyuni</rpm:vendor>
+    <rpm:group>Development/Libraries/Java</rpm:group>
+    <rpm:buildhost>i02-armsrv1</rpm:buildhost>
+    <rpm:sourcerpm></rpm:sourcerpm>
+    <rpm:header-range start="4504" end="8504"/>
+    <rpm:requires>
+      <rpm:entry name="java-devel"/>
+      <rpm:entry name="quartz-kit" flags="EQ" epoch="0" ver="051463d5d44c806dbf5bf2c4ee6402ba7950160e"/>
+      <rpm:entry name="subversion"/>
+      <rpm:entry name="xz"/>
+    </rpm:requires>
+  </format>
+</package>
+<package type="rpm">
+  <name>redstone-xmlrpc</name>
+  <arch>noarch</arch>
+  <version epoch="0" ver="1.1_20071120" rel="0.12.8.uyuni3"/>
+  <checksum type="sha256" pkgid="YES">dd9e75f0473a70edbe9cee8968562a6013320f784923f6ffda0356b0bc1c45e7</checksum>
+  <summary>An xmlrpc library</summary>
+  <description>a simple xmlrpc library for java</description>
+  <packager></packager>
+  <url>http://xmlrpc.sourceforge.net</url>
+  <time file="1762530924" build="1762530922"/>
+  <size package="60120" installed="92851" archive="93684"/>
+  <location href="noarch/redstone-xmlrpc-1.1_20071120-0.12.8.uyuni3.noarch.rpm"/>
+  <format>
+    <rpm:license>LGPL-2.1+</rpm:license>
+    <rpm:vendor>obs://build.opensuse.org/systemsmanagement:Uyuni</rpm:vendor>
+    <rpm:group>Development/Libraries/Java</rpm:group>
+    <rpm:buildhost>i03-armsrv2</rpm:buildhost>
+    <rpm:sourcerpm>redstone-xmlrpc-1.1_20071120-0.12.8.uyuni3.src.rpm</rpm:sourcerpm>
+    <rpm:header-range start="4504" end="7712"/>
+    <rpm:provides>
+      <rpm:entry name="redstone-xmlrpc" flags="EQ" epoch="0" ver="1.1_20071120" rel="0.12.8.uyuni3"/>
+    </rpm:provides>
+    <rpm:requires>
+      <rpm:entry name="servletapi5"/>
+    </rpm:requires>
+    <rpm:obsoletes>
+      <rpm:entry name="marquee-xmlrpc"/>
+    </rpm:obsoletes>
+  </format>
+</package>
+<package type="rpm">
+  <name>redstone-xmlrpc</name>
+  <arch>src</arch>
+  <version epoch="0" ver="1.1_20071120" rel="0.12.8.uyuni3"/>
+  <checksum type="sha256" pkgid="YES">a6b85049bae462e01ec957ac208bc07cea6dbddc5c6c415e3056a8395c4b79dc</checksum>
+  <summary>An xmlrpc library</summary>
+  <description>a simple xmlrpc library for java</description>
+  <packager></packager>
+  <url>http://xmlrpc.sourceforge.net</url>
+  <time file="1762530924" build="1762530922"/>
+  <size package="204965" installed="201911" archive="203244"/>
+  <location href="src/redstone-xmlrpc-1.1_20071120-0.12.8.uyuni3.src.rpm"/>
+  <format>
+    <rpm:license>LGPL-2.1+</rpm:license>
+    <rpm:vendor>obs://build.opensuse.org/systemsmanagement:Uyuni</rpm:vendor>
+    <rpm:group>Development/Libraries/Java</rpm:group>
+    <rpm:buildhost>i03-armsrv2</rpm:buildhost>
+    <rpm:sourcerpm></rpm:sourcerpm>
+    <rpm:header-range start="4504" end="7960"/>
+    <rpm:requires>
+      <rpm:entry name="ant"/>
+      <rpm:entry name="java-devel" flags="GE" epoch="0" ver="1.7.0"/>
+      <rpm:entry name="jpackage-utils" flags="GE" epoch="0" ver="1.5"/>
+      <rpm:entry name="servletapi5"/>
+    </rpm:requires>
+  </format>
+</package>
+<package type="rpm">
+  <name>reflections</name>
+  <arch>noarch</arch>
+  <version epoch="0" ver="0.9.10" rel="1.8.uyuni3"/>
+  <checksum type="sha256" pkgid="YES">4f8eb29545daa84c615a959addbb0dca0333131ee17a7e71b0d517264646f4bf</checksum>
+  <summary>Reflections - a Java runtime metadata</summary>
+  <description>Reflections - a Java runtime metadata</description>
+  <packager></packager>
+  <url>http://github.com/ronmamo/reflections</url>
+  <time file="1762530930" build="1762530927"/>
+  <size package="129340" installed="134743" archive="135496"/>
+  <location href="noarch/reflections-0.9.10-1.8.uyuni3.noarch.rpm"/>
+  <format>
+    <rpm:license>WTFPL</rpm:license>
+    <rpm:vendor>obs://build.opensuse.org/systemsmanagement:Uyuni</rpm:vendor>
+    <rpm:group>Development/Libraries/Java</rpm:group>
+    <rpm:buildhost>i02-armsrv2</rpm:buildhost>
+    <rpm:sourcerpm>reflections-0.9.10-1.8.uyuni3.src.rpm</rpm:sourcerpm>
+    <rpm:header-range start="4504" end="7328"/>
+    <rpm:provides>
+      <rpm:entry name="mvn(org.reflections:reflections)" flags="EQ" epoch="0" ver="0.9.10"/>
+      <rpm:entry name="reflections" flags="EQ" epoch="0" ver="0.9.10" rel="1.8.uyuni3"/>
+    </rpm:provides>
+    <rpm:requires>
+      <rpm:entry name="java"/>
+      <rpm:entry name="mvn(com.google.guava:guava)"/>
+    </rpm:requires>
+  </format>
+</package>
+<package type="rpm">
+  <name>reflections</name>
+  <arch>src</arch>
+  <version epoch="0" ver="0.9.10" rel="1.8.uyuni3"/>
+  <checksum type="sha256" pkgid="YES">f8d898fc4dbf51711a245f584ace502185358e99e2312bab6e1fcb305d4e9c31</checksum>
+  <summary>Reflections - a Java runtime metadata</summary>
+  <description>Reflections - a Java runtime metadata</description>
+  <packager></packager>
+  <url>http://github.com/ronmamo/reflections</url>
+  <time file="1762530930" build="1762530927"/>
+  <size package="57004" installed="51421" archive="52076"/>
+  <location href="src/reflections-0.9.10-1.8.uyuni3.src.rpm"/>
+  <format>
+    <rpm:license>WTFPL</rpm:license>
+    <rpm:vendor>obs://build.opensuse.org/systemsmanagement:Uyuni</rpm:vendor>
+    <rpm:group>Development/Libraries/Java</rpm:group>
+    <rpm:buildhost>i02-armsrv2</rpm:buildhost>
+    <rpm:sourcerpm></rpm:sourcerpm>
+    <rpm:header-range start="4504" end="6824"/>
+    <rpm:requires>
+      <rpm:entry name="java-devel"/>
+      <rpm:entry name="reflections-kit" flags="EQ" epoch="0" ver="7a8b58ae143b655057a6742b4c948aa77c7230c4"/>
+    </rpm:requires>
+  </format>
+</package>
+<package type="rpm">
+  <name>reprepro</name>
+  <arch>aarch64</arch>
+  <version epoch="0" ver="5.4.0" rel="3.6.uyuni3"/>
+  <checksum type="sha256" pkgid="YES">8e48181023bb2c03bc66e34f8c53fe8f81511d04e7fc11f11066d3d6bf3bbd81</checksum>
+  <summary>Debian repository metadata generator</summary>
+  <description>reprepro is a tool to manage a repository of Debian packages (.deb).  It
+stores files either being injected manually or downloaded from some other
+repository (partially) mirrored into one pool/ hierarchy.  Managed packages
+and files are stored in a Berkeley DB, so no database server is needed.
+Checking signatures of mirrored repositories and creating signatures of the
+generated Package indexes is supported.</description>
+  <packager></packager>
+  <url>https://salsa.debian.org/debian/reprepro</url>
+  <time file="1763129809" build="1763129801"/>
+  <size package="446612" installed="1487233" archive="1492436"/>
+  <location href="aarch64/reprepro-5.4.0-3.6.uyuni3.aarch64.rpm"/>
+  <format>
+    <rpm:license>GPL-2.0-only AND GPL-2.0-or-later AND MIT</rpm:license>
+    <rpm:vendor>obs://build.opensuse.org/systemsmanagement:Uyuni</rpm:vendor>
+    <rpm:group>Unspecified</rpm:group>
+    <rpm:buildhost>i02-armsrv3</rpm:buildhost>
+    <rpm:sourcerpm>reprepro-5.4.0-3.6.uyuni3.src.rpm</rpm:sourcerpm>
+    <rpm:header-range start="4504" end="14352"/>
+    <rpm:provides>
+      <rpm:entry name="reprepro" flags="EQ" epoch="0" ver="5.4.0" rel="3.6.uyuni3"/>
+      <rpm:entry name="reprepro(aarch-64)" flags="EQ" epoch="0" ver="5.4.0" rel="3.6.uyuni3"/>
+    </rpm:provides>
+    <rpm:requires>
+      <rpm:entry name="bzip2"/>
+      <rpm:entry name="gpg2"/>
+      <rpm:entry name="ld-linux-aarch64.so.1()(64bit)"/>
+      <rpm:entry name="ld-linux-aarch64.so.1(GLIBC_2.17)(64bit)"/>
+      <rpm:entry name="libarchive.so.13()(64bit)"/>
+      <rpm:entry name="libbz2.so.1()(64bit)"/>
+      <rpm:entry name="libdb-4.8.so()(64bit)"/>
+      <rpm:entry name="libgpg-error.so.0()(64bit)"/>
+      <rpm:entry name="libgpg-error.so.0(GPG_ERROR_1.0)(64bit)"/>
+      <rpm:entry name="libgpgme.so.11()(64bit)"/>
+      <rpm:entry name="libgpgme.so.11(GPGME_1.0)(64bit)"/>
+      <rpm:entry name="libgpgme.so.11(GPGME_1.1)(64bit)"/>
+      <rpm:entry name="liblzma.so.5()(64bit)"/>
+      <rpm:entry name="liblzma.so.5(XZ_5.0)(64bit)"/>
+      <rpm:entry name="libz.so.1()(64bit)"/>
+      <rpm:entry name="libz.so.1(ZLIB_1.2.0.2)(64bit)"/>
+      <rpm:entry name="tar"/>
+      <rpm:entry name="zstd"/>
+      <rpm:entry name="libc.so.6(GLIBC_2.38)(64bit)"/>
+    </rpm:requires>
+    <file>/usr/bin/changestool</file>
+    <file>/usr/bin/reprepro</file>
+    <file>/usr/bin/rredtool</file>
+  </format>
+</package>
+<package type="rpm">
+  <name>reprepro</name>
+  <arch>src</arch>
+  <version epoch="0" ver="5.4.0" rel="3.6.uyuni3"/>
+  <checksum type="sha256" pkgid="YES">e0afddb0180b5c5b37588a08c1e915e8d6c8a2ce5baf5183b2b0f4c1546ea8c8</checksum>
+  <summary>Debian repository metadata generator</summary>
+  <description>reprepro is a tool to manage a repository of Debian packages (.deb).  It
+stores files either being injected manually or downloaded from some other
+repository (partially) mirrored into one pool/ hierarchy.  Managed packages
+and files are stored in a Berkeley DB, so no database server is needed.
+Checking signatures of mirrored repositories and creating signatures of the
+generated Package indexes is supported.</description>
+  <packager></packager>
+  <url>https://salsa.debian.org/debian/reprepro</url>
+  <time file="1763125597" build="1763125585"/>
+  <size package="469580" installed="462557" archive="462948"/>
+  <location href="src/reprepro-5.4.0-3.6.uyuni3.src.rpm"/>
+  <format>
+    <rpm:license>GPL-2.0-only AND GPL-2.0-or-later AND MIT</rpm:license>
+    <rpm:vendor>obs://build.opensuse.org/systemsmanagement:Uyuni</rpm:vendor>
+    <rpm:group>Unspecified</rpm:group>
+    <rpm:buildhost>i02-ch2a</rpm:buildhost>
+    <rpm:sourcerpm></rpm:sourcerpm>
+    <rpm:header-range start="4504" end="8288"/>
+    <rpm:requires>
+      <rpm:entry name="automake"/>
+      <rpm:entry name="gcc"/>
+      <rpm:entry name="gpgme-devel"/>
+      <rpm:entry name="libarchive-devel"/>
+      <rpm:entry name="libbz2-devel"/>
+      <rpm:entry name="libdb-4_8-devel"/>
+      <rpm:entry name="libzstd-devel"/>
+      <rpm:entry name="xz-devel"/>
+      <rpm:entry name="zlib-devel"/>
+    </rpm:requires>
+  </format>
+</package>
+<package type="rpm">
+  <name>reprepro</name>
+  <arch>x86_64</arch>
+  <version epoch="0" ver="5.4.0" rel="3.6.uyuni3"/>
+  <checksum type="sha256" pkgid="YES">3e5ba26137bf341be8d991da88f6610e230502d4bb2dcf08ed2a0e9e692b065f</checksum>
+  <summary>Debian repository metadata generator</summary>
+  <description>reprepro is a tool to manage a repository of Debian packages (.deb).  It
+stores files either being injected manually or downloaded from some other
+repository (partially) mirrored into one pool/ hierarchy.  Managed packages
+and files are stored in a Berkeley DB, so no database server is needed.
+Checking signatures of mirrored repositories and creating signatures of the
+generated Package indexes is supported.</description>
+  <packager></packager>
+  <url>https://salsa.debian.org/debian/reprepro</url>
+  <time file="1763125597" build="1763125585"/>
+  <size package="457604" installed="1322193" archive="1327396"/>
+  <location href="x86_64/reprepro-5.4.0-3.6.uyuni3.x86_64.rpm"/>
+  <format>
+    <rpm:license>GPL-2.0-only AND GPL-2.0-or-later AND MIT</rpm:license>
+    <rpm:vendor>obs://build.opensuse.org/systemsmanagement:Uyuni</rpm:vendor>
+    <rpm:group>Unspecified</rpm:group>
+    <rpm:buildhost>i02-ch2a</rpm:buildhost>
+    <rpm:sourcerpm>reprepro-5.4.0-3.6.uyuni3.src.rpm</rpm:sourcerpm>
+    <rpm:header-range start="4504" end="14568"/>
+    <rpm:provides>
+      <rpm:entry name="reprepro" flags="EQ" epoch="0" ver="5.4.0" rel="3.6.uyuni3"/>
+      <rpm:entry name="reprepro(x86-64)" flags="EQ" epoch="0" ver="5.4.0" rel="3.6.uyuni3"/>
+    </rpm:provides>
+    <rpm:requires>
+      <rpm:entry name="bzip2"/>
+      <rpm:entry name="gpg2"/>
+      <rpm:entry name="libarchive.so.13()(64bit)"/>
+      <rpm:entry name="libbz2.so.1()(64bit)"/>
+      <rpm:entry name="libdb-4.8.so()(64bit)"/>
+      <rpm:entry name="libgpg-error.so.0()(64bit)"/>
+      <rpm:entry name="libgpg-error.so.0(GPG_ERROR_1.0)(64bit)"/>
+      <rpm:entry name="libgpgme.so.11()(64bit)"/>
+      <rpm:entry name="libgpgme.so.11(GPGME_1.0)(64bit)"/>
+      <rpm:entry name="libgpgme.so.11(GPGME_1.1)(64bit)"/>
+      <rpm:entry name="liblzma.so.5()(64bit)"/>
+      <rpm:entry name="liblzma.so.5(XZ_5.0)(64bit)"/>
+      <rpm:entry name="libz.so.1()(64bit)"/>
+      <rpm:entry name="libz.so.1(ZLIB_1.2.0.2)(64bit)"/>
+      <rpm:entry name="tar"/>
+      <rpm:entry name="zstd"/>
+      <rpm:entry name="libc.so.6(GLIBC_2.38)(64bit)"/>
+    </rpm:requires>
+    <file>/usr/bin/changestool</file>
+    <file>/usr/bin/reprepro</file>
+    <file>/usr/bin/rredtool</file>
+  </format>
+</package>
+<package type="rpm">
+  <name>simple-core</name>
+  <arch>aarch64</arch>
+  <version epoch="0" ver="3.1.3" rel="0.11.8.uyuni3"/>
+  <checksum type="sha256" pkgid="YES">95ff66ba4492e94aa44fe848cfd51cf9e9e7b395942e258f162a5f69512de131</checksum>
+  <summary>Embeddable Java HTTP engine capable of handling large loads</summary>
+  <description>The core API consists of a simple.http package and various
+sub-packages, it also contains various utilities. This is all that is
+required to develop HTTP services.</description>
+  <packager></packager>
+  <url>http://www.simpleframework.org</url>
+  <time file="1762530962" build="1762530958"/>
+  <size package="172512" installed="214952" archive="217028"/>
+  <location href="aarch64/simple-core-3.1.3-0.11.8.uyuni3.aarch64.rpm"/>
+  <format>
+    <rpm:license>LGPL-2.1-or-later</rpm:license>
+    <rpm:vendor>obs://build.opensuse.org/systemsmanagement:Uyuni</rpm:vendor>
+    <rpm:group>Development/Libraries/Java</rpm:group>
+    <rpm:buildhost>i03-armsrv1</rpm:buildhost>
+    <rpm:sourcerpm>simple-core-3.1.3-0.11.8.uyuni3.src.rpm</rpm:sourcerpm>
+    <rpm:header-range start="4504" end="8776"/>
+    <rpm:provides>
+      <rpm:entry name="simple-core" flags="EQ" epoch="0" ver="3.1.3" rel="0.11.8.uyuni3"/>
+      <rpm:entry name="simple-core(aarch-64)" flags="EQ" epoch="0" ver="3.1.3" rel="0.11.8.uyuni3"/>
+    </rpm:provides>
+    <rpm:requires>
+      <rpm:entry name="java" flags="GE" epoch="0" ver="1.7"/>
+      <rpm:entry name="kxml"/>
+      <rpm:entry name="xmlpull-api"/>
+    </rpm:requires>
+  </format>
+</package>
+<package type="rpm">
+  <name>simple-core</name>
+  <arch>src</arch>
+  <version epoch="0" ver="3.1.3" rel="0.11.8.uyuni3"/>
+  <checksum type="sha256" pkgid="YES">cc97ba600645185b7cce10d836aca2baad043bfe1b3e86e6ef8c85cb48dc9faf</checksum>
+  <summary>Embeddable Java HTTP engine capable of handling large loads</summary>
+  <description>The core API consists of a simple.http package and various
+sub-packages, it also contains various utilities. This is all that is
+required to develop HTTP services.</description>
+  <packager></packager>
+  <url>http://www.simpleframework.org</url>
+  <time file="1762530962" build="1762530958"/>
+  <size package="490733" installed="485358" archive="485876"/>
+  <location href="src/simple-core-3.1.3-0.11.8.uyuni3.src.rpm"/>
+  <format>
+    <rpm:license>LGPL-2.1-or-later</rpm:license>
+    <rpm:vendor>obs://build.opensuse.org/systemsmanagement:Uyuni</rpm:vendor>
+    <rpm:group>Development/Libraries/Java</rpm:group>
+    <rpm:buildhost>i03-armsrv1</rpm:buildhost>
+    <rpm:sourcerpm></rpm:sourcerpm>
+    <rpm:header-range start="4504" end="7048"/>
+    <rpm:requires>
+      <rpm:entry name="ant"/>
+      <rpm:entry name="java-devel" flags="GE" epoch="0" ver="1.7.0"/>
+      <rpm:entry name="kxml"/>
+      <rpm:entry name="xmlpull-api"/>
+    </rpm:requires>
+  </format>
+</package>
+<package type="rpm">
+  <name>simple-core</name>
+  <arch>x86_64</arch>
+  <version epoch="0" ver="3.1.3" rel="0.11.8.uyuni3"/>
+  <checksum type="sha256" pkgid="YES">e0a787f4e03237cb882d1f86002e5738cc7807fe98bd0e5b7a4f73a7a36aa4b5</checksum>
+  <summary>Embeddable Java HTTP engine capable of handling large loads</summary>
+  <description>The core API consists of a simple.http package and various
+sub-packages, it also contains various utilities. This is all that is
+required to develop HTTP services.</description>
+  <packager></packager>
+  <url>http://www.simpleframework.org</url>
+  <time file="1762531103" build="1762531099"/>
+  <size package="172520" installed="214952" archive="217028"/>
+  <location href="x86_64/simple-core-3.1.3-0.11.8.uyuni3.x86_64.rpm"/>
+  <format>
+    <rpm:license>LGPL-2.1-or-later</rpm:license>
+    <rpm:vendor>obs://build.opensuse.org/systemsmanagement:Uyuni</rpm:vendor>
+    <rpm:group>Development/Libraries/Java</rpm:group>
+    <rpm:buildhost>h02-ch1a</rpm:buildhost>
+    <rpm:sourcerpm>simple-core-3.1.3-0.11.8.uyuni3.src.rpm</rpm:sourcerpm>
+    <rpm:header-range start="4504" end="8768"/>
+    <rpm:provides>
+      <rpm:entry name="simple-core" flags="EQ" epoch="0" ver="3.1.3" rel="0.11.8.uyuni3"/>
+      <rpm:entry name="simple-core(x86-64)" flags="EQ" epoch="0" ver="3.1.3" rel="0.11.8.uyuni3"/>
+    </rpm:provides>
+    <rpm:requires>
+      <rpm:entry name="java" flags="GE" epoch="0" ver="1.7"/>
+      <rpm:entry name="kxml"/>
+      <rpm:entry name="xmlpull-api"/>
+    </rpm:requires>
+  </format>
+</package>
+<package type="rpm">
+  <name>simplexml</name>
+  <arch>noarch</arch>
+  <version epoch="0" ver="2.7.1" rel="1.1.uyuni3"/>
+  <checksum type="sha256" pkgid="YES">7042bdbcc9b5c398d91b96e587ca0bd95eac2204423dbe2583d9ec88bd75cd7b</checksum>
+  <summary>Simple XML</summary>
+  <description>Simple is a high performance XML serialization and configuration framework for
+Java. Its goal is to provide an XML framework that enables rapid development of
+XML configuration and communication systems. This framework aids the
+development of XML systems with minimal effort and reduced errors. It offers
+full object serialization and deserialization, maintaining each reference
+encountered. In essence it is similar to C# XML serialization for the Java
+platform, but offers additional features for interception and manipulation.</description>
+  <packager></packager>
+  <url>https://github.com/ngallagher/simplexml</url>
+  <time file="1764317530" build="1764317526"/>
+  <size package="382048" installed="438738" archive="440244"/>
+  <location href="noarch/simplexml-2.7.1-1.1.uyuni3.noarch.rpm"/>
+  <format>
+    <rpm:license>Apache-2.0</rpm:license>
+    <rpm:vendor>obs://build.opensuse.org/systemsmanagement:Uyuni</rpm:vendor>
+    <rpm:group>Development/Libraries/Java</rpm:group>
+    <rpm:buildhost>h02-ch1d</rpm:buildhost>
+    <rpm:sourcerpm>simplexml-2.7.1-1.1.uyuni3.src.rpm</rpm:sourcerpm>
+    <rpm:header-range start="4504" end="8728"/>
+    <rpm:provides>
+      <rpm:entry name="mvn(org.simpleframework:simple-xml)" flags="EQ" epoch="0" ver="2.7.1"/>
+      <rpm:entry name="mvn(org.simpleframework:simple-xml:pom:)" flags="EQ" epoch="0" ver="2.7.1"/>
+      <rpm:entry name="simplexml" flags="EQ" epoch="0" ver="2.7.1" rel="1.1.uyuni3"/>
+    </rpm:provides>
+    <rpm:requires>
+      <rpm:entry name="java-headless" flags="GE" epoch="0" ver="1.8"/>
+      <rpm:entry name="javapackages-filesystem"/>
+      <rpm:entry name="mvn(xpp3:xpp3)"/>
+    </rpm:requires>
+  </format>
+</package>
+<package type="rpm">
+  <name>simplexml</name>
+  <arch>src</arch>
+  <version epoch="0" ver="2.7.1" rel="1.1.uyuni3"/>
+  <checksum type="sha256" pkgid="YES">d5345453e46064a2174e79f5d67b78598215dc7eb6af44fd7c2183b068ca7437</checksum>
+  <summary>Simple XML</summary>
+  <description>Simple is a high performance XML serialization and configuration framework for
+Java. Its goal is to provide an XML framework that enables rapid development of
+XML configuration and communication systems. This framework aids the
+development of XML systems with minimal effort and reduced errors. It offers
+full object serialization and deserialization, maintaining each reference
+encountered. In essence it is similar to C# XML serialization for the Java
+platform, but offers additional features for interception and manipulation.</description>
+  <packager></packager>
+  <url>https://github.com/ngallagher/simplexml</url>
+  <time file="1764317531" build="1764317526"/>
+  <size package="10470987" installed="10462935" archive="10463324"/>
+  <location href="src/simplexml-2.7.1-1.1.uyuni3.src.rpm"/>
+  <format>
+    <rpm:license>Apache-2.0</rpm:license>
+    <rpm:vendor>obs://build.opensuse.org/systemsmanagement:Uyuni</rpm:vendor>
+    <rpm:group>Development/Libraries/Java</rpm:group>
+    <rpm:buildhost>h02-ch1d</rpm:buildhost>
+    <rpm:sourcerpm></rpm:sourcerpm>
+    <rpm:header-range start="4504" end="7020"/>
+    <rpm:requires>
+      <rpm:entry name="fdupes"/>
+      <rpm:entry name="maven-local"/>
+      <rpm:entry name="mvn(org.apache.maven.wagon:wagon-ssh-external)"/>
+      <rpm:entry name="mvn(xpp3:xpp3)"/>
+    </rpm:requires>
+  </format>
+</package>
+<package type="rpm">
+  <name>simplexml-javadoc</name>
+  <arch>noarch</arch>
+  <version epoch="0" ver="2.7.1" rel="1.1.uyuni3"/>
+  <checksum type="sha256" pkgid="YES">4e1675b88199c22e8b822bd0cae1b29c1e72f9cf2120d4cb24263df7334ca89b</checksum>
+  <summary>API documentation for simplexml</summary>
+  <description>API documentation for simplexml.</description>
+  <packager></packager>
+  <url>https://github.com/ngallagher/simplexml</url>
+  <time file="1764317531" build="1764317526"/>
+  <size package="893636" installed="15865085" archive="16029340"/>
+  <location href="noarch/simplexml-javadoc-2.7.1-1.1.uyuni3.noarch.rpm"/>
+  <format>
+    <rpm:license>Apache-2.0</rpm:license>
+    <rpm:vendor>obs://build.opensuse.org/systemsmanagement:Uyuni</rpm:vendor>
+    <rpm:group>Documentation/HTML</rpm:group>
+    <rpm:buildhost>h02-ch1d</rpm:buildhost>
+    <rpm:sourcerpm>simplexml-2.7.1-1.1.uyuni3.src.rpm</rpm:sourcerpm>
+    <rpm:header-range start="4504" end="124824"/>
+    <rpm:provides>
+      <rpm:entry name="simplexml-javadoc" flags="EQ" epoch="0" ver="2.7.1" rel="1.1.uyuni3"/>
+    </rpm:provides>
+    <rpm:requires>
+      <rpm:entry name="javapackages-filesystem"/>
+    </rpm:requires>
+  </format>
+</package>
+<package type="rpm">
+  <name>sitemesh</name>
+  <arch>noarch</arch>
+  <version epoch="0" ver="2.1" rel="0.12.60.uyuni3"/>
+  <checksum type="sha256" pkgid="YES">3f6507b943cf89dd3a4ba22c8be3b9b1ec20fe6b042916cd411fd5af9106ca8b</checksum>
+  <summary>A web layout and application integration framework</summary>
+  <description>SiteMesh is a web-page layout and decoration framework and web-
+application integration framework to aid in creating large sites
+consisting of many pages for which a consistent look/feel, navigation
+and layout scheme is required.</description>
+  <packager></packager>
+  <url>http://www.opensymphony.com/sitemesh/</url>
+  <time file="1765470293" build="1765470287"/>
+  <size package="101896" installed="106809" archive="107236"/>
+  <location href="noarch/sitemesh-2.1-0.12.60.uyuni3.noarch.rpm"/>
+  <format>
+    <rpm:license>Apache-2.0</rpm:license>
+    <rpm:vendor>obs://build.opensuse.org/systemsmanagement:Uyuni</rpm:vendor>
+    <rpm:group>Development/Libraries/Java</rpm:group>
+    <rpm:buildhost>i02-armsrv1</rpm:buildhost>
+    <rpm:sourcerpm>sitemesh-2.1-0.12.60.uyuni3.src.rpm</rpm:sourcerpm>
+    <rpm:header-range start="4504" end="7592"/>
+    <rpm:provides>
+      <rpm:entry name="sitemesh" flags="EQ" epoch="0" ver="2.1" rel="0.12.60.uyuni3"/>
+    </rpm:provides>
+  </format>
+</package>
+<package type="rpm">
+  <name>sitemesh</name>
+  <arch>src</arch>
+  <version epoch="0" ver="2.1" rel="0.12.60.uyuni3"/>
+  <checksum type="sha256" pkgid="YES">590d714e43d4202e48a04885aa56c7596c061eab22da2704824b0fbe68cd10c8</checksum>
+  <summary>A web layout and application integration framework</summary>
+  <description>SiteMesh is a web-page layout and decoration framework and web-
+application integration framework to aid in creating large sites
+consisting of many pages for which a consistent look/feel, navigation
+and layout scheme is required.</description>
+  <packager></packager>
+  <url>http://www.opensymphony.com/sitemesh/</url>
+  <time file="1765470293" build="1765470287"/>
+  <size package="2812426" installed="2848561" archive="2849488"/>
+  <location href="src/sitemesh-2.1-0.12.60.uyuni3.src.rpm"/>
+  <format>
+    <rpm:license>Apache-2.0</rpm:license>
+    <rpm:vendor>obs://build.opensuse.org/systemsmanagement:Uyuni</rpm:vendor>
+    <rpm:group>Development/Libraries/Java</rpm:group>
+    <rpm:buildhost>i02-armsrv1</rpm:buildhost>
+    <rpm:sourcerpm></rpm:sourcerpm>
+    <rpm:header-range start="4504" end="7856"/>
+    <rpm:requires>
+      <rpm:entry name="ant-junit"/>
+      <rpm:entry name="apache-commons-collections"/>
+      <rpm:entry name="fdupes"/>
+      <rpm:entry name="java-devel"/>
+      <rpm:entry name="junit"/>
+      <rpm:entry name="servletapi4"/>
+      <rpm:entry name="unzip"/>
+      <rpm:entry name="xerces-j2"/>
+    </rpm:requires>
+  </format>
+</package>
+<package type="rpm">
+  <name>sitemesh-javadoc</name>
+  <arch>noarch</arch>
+  <version epoch="0" ver="2.1" rel="0.12.60.uyuni3"/>
+  <checksum type="sha256" pkgid="YES">31b7693622bcb74b51b8c7f6b4b7cd5b8b3523460360896b2e9cd965c9796535</checksum>
+  <summary>Javadoc for sitemesh</summary>
+  <description>Javadoc for sitemesh.</description>
+  <packager></packager>
+  <url>http://www.opensymphony.com/sitemesh/</url>
+  <time file="1765470293" build="1765470287"/>
+  <size package="343364" installed="3405035" archive="3449004"/>
+  <location href="noarch/sitemesh-javadoc-2.1-0.12.60.uyuni3.noarch.rpm"/>
+  <format>
+    <rpm:license>Apache-2.0</rpm:license>
+    <rpm:vendor>obs://build.opensuse.org/systemsmanagement:Uyuni</rpm:vendor>
+    <rpm:group>Development/Documentation</rpm:group>
+    <rpm:buildhost>i02-armsrv1</rpm:buildhost>
+    <rpm:sourcerpm>sitemesh-2.1-0.12.60.uyuni3.src.rpm</rpm:sourcerpm>
+    <rpm:header-range start="4504" end="36624"/>
+    <rpm:provides>
+      <rpm:entry name="sitemesh-javadoc" flags="EQ" epoch="0" ver="2.1" rel="0.12.60.uyuni3"/>
+    </rpm:provides>
+    <rpm:requires>
+      <rpm:entry name="/bin/sh" pre="1"/>
+      <rpm:entry name="/bin/sh"/>
+    </rpm:requires>
+  </format>
+</package>
+<package type="rpm">
+  <name>spark-core</name>
+  <arch>noarch</arch>
+  <version epoch="0" ver="2.9.3" rel="3.16.uyuni3"/>
+  <checksum type="sha256" pkgid="YES">3e3dcace79c8c8877c5a1e0325ce67d716b2b8f4a744e19d17aae01c9e2cc330</checksum>
+  <summary>A Sinatra inspired java web framework</summary>
+  <description>A Sinatra inspired framework for creating web applications in Java with minimal effort</description>
+  <packager></packager>
+  <url>http://www.sparkjava.com</url>
+  <time file="1766158269" build="1766158262"/>
+  <size package="139012" installed="154837" archive="156016"/>
+  <location href="noarch/spark-core-2.9.3-3.16.uyuni3.noarch.rpm"/>
+  <format>
+    <rpm:license>Apache-2.0</rpm:license>
+    <rpm:vendor>obs://build.opensuse.org/systemsmanagement:Uyuni</rpm:vendor>
+    <rpm:group>Development/Libraries/Java</rpm:group>
+    <rpm:buildhost>i02-armsrv1</rpm:buildhost>
+    <rpm:sourcerpm>spark-core-2.9.3-3.16.uyuni3.src.rpm</rpm:sourcerpm>
+    <rpm:header-range start="4504" end="9296"/>
+    <rpm:provides>
+      <rpm:entry name="mvn(com.sparkjava:spark-core)" flags="EQ" epoch="0" ver="2.9.3"/>
+      <rpm:entry name="mvn(com.sparkjava:spark-core:pom:)" flags="EQ" epoch="0" ver="2.9.3"/>
+      <rpm:entry name="osgi(com.sparkjava.spark-core)" flags="EQ" epoch="0" ver="2.9.3"/>
+      <rpm:entry name="spark" flags="EQ" epoch="0" ver="2.9.3"/>
+      <rpm:entry name="spark-core" flags="EQ" epoch="0" ver="2.9.3" rel="3.16.uyuni3"/>
+    </rpm:provides>
+    <rpm:requires>
+      <rpm:entry name="java" flags="GE" epoch="0" ver="11"/>
+      <rpm:entry name="java-headless" flags="GE" epoch="0" ver="11"/>
+      <rpm:entry name="javapackages-filesystem"/>
+      <rpm:entry name="mvn(org.slf4j:slf4j-api)"/>
+    </rpm:requires>
+    <rpm:obsoletes>
+      <rpm:entry name="spark" flags="LT" epoch="0" ver="2.9.3"/>
+    </rpm:obsoletes>
+  </format>
+</package>
+<package type="rpm">
+  <name>spark-core</name>
+  <arch>src</arch>
+  <version epoch="0" ver="2.9.3" rel="3.16.uyuni3"/>
+  <checksum type="sha256" pkgid="YES">ae4a251c8514daee187acd59ba44913951bda50f49bf15e911193e0080dc9cda</checksum>
+  <summary>A Sinatra inspired java web framework</summary>
+  <description>A Sinatra inspired framework for creating web applications in Java with minimal effort</description>
+  <packager></packager>
+  <url>http://www.sparkjava.com</url>
+  <time file="1766158269" build="1766158262"/>
+  <size package="246282" installed="457667" archive="458188"/>
+  <location href="src/spark-core-2.9.3-3.16.uyuni3.src.rpm"/>
+  <format>
+    <rpm:license>Apache-2.0</rpm:license>
+    <rpm:vendor>obs://build.opensuse.org/systemsmanagement:Uyuni</rpm:vendor>
+    <rpm:group>Development/Libraries/Java</rpm:group>
+    <rpm:buildhost>i02-armsrv1</rpm:buildhost>
+    <rpm:sourcerpm></rpm:sourcerpm>
+    <rpm:header-range start="4504" end="8000"/>
+    <rpm:requires>
+      <rpm:entry name="fdupes"/>
+      <rpm:entry name="maven-local"/>
+      <rpm:entry name="mvn(javax.servlet:javax.servlet-api)"/>
+      <rpm:entry name="mvn(org.apache.felix:maven-bundle-plugin)"/>
+      <rpm:entry name="mvn(org.slf4j:slf4j-api)"/>
+      <rpm:entry name="mvn(org.sonatype.oss:oss-parent:pom:)"/>
+    </rpm:requires>
+  </format>
+</package>
+<package type="rpm">
+  <name>spark-core-javadoc</name>
+  <arch>noarch</arch>
+  <version epoch="0" ver="2.9.3" rel="3.16.uyuni3"/>
+  <checksum type="sha256" pkgid="YES">62ee398d1f57be5af6948c47d912b3daea3e748c0fabadf0a24ae1847f6f5631</checksum>
+  <summary>Javadoc for spark-core</summary>
+  <description>This package contains javadoc for spark-core</description>
+  <packager></packager>
+  <url>http://www.sparkjava.com</url>
+  <time file="1766158269" build="1766158262"/>
+  <size package="415388" installed="4482898" archive="4536388"/>
+  <location href="noarch/spark-core-javadoc-2.9.3-3.16.uyuni3.noarch.rpm"/>
+  <format>
+    <rpm:license>Apache-2.0</rpm:license>
+    <rpm:vendor>obs://build.opensuse.org/systemsmanagement:Uyuni</rpm:vendor>
+    <rpm:group>Development/Libraries/Java</rpm:group>
+    <rpm:buildhost>i02-armsrv1</rpm:buildhost>
+    <rpm:sourcerpm>spark-core-2.9.3-3.16.uyuni3.src.rpm</rpm:sourcerpm>
+    <rpm:header-range start="4504" end="49788"/>
+    <rpm:provides>
+      <rpm:entry name="spark-core-javadoc" flags="EQ" epoch="0" ver="2.9.3" rel="3.16.uyuni3"/>
+    </rpm:provides>
+    <rpm:requires>
+      <rpm:entry name="javapackages-filesystem"/>
+    </rpm:requires>
+  </format>
+</package>
+<package type="rpm">
+  <name>spark-template-jade</name>
+  <arch>noarch</arch>
+  <version epoch="0" ver="2.7.1" rel="2.5.uyuni3"/>
+  <checksum type="sha256" pkgid="YES">642c21ce87bbe538392e1601b8cdeb007b95a8ec8a30631298496f9ad3f233df</checksum>
+  <summary>Spark templating system using jade4j</summary>
+  <description>Spark templating system using jade4j</description>
+  <packager>https://www.suse.com/</packager>
+  <url>http://www.sparkjava.com</url>
+  <time file="1730483108" build="1730483099"/>
+  <size package="15924" installed="19928" archive="21208"/>
+  <location href="noarch/spark-template-jade-2.7.1-2.5.uyuni3.noarch.rpm"/>
+  <format>
+    <rpm:license>Apache-2.0</rpm:license>
+    <rpm:vendor>obs://build.opensuse.org/systemsmanagement:Uyuni</rpm:vendor>
+    <rpm:group>Development/Libraries/Java</rpm:group>
+    <rpm:buildhost>h02-ch2a</rpm:buildhost>
+    <rpm:sourcerpm>spark-template-jade-2.7.1-2.5.uyuni3.src.rpm</rpm:sourcerpm>
+    <rpm:header-range start="4504" end="8152"/>
+    <rpm:provides>
+      <rpm:entry name="mvn(com.sparkjava:spark-template-jade)" flags="EQ" epoch="0" ver="2.7.1"/>
+      <rpm:entry name="mvn(com.sparkjava:spark-template-jade:pom:)" flags="EQ" epoch="0" ver="2.7.1"/>
+      <rpm:entry name="spark-template-jade" flags="EQ" epoch="0" ver="2.7.1" rel="2.5.uyuni3"/>
+    </rpm:provides>
+    <rpm:requires>
+      <rpm:entry name="java"/>
+      <rpm:entry name="java-headless" flags="GE" epoch="0" ver="1.8"/>
+      <rpm:entry name="javapackages-filesystem"/>
+      <rpm:entry name="mvn(com.sparkjava:spark-core)"/>
+      <rpm:entry name="mvn(de.neuland-bfi:jade4j)"/>
+    </rpm:requires>
+  </format>
+</package>
+<package type="rpm">
+  <name>spark-template-jade</name>
+  <arch>src</arch>
+  <version epoch="0" ver="2.7.1" rel="2.5.uyuni3"/>
+  <checksum type="sha256" pkgid="YES">283d487fc35aaa1d0710fe6fb8d7c458885f6f7e95e851de797ad2ef059a38d8</checksum>
+  <summary>Spark templating system using jade4j</summary>
+  <description>Spark templating system using jade4j</description>
+  <packager>https://www.suse.com/</packager>
+  <url>http://www.sparkjava.com</url>
+  <time file="1730483108" build="1730483099"/>
+  <size package="54921" installed="52863" archive="53276"/>
+  <location href="src/spark-template-jade-2.7.1-2.5.uyuni3.src.rpm"/>
+  <format>
+    <rpm:license>Apache-2.0</rpm:license>
+    <rpm:vendor>obs://build.opensuse.org/systemsmanagement:Uyuni</rpm:vendor>
+    <rpm:group>Development/Libraries/Java</rpm:group>
+    <rpm:buildhost>h02-ch2a</rpm:buildhost>
+    <rpm:sourcerpm></rpm:sourcerpm>
+    <rpm:header-range start="4504" end="6844"/>
+    <rpm:requires>
+      <rpm:entry name="fdupes"/>
+      <rpm:entry name="maven-local"/>
+      <rpm:entry name="mvn(com.sparkjava:spark-core)"/>
+      <rpm:entry name="mvn(de.neuland-bfi:jade4j)"/>
+      <rpm:entry name="mvn(org.eclipse.jetty.websocket:websocket-server)"/>
+      <rpm:entry name="mvn(org.eclipse.jetty.websocket:websocket-servlet)"/>
+      <rpm:entry name="mvn(org.eclipse.jetty:jetty-server)"/>
+      <rpm:entry name="mvn(org.eclipse.jetty:jetty-webapp)"/>
+      <rpm:entry name="mvn(org.sonatype.oss:oss-parent:pom:)"/>
+    </rpm:requires>
+  </format>
+</package>
+<package type="rpm">
+  <name>spark-template-jade-javadoc</name>
+  <arch>noarch</arch>
+  <version epoch="0" ver="2.7.1" rel="2.5.uyuni3"/>
+  <checksum type="sha256" pkgid="YES">016e2f548f03a9263d692989557ff8a4d9e7e7adc00fdc7071b09dc20f23366b</checksum>
+  <summary>Javadoc for spark-template-jade</summary>
+  <description>This package contains javadoc for spark-template-jade</description>
+  <packager>https://www.suse.com/</packager>
+  <url>http://www.sparkjava.com</url>
+  <time file="1730483108" build="1730483099"/>
+  <size package="238212" installed="1057641" archive="1068480"/>
+  <location href="noarch/spark-template-jade-javadoc-2.7.1-2.5.uyuni3.noarch.rpm"/>
+  <format>
+    <rpm:license>Apache-2.0</rpm:license>
+    <rpm:vendor>obs://build.opensuse.org/systemsmanagement:Uyuni</rpm:vendor>
+    <rpm:group>Development/Libraries/Java</rpm:group>
+    <rpm:buildhost>h02-ch2a</rpm:buildhost>
+    <rpm:sourcerpm>spark-template-jade-2.7.1-2.5.uyuni3.src.rpm</rpm:sourcerpm>
+    <rpm:header-range start="4504" end="15500"/>
+    <rpm:provides>
+      <rpm:entry name="spark-template-jade-javadoc" flags="EQ" epoch="0" ver="2.7.1" rel="2.5.uyuni3"/>
+    </rpm:provides>
+    <rpm:requires>
+      <rpm:entry name="javapackages-filesystem"/>
+    </rpm:requires>
+  </format>
+</package>
+<package type="rpm">
+  <name>statistics</name>
+  <arch>noarch</arch>
+  <version epoch="0" ver="1.0.2" rel="1.117.uyuni3"/>
+  <checksum type="sha256" pkgid="YES">f5e08c782060c8a82273b093ae187bdffd4ce660717c25a54c189a538c967f7d</checksum>
+  <summary>A Java statistics framework used inside Ehcache</summary>
+  <description>A statistics framework for Java used inside Ehcache and the Terracotta products.</description>
+  <packager></packager>
+  <url>https://github.com/Terracotta-OSS/statistics</url>
+  <time file="1766158315" build="1766158312"/>
+  <size package="93936" installed="103596" archive="104032"/>
+  <location href="noarch/statistics-1.0.2-1.117.uyuni3.noarch.rpm"/>
+  <format>
+    <rpm:license>Apache-2.0</rpm:license>
+    <rpm:vendor>obs://build.opensuse.org/systemsmanagement:Uyuni</rpm:vendor>
+    <rpm:group>Development/Libraries/Java</rpm:group>
+    <rpm:buildhost>i02-armsrv3</rpm:buildhost>
+    <rpm:sourcerpm>statistics-1.0.2-1.117.uyuni3.src.rpm</rpm:sourcerpm>
+    <rpm:header-range start="4504" end="7024"/>
+    <rpm:provides>
+      <rpm:entry name="mvn(org.terracotta.internal:statistics)" flags="EQ" epoch="0" ver="1.0.2"/>
+      <rpm:entry name="statistics" flags="EQ" epoch="0" ver="1.0.2" rel="1.117.uyuni3"/>
+    </rpm:provides>
+    <rpm:requires>
+      <rpm:entry name="java"/>
+      <rpm:entry name="osgi(slf4j.api)"/>
+    </rpm:requires>
+  </format>
+</package>
+<package type="rpm">
+  <name>statistics</name>
+  <arch>src</arch>
+  <version epoch="0" ver="1.0.2" rel="1.117.uyuni3"/>
+  <checksum type="sha256" pkgid="YES">76090dc1200bfb0105bafb6d33f5eb552d3137725ab4ec11447b3946d3f305e8</checksum>
+  <summary>A Java statistics framework used inside Ehcache</summary>
+  <description>A statistics framework for Java used inside Ehcache and the Terracotta products.</description>
+  <packager></packager>
+  <url>https://github.com/Terracotta-OSS/statistics</url>
+  <time file="1766158315" build="1766158312"/>
+  <size package="57515" installed="51970" archive="52644"/>
+  <location href="src/statistics-1.0.2-1.117.uyuni3.src.rpm"/>
+  <format>
+    <rpm:license>Apache-2.0</rpm:license>
+    <rpm:vendor>obs://build.opensuse.org/systemsmanagement:Uyuni</rpm:vendor>
+    <rpm:group>Development/Libraries/Java</rpm:group>
+    <rpm:buildhost>i02-armsrv3</rpm:buildhost>
+    <rpm:sourcerpm></rpm:sourcerpm>
+    <rpm:header-range start="4504" end="6840"/>
+    <rpm:requires>
+      <rpm:entry name="java-devel"/>
+      <rpm:entry name="statistics-kit" flags="EQ" epoch="0" ver="ddd8053e0e2d5f44696acb18186a0f55ae9b56cb"/>
+      <rpm:entry name="xz"/>
+    </rpm:requires>
+  </format>
+</package>
+<package type="rpm">
+  <name>struts</name>
+  <arch>noarch</arch>
+  <version epoch="0" ver="1.2.9" rel="162.39.2.uyuni3"/>
+  <checksum type="sha256" pkgid="YES">12981667558f6c4b0baa8a57c36312faf2c3fbc9b017f32da14999db1a87b212</checksum>
+  <summary>Web application framework</summary>
+  <description>Welcome to the Struts Framework! The goal of this project is to provide
+an open source framework useful in building web applications with Java
+Servlet and JavaServer Pages (JSP) technology. Struts encourages
+application architectures based on the Model-View-Controller (MVC)
+design paradigm, colloquially known as Model 2 in discussions on
+various servlet and JSP related mailing lists. Struts includes the
+following primary areas of functionality: A controller servlet that
+dispatches requests to appropriate Action classes provided by the
+application developer. JSP custom tag libraries, and associated support
+in the controller servlet, that assists developers in creating
+interactive form-based applications. Utility classes to support XML
+parsing, automatic population of JavaBeans properties based on the Java
+reflection APIs, and internationalization of prompts and messages.
+Struts is part of the Jakarta Project, sponsored by the Apache Software
+Foundation.</description>
+  <packager></packager>
+  <url>http://jakarta.apache.org/struts/</url>
+  <time file="1762530976" build="1762530974"/>
+  <size package="546676" installed="883467" archive="886128"/>
+  <location href="noarch/struts-1.2.9-162.39.2.uyuni3.noarch.rpm"/>
+  <format>
+    <rpm:license>Apache-2.0</rpm:license>
+    <rpm:vendor>obs://build.opensuse.org/systemsmanagement:Uyuni</rpm:vendor>
+    <rpm:group>Development/Libraries/Java</rpm:group>
+    <rpm:buildhost>i02-armsrv2</rpm:buildhost>
+    <rpm:sourcerpm>struts-1.2.9-162.39.2.uyuni3.src.rpm</rpm:sourcerpm>
+    <rpm:header-range start="4504" end="11484"/>
+    <rpm:provides>
+      <rpm:entry name="struts" flags="EQ" epoch="0" ver="1.2.9" rel="162.39.2.uyuni3"/>
+    </rpm:provides>
+    <rpm:requires>
+      <rpm:entry name="(apache-commons-beanutils or jakarta-commons-beanutils &gt;= 1.6.1)"/>
+      <rpm:entry name="(apache-commons-validator or jakarta-commons-validator &gt;= 1.0.2)"/>
+      <rpm:entry name="(oro &gt;= 2.0.7 or jakarta-oro)"/>
+      <rpm:entry name="apache-commons-digester" flags="GE" epoch="0" ver="1.5"/>
+      <rpm:entry name="apache-commons-fileupload2-core"/>
+      <rpm:entry name="apache-commons-fileupload2-javax"/>
+      <rpm:entry name="apache-commons-io"/>
+      <rpm:entry name="servlet"/>
+    </rpm:requires>
+    <rpm:recommends>
+      <rpm:entry name="jdbc-stdext"/>
+    </rpm:recommends>
+  </format>
+</package>
+<package type="rpm">
+  <name>struts</name>
+  <arch>src</arch>
+  <version epoch="0" ver="1.2.9" rel="162.39.2.uyuni3"/>
+  <checksum type="sha256" pkgid="YES">46ded9288d85bb7cc251a96e91704118a84ae633449adece809026c791f5cc08</checksum>
+  <summary>Web application framework</summary>
+  <description>Welcome to the Struts Framework! The goal of this project is to provide
+an open source framework useful in building web applications with Java
+Servlet and JavaServer Pages (JSP) technology. Struts encourages
+application architectures based on the Model-View-Controller (MVC)
+design paradigm, colloquially known as Model 2 in discussions on
+various servlet and JSP related mailing lists. Struts includes the
+following primary areas of functionality: A controller servlet that
+dispatches requests to appropriate Action classes provided by the
+application developer. JSP custom tag libraries, and associated support
+in the controller servlet, that assists developers in creating
+interactive form-based applications. Utility classes to support XML
+parsing, automatic population of JavaBeans properties based on the Java
+reflection APIs, and internationalization of prompts and messages.
+Struts is part of the Jakarta Project, sponsored by the Apache Software
+Foundation.</description>
+  <packager></packager>
+  <url>http://jakarta.apache.org/struts/</url>
+  <time file="1762530976" build="1762530974"/>
+  <size package="4310576" installed="4327830" archive="4329104"/>
+  <location href="src/struts-1.2.9-162.39.2.uyuni3.src.rpm"/>
+  <format>
+    <rpm:license>Apache-2.0</rpm:license>
+    <rpm:vendor>obs://build.opensuse.org/systemsmanagement:Uyuni</rpm:vendor>
+    <rpm:group>Development/Libraries/Java</rpm:group>
+    <rpm:buildhost>i02-armsrv2</rpm:buildhost>
+    <rpm:sourcerpm></rpm:sourcerpm>
+    <rpm:header-range start="4504" end="19664"/>
+    <rpm:requires>
+      <rpm:entry name="(jakarta-commons-validator or apache-commons-validator)"/>
+      <rpm:entry name="(oro or jakarta-oro)"/>
+      <rpm:entry name="ant-apache-oro"/>
+      <rpm:entry name="ant-apache-regexp"/>
+      <rpm:entry name="antlr"/>
+      <rpm:entry name="apache-commons-beanutils"/>
+      <rpm:entry name="apache-commons-collections"/>
+      <rpm:entry name="apache-commons-digester"/>
+      <rpm:entry name="apache-commons-fileupload2-core"/>
+      <rpm:entry name="apache-commons-fileupload2-javax"/>
+      <rpm:entry name="apache-commons-io"/>
+      <rpm:entry name="apache-commons-logging"/>
+      <rpm:entry name="fdupes"/>
+      <rpm:entry name="java-devel" flags="GE" epoch="0" ver="1.6.0"/>
+      <rpm:entry name="javapackages-tools"/>
+      <rpm:entry name="servletapi5"/>
+      <rpm:entry name="unzip"/>
+      <rpm:entry name="update-alternatives"/>
+      <rpm:entry name="xalan-j2"/>
+    </rpm:requires>
+  </format>
+</package>
+<package type="rpm">
+  <name>tomcat-taglibs-standard-1_2_5</name>
+  <arch>noarch</arch>
+  <version epoch="0" ver="1.2.5" rel="2.126.uyuni3"/>
+  <checksum type="sha256" pkgid="YES">8d276941e0a98c810fbedea054acff75853138197b8d11886b66b96275152577</checksum>
+  <summary>An implementation of the JSP Standard Tag Library (JSTL)</summary>
+  <description>Apache Taglibs provides open source implementations of Tag Libraries for use
+with Java Server Pages (JSPs). In particular, it contains the Apache Standard
+Taglib, an open source implementation of the Java Standard Tag Library (JSTL)
+specification.</description>
+  <packager></packager>
+  <url>http://tomcat.apache.org/taglibs.html</url>
+  <time file="1766158346" build="1766158343"/>
+  <size package="409412" installed="474672" archive="476208"/>
+  <location href="noarch/tomcat-taglibs-standard-1_2_5-1.2.5-2.126.uyuni3.noarch.rpm"/>
+  <format>
+    <rpm:license>Apache-2.0</rpm:license>
+    <rpm:vendor>obs://build.opensuse.org/systemsmanagement:Uyuni</rpm:vendor>
+    <rpm:group>Development/Libraries/Java</rpm:group>
+    <rpm:buildhost>i01-armsrv3</rpm:buildhost>
+    <rpm:sourcerpm>tomcat-taglibs-standard-1_2_5-1.2.5-2.126.uyuni3.src.rpm</rpm:sourcerpm>
+    <rpm:header-range start="4504" end="13084"/>
+    <rpm:provides>
+      <rpm:entry name="mvn(org.apache.taglibs:taglibs-standard-compat)" flags="EQ" epoch="0" ver="1.2.5"/>
+      <rpm:entry name="mvn(org.apache.taglibs:taglibs-standard-impl)" flags="EQ" epoch="0" ver="1.2.5"/>
+      <rpm:entry name="mvn(org.apache.taglibs:taglibs-standard-jstlel)" flags="EQ" epoch="0" ver="1.2.5"/>
+      <rpm:entry name="mvn(org.apache.taglibs:taglibs-standard-spec)" flags="EQ" epoch="0" ver="1.2.5"/>
+      <rpm:entry name="tomcat-taglibs-standard" flags="EQ" epoch="0" ver="1.2.5" rel="2.126.uyuni3"/>
+      <rpm:entry name="tomcat-taglibs-standard-1_2_5" flags="EQ" epoch="0" ver="1.2.5" rel="2.126.uyuni3"/>
+    </rpm:provides>
+    <rpm:requires>
+      <rpm:entry name="java"/>
+    </rpm:requires>
+  </format>
+</package>
+<package type="rpm">
+  <name>tomcat-taglibs-standard-1_2_5</name>
+  <arch>src</arch>
+  <version epoch="0" ver="1.2.5" rel="2.126.uyuni3"/>
+  <checksum type="sha256" pkgid="YES">bf731555495aba28387198cf8f5f7e0ed7289b05f6bb29c27ba29942f0969701</checksum>
+  <summary>An implementation of the JSP Standard Tag Library (JSTL)</summary>
+  <description>Apache Taglibs provides open source implementations of Tag Libraries for use
+with Java Server Pages (JSPs). In particular, it contains the Apache Standard
+Taglib, an open source implementation of the Java Standard Tag Library (JSTL)
+specification.</description>
+  <packager></packager>
+  <url>http://tomcat.apache.org/taglibs.html</url>
+  <time file="1766158346" build="1766158343"/>
+  <size package="517566" installed="624880" archive="625580"/>
+  <location href="src/tomcat-taglibs-standard-1_2_5-1.2.5-2.126.uyuni3.src.rpm"/>
+  <format>
+    <rpm:license>Apache-2.0</rpm:license>
+    <rpm:vendor>obs://build.opensuse.org/systemsmanagement:Uyuni</rpm:vendor>
+    <rpm:group>Development/Libraries/Java</rpm:group>
+    <rpm:buildhost>i01-armsrv3</rpm:buildhost>
+    <rpm:sourcerpm></rpm:sourcerpm>
+    <rpm:header-range start="4504" end="12164"/>
+    <rpm:requires>
+      <rpm:entry name="java-devel"/>
+      <rpm:entry name="tomcat-taglibs-standard-1_2_5-kit" flags="EQ" epoch="0" ver="5dfe358859d4704112d0a3d311412c7b1f631480"/>
+      <rpm:entry name="unzip"/>
+      <rpm:entry name="xz"/>
+    </rpm:requires>
+  </format>
+</package>
+<package type="rpm">
+  <name>woodstox</name>
+  <arch>noarch</arch>
+  <version epoch="0" ver="4.4.2" rel="6.60.uyuni3"/>
+  <checksum type="sha256" pkgid="YES">46b0b4f7a1fdce29abbfffdf795f09a764b119129931f543f8e3d58e768cbf69</checksum>
+  <summary>The gold standard Stax XML API implementation</summary>
+  <description>Woodstox is an XML-parser that allows parsing of XML documents in so-called pull mode (aka "pull parsing").</description>
+  <packager></packager>
+  <url>https://github.com/FasterXML/Woodstox4</url>
+  <time file="1766158269" build="1766158262"/>
+  <size package="655496" installed="700915" archive="702288"/>
+  <location href="noarch/woodstox-4.4.2-6.60.uyuni3.noarch.rpm"/>
+  <format>
+    <rpm:license>LGPL-2.1-only</rpm:license>
+    <rpm:vendor>obs://build.opensuse.org/systemsmanagement:Uyuni</rpm:vendor>
+    <rpm:group>Development/Libraries/Java</rpm:group>
+    <rpm:buildhost>i03-armsrv2</rpm:buildhost>
+    <rpm:sourcerpm>woodstox-4.4.2-6.60.uyuni3.src.rpm</rpm:sourcerpm>
+    <rpm:header-range start="4504" end="8664"/>
+    <rpm:provides>
+      <rpm:entry name="mvn(org.codehaus.woodstox:stax2-api)" flags="EQ" epoch="0" ver="4.0.0"/>
+      <rpm:entry name="mvn(org.codehaus.woodstox:woodstox-core-asl)"/>
+      <rpm:entry name="woodstox" flags="EQ" epoch="0" ver="4.4.2" rel="6.60.uyuni3"/>
+    </rpm:provides>
+  </format>
+</package>
+<package type="rpm">
+  <name>woodstox</name>
+  <arch>src</arch>
+  <version epoch="0" ver="4.4.2" rel="6.60.uyuni3"/>
+  <checksum type="sha256" pkgid="YES">12340e26e85a114aff4507ba3949328b22cc434eeedf26beef2f6c22a13e001d</checksum>
+  <summary>The gold standard Stax XML API implementation</summary>
+  <description>Woodstox is an XML-parser that allows parsing of XML documents in so-called pull mode (aka "pull parsing").</description>
+  <packager></packager>
+  <url>https://github.com/FasterXML/Woodstox4</url>
+  <time file="1766158269" build="1766158262"/>
+  <size package="6034787" installed="7106499" archive="7107168"/>
+  <location href="src/woodstox-4.4.2-6.60.uyuni3.src.rpm"/>
+  <format>
+    <rpm:license>LGPL-2.1-only</rpm:license>
+    <rpm:vendor>obs://build.opensuse.org/systemsmanagement:Uyuni</rpm:vendor>
+    <rpm:group>Development/Libraries/Java</rpm:group>
+    <rpm:buildhost>i03-armsrv2</rpm:buildhost>
+    <rpm:sourcerpm></rpm:sourcerpm>
+    <rpm:header-range start="4504" end="7668"/>
+    <rpm:requires>
+      <rpm:entry name="ant"/>
+      <rpm:entry name="java-devel"/>
+      <rpm:entry name="javapackages-tools"/>
+      <rpm:entry name="unzip"/>
+      <rpm:entry name="woodstox-kit" flags="EQ" epoch="0" ver="1.0"/>
+    </rpm:requires>
+  </format>
+</package>
+<package type="rpm">
+  <name>xmlpull-api</name>
+  <arch>noarch</arch>
+  <version epoch="0" ver="1.1.3.1" rel="3.8.uyuni3"/>
+  <checksum type="sha256" pkgid="YES">dc8d3ccc1a6fea9a704d2181290129fe3fb21e802378d2b4b3b3d1a89438149c</checksum>
+  <summary>XML Pull Parsing Java APIs</summary>
+  <description>XmlPull v1 API is a simple to use XML pull parsing API that was
+designed for simplicity and very good performance both in constrained
+environment such as defined by J2ME and on server side when used in
+J2EE application servers.</description>
+  <packager></packager>
+  <url>https://www.xmlpull.org/</url>
+  <time file="1762530908" build="1762530905"/>
+  <size package="14844" installed="8120" archive="8856"/>
+  <location href="noarch/xmlpull-api-1.1.3.1-3.8.uyuni3.noarch.rpm"/>
+  <format>
+    <rpm:license>SUSE-Public-Domain</rpm:license>
+    <rpm:vendor>obs://build.opensuse.org/systemsmanagement:Uyuni</rpm:vendor>
+    <rpm:group>Development/Libraries/Java</rpm:group>
+    <rpm:buildhost>i03-armsrv1</rpm:buildhost>
+    <rpm:sourcerpm>xmlpull-api-1.1.3.1-3.8.uyuni3.src.rpm</rpm:sourcerpm>
+    <rpm:header-range start="4504" end="7400"/>
+    <rpm:provides>
+      <rpm:entry name="xmlpull-api" flags="EQ" epoch="0" ver="1.1.3.1" rel="3.8.uyuni3"/>
+    </rpm:provides>
+    <rpm:requires>
+      <rpm:entry name="java"/>
+    </rpm:requires>
+  </format>
+</package>
+<package type="rpm">
+  <name>xmlpull-api</name>
+  <arch>src</arch>
+  <version epoch="0" ver="1.1.3.1" rel="3.8.uyuni3"/>
+  <checksum type="sha256" pkgid="YES">e845e573700c5af1210a3f2fb44a259148752d84ffe6fff869d14aabc27630b9</checksum>
+  <summary>XML Pull Parsing Java APIs</summary>
+  <description>XmlPull v1 API is a simple to use XML pull parsing API that was
+designed for simplicity and very good performance both in constrained
+environment such as defined by J2ME and on server side when used in
+J2EE application servers.</description>
+  <packager></packager>
+  <url>https://www.xmlpull.org/</url>
+  <time file="1762530908" build="1762530905"/>
+  <size package="851808" installed="845272" archive="845788"/>
+  <location href="src/xmlpull-api-1.1.3.1-3.8.uyuni3.src.rpm"/>
+  <format>
+    <rpm:license>SUSE-Public-Domain</rpm:license>
+    <rpm:vendor>obs://build.opensuse.org/systemsmanagement:Uyuni</rpm:vendor>
+    <rpm:group>Development/Libraries/Java</rpm:group>
+    <rpm:buildhost>i03-armsrv1</rpm:buildhost>
+    <rpm:sourcerpm></rpm:sourcerpm>
+    <rpm:header-range start="4504" end="6836"/>
+    <rpm:requires>
+      <rpm:entry name="java-devel"/>
+      <rpm:entry name="xmlpull-api-kit" flags="EQ" epoch="0" ver="0d1c5e80440321046775eed5a1cf15ba783acac2"/>
+    </rpm:requires>
+  </format>
+</package>
+<package type="rpm">
+  <name>xmlsec</name>
+  <arch>noarch</arch>
+  <version epoch="0" ver="2.0.7" rel="4.126.uyuni3"/>
+  <checksum type="sha256" pkgid="YES">75574bf304802411dd07d572f4c40aab89e28fd9d8a253ee0245aa24d1b592ee</checksum>
+  <summary>Apache XML Security for Java supports XML-Signature Syntax</summary>
+  <description>Apache XML Security for Java supports XML-Signature Syntax and Processing, W3C Recommendation 12 February 2002, and XML Encryption Syntax and Processing, W3C Recommendation 10 December 2002. As of version 1.4, the library supports the standard Java API JSR-105: XML Digital Signature APIs</description>
+  <packager></packager>
+  <url>http://santuario.apache.org/</url>
+  <time file="1766158402" build="1766158397"/>
+  <size package="1003124" installed="1134095" archive="1134520"/>
+  <location href="noarch/xmlsec-2.0.7-4.126.uyuni3.noarch.rpm"/>
+  <format>
+    <rpm:license>Apache-2.0</rpm:license>
+    <rpm:vendor>obs://build.opensuse.org/systemsmanagement:Uyuni</rpm:vendor>
+    <rpm:group>Development/Libraries/Java</rpm:group>
+    <rpm:buildhost>i02-armsrv1</rpm:buildhost>
+    <rpm:sourcerpm>xmlsec-2.0.7-4.126.uyuni3.src.rpm</rpm:sourcerpm>
+    <rpm:header-range start="4504" end="7696"/>
+    <rpm:provides>
+      <rpm:entry name="mvn(org.apache.santuario:xmlsec)" flags="EQ" epoch="0" ver="2.0.7"/>
+      <rpm:entry name="xmlsec" flags="EQ" epoch="0" ver="2.0.7" rel="4.126.uyuni3"/>
+    </rpm:provides>
+    <rpm:requires>
+      <rpm:entry name="java"/>
+      <rpm:entry name="mvn(commons-codec:commons-codec)"/>
+      <rpm:entry name="mvn(org.codehaus.woodstox:woodstox-core-asl)"/>
+      <rpm:entry name="osgi(slf4j.api)"/>
+    </rpm:requires>
+  </format>
+</package>
+<package type="rpm">
+  <name>xmlsec</name>
+  <arch>src</arch>
+  <version epoch="0" ver="2.0.7" rel="4.126.uyuni3"/>
+  <checksum type="sha256" pkgid="YES">47d9178478b66676e818b0a47880d576b81a815dce847c57c5a7b6fad9369f78</checksum>
+  <summary>Apache XML Security for Java supports XML-Signature Syntax</summary>
+  <description>Apache XML Security for Java supports XML-Signature Syntax and Processing, W3C Recommendation 12 February 2002, and XML Encryption Syntax and Processing, W3C Recommendation 10 December 2002. As of version 1.4, the library supports the standard Java API JSR-105: XML Digital Signature APIs</description>
+  <packager></packager>
+  <url>http://santuario.apache.org/</url>
+  <time file="1766158402" build="1766158397"/>
+  <size package="2277594" installed="2866029" archive="2866688"/>
+  <location href="src/xmlsec-2.0.7-4.126.uyuni3.src.rpm"/>
+  <format>
+    <rpm:license>Apache-2.0</rpm:license>
+    <rpm:vendor>obs://build.opensuse.org/systemsmanagement:Uyuni</rpm:vendor>
+    <rpm:group>Development/Libraries/Java</rpm:group>
+    <rpm:buildhost>i02-armsrv1</rpm:buildhost>
+    <rpm:sourcerpm></rpm:sourcerpm>
+    <rpm:header-range start="4504" end="7460"/>
+    <rpm:requires>
+      <rpm:entry name="java-devel"/>
+      <rpm:entry name="unzip"/>
+      <rpm:entry name="xmlsec-kit" flags="EQ" epoch="0" ver="b3b8eb4e03915b8bb8863fb758ebfcbac0a622bb"/>
+    </rpm:requires>
+  </format>
+</package>
+</metadata>

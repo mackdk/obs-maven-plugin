@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<common:metadata xmlns:common="http://linux.duke.edu/metadata/common" xmlns:rpm="http://linux.duke.edu/metadata/rpm" packages="1">
+<revision>1766158663</revision>
+<common:package type="rpm">
+  <common:name>optaplanner</common:name>
+  <common:arch>noarch</common:arch>
+  <timestamp>1766158663</timestamp>
+  <common:version epoch="0" ver="7.17.0" rel="6.125.uyuni3"/>
+  <common:checksum type="sha256" pkgid="YES">ff4a7f487bce111679f5823379f483a8fbd9a5abbdcc88104a9fa590f9b9f4c8</common:checksum>
+  <common:summary>A Java library to solve planning problems</common:summary>
+  <common:description>OptaPlanner solves planning problems. This lightweight, embeddable planning engine implements powerful and scalable algorithms to optimize business resource scheduling and planning.</common:description>
+  <common:packager></common:packager>
+  <common:url>https://www.optaplanner.org</common:url>
+  <common:time file="1766158264" build="1766158257"/>
+  <common:size package="1006892" installed="1184840" archive="1185624"/>
+  <common:location href="noarch/optaplanner-7.17.0-6.125.uyuni3.noarch.rpm"/>
+  <common:format>
+    <rpm:license>Apache-2.0</rpm:license>
+    <rpm:vendor>obs://build.opensuse.org/systemsmanagement:Uyuni</rpm:vendor>
+    <rpm:group>Development/Libraries/Java</rpm:group>
+    <rpm:buildhost>i02-armsrv2</rpm:buildhost>
+    <rpm:sourcerpm>optaplanner-7.17.0-6.125.uyuni3.src.rpm</rpm:sourcerpm>
+    <rpm:header-range start="4504" end="8148"/>
+    <rpm:provides>
+      <rpm:entry name="mvn(org.optaplanner:optaplanner-core)" flags="EQ" epoch="0" ver="7.17.0"/>
+      <rpm:entry name="optaplanner" flags="EQ" epoch="0" ver="7.17.0" rel="6.125.uyuni3"/>
+    </rpm:provides>
+    <rpm:requires>
+      <rpm:entry name="java" flags="GE" epoch="0" ver="11"/>
+      <rpm:entry name="mvn(org.drools:drools-compiler)" flags="EQ" epoch="0" ver="7.17.0"/>
+      <rpm:entry name="mvn(org.drools:drools-core)" flags="EQ" epoch="0" ver="7.17.0"/>
+    </rpm:requires>
+  </common:format>
+</common:package>
+</common:metadata>
