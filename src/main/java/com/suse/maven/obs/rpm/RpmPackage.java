@@ -43,6 +43,12 @@ public class RpmPackage {
 
     private static final short RPM_TYPE_SOURCE = 1;
 
+    private static final int MAX_HEADER_INDEX_COUNT = 100_000;
+
+    private static final int MAX_HEADER_DATA_SIZE = 64 * 1024 * 1024; // 64 MB
+
+    private static final long MAX_TOTAL_HEADER_SIZE = 128L * 1024 * 1024; // 128 MB
+
     private final Path archivePath;
 
     private Predicate<RpmFile> filter;
@@ -158,16 +164,25 @@ public class RpmPackage {
         byte[] magic = new byte[8];
         rpmStream.readFully(magic);
 
-        // Simple sanity check
+        // Ensure the magic number matches
         if (!Arrays.equals(magic, RPM_HEADER_MAGIC)) {
             throw new IOException("Invalid RPM header magic bytes");
         }
 
         int indexCount = rpmStream.readInt();
+        // Simple sanity check on the number of indexes
+        if (indexCount < 0 || indexCount > MAX_HEADER_INDEX_COUNT) {
+            throw new IOException("Invalid RPM header: unreasonable index count " + indexCount);
+        }
+
         int dataSize = rpmStream.readInt();
+        // Simple safeguard on the data size of the header
+        if (dataSize < 0 || dataSize > MAX_HEADER_DATA_SIZE) {
+            throw new IOException("Invalid RPM header: unreasonable data size " + dataSize);
+        }
 
         // Calculate total size of the header data: Each index entry is 16 bytes
-        long totalHeaderSize = (16L * indexCount) + dataSize;
+        long totalHeaderSize = getTotalHeaderSize(indexCount, dataSize);
 
         // Skip the data
         IOUtils.skipFully(rpmStream, totalHeaderSize);
@@ -180,5 +195,21 @@ public class RpmPackage {
                 IOUtils.skipFully(rpmStream, 8 - remainder);
             }
         }
+    }
+
+    private static long getTotalHeaderSize(int indexCount, int dataSize) throws IOException {
+        long totalHeaderSize;
+
+        try {
+            // Use Math.addExact to be overflow-safe
+            totalHeaderSize = Math.addExact(16L * indexCount, dataSize);
+            // Defensive upper bound in case individual limits change in the future
+            if (totalHeaderSize > MAX_TOTAL_HEADER_SIZE) {
+                throw new IOException("Invalid RPM header: total header size too large (" + totalHeaderSize + ")");
+            }
+        } catch (ArithmeticException ex) {
+            throw new IOException("Invalid RPM header: size overflow", ex);
+        }
+        return totalHeaderSize;
     }
 }
