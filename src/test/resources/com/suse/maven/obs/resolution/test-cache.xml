@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<checksums>
+    <entry key="dependency:testGroup:firstArtifact:jar" type="sha1" hash="09a902b5e4b4749d7176c608291d34563cceb09e" />
+    <entry key="dependency:testGroup:secondArtifact:jar" type="md5" hash="457de9b3e0a4942b81a46c0b8ce5db7f" />
+    <entry key="index:repo-one:primary" type="sha256" hash="82129c9aa76957ea5e0de3d47409378324836ae7cc6319e0db8b3549d1146c9b" />
+    <entry key="index:repo-two:primary" type="sha3" hash="eb9aaf76d660b196a8a296ee9b2d4704272bdee7a137326e6d101e030583c9fb" />
+</checksums>

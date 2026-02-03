@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- This xml will read the content of /etc/os-release if external entity processing is not blocked -->
+<!DOCTYPE root [
+  <!ENTITY xxe SYSTEM "file:///etc/os-release">
+]>
+<root>&xxe;</root>

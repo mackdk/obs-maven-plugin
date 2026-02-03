@@ -1,5 +1,5 @@
 /*
- * Copyright (c) 2025 SUSE LLC
+ * Copyright (c) 2025--2026 SUSE LLC
  *
  * This software is licensed to you under the GNU General Public License,
  * version 2 (GPLv2). There is NO WARRANTY for this software, express or
@@ -16,11 +16,16 @@ import com.suse.maven.obs.model.ObsRepository;
 import org.apache.maven.model.Dependency;
 
 import java.math.BigInteger;
+import java.io.IOException;
+import java.io.UncheckedIOException;
 import java.net.URISyntaxException;
 import java.net.URL;
+import java.nio.file.Files;
 import java.nio.file.Path;
 import java.nio.file.Paths;
 import java.util.Arrays;
+import java.util.Comparator;
+import java.util.stream.Stream;
 
 /**
  * Utility class providing helper methods for unit tests.
@@ -111,10 +116,54 @@ public class TestUtils {
      * @return a maven dependency.
      */
     public static Dependency createMavenDependency(String groupId, String artifactId, String version) {
+        return createMavenDependency(groupId, artifactId, version, "compile", "jar", null);
+    }
+
+    /**
+     * Creates a Maven {@link Dependency} with the specified coordinates.
+     * @param groupId the group ID.
+     * @param artifactId the artifact ID.
+     * @param version the version string.
+     * @param type the type
+     * @return a maven dependency.
+     */
+    public static Dependency createMavenDependency(String groupId, String artifactId, String version, String type) {
+        return createMavenDependency(groupId, artifactId, version, "compile", type, null);
+    }
+
+    /**
+     * Creates a Maven {@link Dependency} with the specified coordinates.
+     * @param groupId the group ID.
+     * @param artifactId the artifact ID.
+     * @param version the version string.
+     * @param type the type
+     * @param classifier the classifier
+     * @return a maven dependency.
+     */
+    public static Dependency createMavenDependency(String groupId, String artifactId, String version, String type,
+                                                   String classifier) {
+        return createMavenDependency(groupId, artifactId, version, "compile", type, classifier);
+    }
+
+    /**
+     * Creates a Maven {@link Dependency} with the specified coordinates.
+     * @param groupId the group ID.
+     * @param artifactId the artifact ID.
+     * @param version the version string.
+     * @param scope the scope
+     * @param type the type
+     * @param classifier the classifier
+     * @return a maven dependency.
+     */
+    public static Dependency createMavenDependency(String groupId, String artifactId, String version, String scope,
+                                                   String type, String classifier) {
         Dependency dependency = new Dependency();
         dependency.setGroupId(groupId);
         dependency.setArtifactId(artifactId);
         dependency.setVersion(version);
+        dependency.setScope(scope);
+        dependency.setType(type);
+        dependency.setClassifier(classifier);
         return dependency;
     }
 
@@ -134,6 +183,30 @@ public class TestUtils {
         // - have the resulting byte array always treated as a positive magnitude
         byte[] biBytes = new BigInteger("10" + src.replaceAll("\\s", ""), 16).toByteArray();
         return Arrays.copyOfRange(biBytes, 1, biBytes.length);
+    }
+
+    /**
+     * Recursively deletes a directory and all its contents.
+     * @param targetPath the path to the directory to remove.
+     * @throws IOException if the directory traversal fails or a file cannot be deleted.
+     */
+    public static void removeDirectoryTree(Path targetPath) throws IOException {
+        if (!Files.exists(targetPath)) {
+            return;
+        }
+
+        try (Stream<Path> temporaryFiles = Files.walk(targetPath)) {
+            temporaryFiles.sorted(Comparator.reverseOrder())
+                .forEach(path -> {
+                    try {
+                        Files.delete(path);
+                    } catch (IOException e) {
+                        throw new UncheckedIOException(e);
+                    }
+                });
+        } catch (UncheckedIOException ex) {
+            throw ex.getCause();
+        }
     }
 
     private static Class<?> getTestClass() {

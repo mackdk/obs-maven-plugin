@@ -1,5 +1,5 @@
 /*
- * Copyright (c) 2025 SUSE LLC
+ * Copyright (c) 2025-2026 SUSE LLC
  *
  * This software is licensed to you under the GNU General Public License,
  * version 2 (GPLv2). There is NO WARRANTY for this software, express or
@@ -15,6 +15,8 @@ import org.jetbrains.annotations.Nullable;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
+import com.suse.maven.obs.common.SafeXml;
+
 import java.io.InputStream;
 import java.time.Instant;
 import java.util.ArrayList;
@@ -24,7 +26,6 @@ import java.util.Optional;
 import java.util.function.Predicate;
 
 import javax.inject.Named;
-import javax.xml.stream.XMLInputFactory;
 import javax.xml.stream.XMLStreamConstants;
 import javax.xml.stream.XMLStreamException;
 import javax.xml.stream.XMLStreamReader;
@@ -44,19 +45,6 @@ public class ObsMetadataParser {
 
     private static final String PACKAGE_PATH = "/metadata/package";
 
-    private final XMLInputFactory xmlInputFactory;
-
-    /**
-     * Default constructor.
-     */
-    public ObsMetadataParser() {
-        xmlInputFactory = XMLInputFactory.newFactory();
-
-        // Disable DTD support and external entities
-        xmlInputFactory.setProperty(XMLInputFactory.SUPPORT_DTD, false);
-        xmlInputFactory.setProperty(XMLInputFactory.IS_SUPPORTING_EXTERNAL_ENTITIES, false);
-    }
-
     /**
      * Parses the repository index (repomd.xml) to find a specific metadata entry.
      * @param dataStream the input stream of the {@code repomd.xml} file.
@@ -67,7 +55,7 @@ public class ObsMetadataParser {
     @Nullable
     public MetadataEntry getMetadata(@NotNull InputStream dataStream, @NotNull String dataType)
         throws XMLStreamException {
-        XMLStreamReader reader = xmlInputFactory.createXMLStreamReader(
+        XMLStreamReader reader = SafeXml.newStreamReader(
             Objects.requireNonNull(dataStream, "dataStream must not be null")
         );
 
@@ -151,7 +139,7 @@ public class ObsMetadataParser {
     public List<PackageEntry> processPrimary(@NotNull InputStream primaryStream,
                                              @NotNull Predicate<PackageEntry> packageFilter)
         throws XMLStreamException {
-        XMLStreamReader reader = xmlInputFactory.createXMLStreamReader(
+        XMLStreamReader reader = SafeXml.newStreamReader(
             Objects.requireNonNull(primaryStream, "primaryStream must not be null")
         );
 
